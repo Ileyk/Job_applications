@@ -1,0 +1,49 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww28600\viewh16520\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\b\fs36 \cf0 4.1 Numerical Method
+\b0 \
+\
+\pard\pardeftab720\qj
+\cf0 The MPI-AMRVAC code has as a guiding principle its versatility to handle any set of (near-)conservative equations, with strict conservation possibly destroyed by the presence of physical source terms. The nature of this latter term is general enough to cover many situations commonly encountered in astrophysical settings. While any set of equations written in the above form can be handled in principle, the code currently has following functionalities: hydrodynamics, (resistive or ideal) classical magnetohydrodynamic, special relativistic hydro and ideal MHD. All these physics can be used in any dimensionality D, combined with any physically meaningful combination in terms of the number of vector components thereby employed. The dimensionality of the code, and the number of vector components, as well as the selected physics module, the basic grid block size, and a problem-specific user module is selected before the code is compiled by a (Perl) preprocessor. The functionality further encompasses the use of Cartesian, polar, cylindrical (to which polar belongs), or spherical grids, with possibilities to treat axisymmetric or translationally symmetric ignored dimensions. In terms of source terms, precoded modules contain external gravity, also in discrete point source form, and optically thin radiative losses, besides the resistive terms present in the classical MHD routines. For every physics module, a number of high-resolution shockcapturing strategies are available, which can be chosen to differ from grid level to grid level in multi-level AMR simulations. In the remainder of this paper, we will illustrate this flexibility for special relativistic applications. As a final note on code philosophy, it is written in Fortran, employs MPI for parallelization as discussed in detail below, and does not rely on any library functionality, making it easy to install on laptops, desktops, to massively parallel Unix-based platforms. Various\'a0 shock-capturing schemes to advance the system are implimented in AMRVAC\'a0 : tvdlf, HLL, HLLC, HLLD, Roe solver and lmany different limiters\'a0 qare implimented from minmod, .., PPM, Koren, ...\
+\pard\pardeftab720\sa200\qj
+\cf0 \
+
+\b 	Adaptive Mesh Refinement strategies
+\b0 \
+Currently, the MPI-AMRVAC variant employs pure octree block refinement, where all 2D child blocks are activated when a block is identified for refinement. The strategy for refine/coarse operations is explained further on. To simplify the parallelization, we gave up flexibility to allow different sized refinement ratios between grid levels, fixing it to 2. Moreover, to allow for direct parallelization over all grids at all levels, we now use the same time step _t for all levels, dramatically simplifying the filling of ghost cells (no more temporal interpolations required). The flux-fixing operations are still identical to those in the other AMR strategies, while the prolongation and restriction formulae are designed to handle curvilinear grids as well.\
+
+\b 	Refinement criteria\'a0
+\b0 \
+The efficiency gain and accuracy preservation of AMR computations, as compared to equivalent uniform effective resolution runs, ultimately relies on the criteria controlling grid refinement and coarsening operations. In block-tree, fixed refinement ratio 2 simulations, a fair variety of local error estimators are used in existing AMRVAC frameworks\'a0 . The local error estimator can be one of the following three options, which differ in the amount of time levels involved in the estimator. One can employ a Richardson-based estimator, quantifying errors at a future time level tn+1, using variables stored both at previous tn\uc0\u8722 1 and current tn time levels. A second choice involves only these latter two time levels, and employs local comparisons. The third choice availableis a L\'a0 \'f6hner type estimator.\
+
+\b 	Efficiency quantification\'a0
+\b0 \
+To demonstrate code performance, Fig. 1 quantifies speedup behavior for some representative simulations. The left panel uses the AMR as a domain decomposition strategy (1 grid level), for a full 2D, classical MHD simulation taking roughly 1000 timesteps with a 384\'d7384 resolution, including I/O. The setup is the frequently encountered Orszag-Tang test problem (inset shows the pressure at the endtime simulated), for which we discuss a relativistic MHD variant in the test suite below. Note that we can model this planar, non-relativistic MHD test in less than 5 seconds on 64 processors. Cache effects influence the scaling at low processor numbers. The right panel contains timings, part from actual production runs on the CINES Jade supercomputer, for\
+\'95 a 3-level, 3D relativistic MHD run at 480 \'d7 480 \'d7 384 effective resolution\
+(see inset, modeling a two-component jet, for which we give a 2.5D test in cylindrical geometry in the test suite);\
+\'95 a 10-level 2D relativistic hydro run (targeting GRB shock dynamics, for which we provide 1D stringent tests in this paper). The latter problem is sufficiently large in overall block number to demonstrate sustained 80% efficiency up to 2000 CPUs. It should be noted that having sufficiently many, large enough blocks per processor is the key point to demonstrate scaling for larger CPU numbers.\
+\pard\pardeftab720
+\cf0 \
+\pard\pardeftab720\qj
+\cf0 Fig. 1. Parallel performance for MPI-AMRVAC in terms of obtained speedup when using increasing numbers of CPUs (Np). Left panel is for a domain decomposition run of a 2D classical MHD test. Right panel is for both a 2D and 3D relativistic (M)HD run, where up to 2000 processors are exploited at 80% efficiency.\
+\
+	
+\b I/O specifics\'a0 :
+\b0 \
+\pard\pardeftab720\sa200\qj
+\cf0 For large-scale simulations, the I/O operations themselves require special attention. In any simulation, one may distinguish among three types of I/O procedures: one ensuring sufficiently complete data file dumps for restarts or later post-processing, one collecting globally computed monitor quantities useful for later data analysis and interpretation, and a third category related to visualization/post-processing only.\
+The I/O associated with complete data file dumps is worth mentioning separately: the Morton-ordered space filling curve, together with the fixed block size, allows us to perform fully parallel I/O read and write operations. In fact, each processor writes all grids stored in its local memory in the order defined by the Morton number. All processors write simultaneously to a single file. As a backup option for those configurations where full parallel I/O from all processors is unavailable, we also implemented a fully equivalent, pure master-slave data file dump optionality.\
+
+\b 	Visualization\'a0 
+\b0 :\
+The\'a0 I/O subroutines within MPI-AMRVAC allow a broad variety of post-processing on the data file format used for restart. We provide possibilities to convert to vtu (unstructured VTK) format, in parallel (using a master-slave pattern) or single CPU execution mode, which are directly readable by open-source (parallel) visualization efforts like Paraview or Visit. In the conversion, one can optionally switch to cell corner representations, use provided functionality to add (even gradient-based) additional variables computed from the conserved (or auxiliary) variables, and if needed enforce the code to create a uniform grid interpolation at any level desired, when the postprocessing can not handle quadtree/octree grids. Other data formats available for conversion relate to Idl or OpenDX visualization possibilities.\
+In our projet we will use mainly Paraview for visualisation using the local visulation machine in laboratory LUTh.\
+
+\b 	Clusters in use by AMRVAC\'a0 :
+\b0 \
+The basic code requirements are availability of a Fortran 90 compiler, in combination with MPI2. The code has been used previously on the IBM SP6 at Cineca, Bologna, Italy, on the VIC3 supercomputer at K.U.Leuven, Belgium, and in HPC Europa projects on CINES Jade, France. Other than the availability of Perl (exploited in a code pre-processing step), and MPI2 compatibility (both openMPI and MPT have previously been used) , there are no further library requirements.}

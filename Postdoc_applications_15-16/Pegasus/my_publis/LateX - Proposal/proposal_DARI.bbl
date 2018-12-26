@@ -1,0 +1,128 @@
+\begin{thebibliography}{13}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Avni and Bahcall(1975)]{Avni1975}
+Y.~Avni and J.~N. Bahcall.
+\newblock {Ellipsoidal light variations and masses of X-ray binaries}.
+\newblock \emph{Astrophys. J.}, 197:\penalty0 675, May 1975.
+\newblock ISSN 0004-637X.
+\newblock \doi{10.1086/153558}.
+\newblock URL \url{http://adsabs.harvard.edu/abs/1975ApJ...197..675A}.
+
+\bibitem[Edgar(2004)]{Edgar:2004ip}
+Richard~G Edgar.
+\newblock {A review of Bondi–Hoyle–Lyttleton accretion}.
+\newblock \emph{New Astron. Rev.}, 48\penalty0 (10):\penalty0 843--859,
+  September 2004.
+\newblock ISSN 13876473.
+\newblock \doi{10.1016/j.newar.2004.06.001}.
+\newblock URL
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S1387647304000739}.
+
+\bibitem[Foglizzo et~al.(2005)Foglizzo, Galletti, and Ruffert]{Foglizzo2005}
+T.~Foglizzo, P.~Galletti, and M.~Ruffert.
+\newblock {A fresh look at the unstable simulations of Bondi-Hoyle-Lyttleton
+  accretion}.
+\newblock \emph{Astron. Astrophys.}, 2201\penalty0 (2201):\penalty0 15, May
+  2005.
+\newblock ISSN 0004-6361.
+\newblock \doi{10.1051/0004-6361:20042201}.
+\newblock URL \url{http://arxiv.org/abs/astro-ph/0502168}.
+
+\bibitem[Foglizzo and Ruffert(1996)]{Foglizzo1996}
+Thierry Foglizzo and Maximilian Ruffert.
+\newblock {An analytical study of Bondi-Hoyle-Lyttleton accretion I. Stationary
+  flows}.
+\newblock 361:\penalty0 22, April 1996.
+\newblock ISSN 00046361.
+\newblock URL \url{http://arxiv.org/abs/astro-ph/9905226
+  http://arxiv.org/abs/astro-ph/9604160}.
+
+\bibitem[Fryxell and Taam(1988)]{Fryxell1988}
+B.~a. Fryxell and Ronald~E. Taam.
+\newblock {Numerical simulation of nonaxisymmetric adiabatic accretion flow}.
+\newblock \emph{Astrophys. J.}, 335:\penalty0 862, December 1988.
+\newblock ISSN 0004-637X.
+\newblock \doi{10.1086/166973}.
+\newblock URL \url{http://adsabs.harvard.edu/abs/1988ApJ...335..862F}.
+
+\bibitem[Giacconi et~al.(1962)Giacconi, Gursky, Paolini, and
+  Rossi]{Giacconi1962}
+Riccardo Giacconi, Herbert Gursky, Frank~R. Paolini, and Bruno~B. Rossi.
+\newblock {Evidence for x Rays From Sources Outside the Solar System}.
+\newblock \emph{Phys. Rev. Lett.}, 9\penalty0 (11):\penalty0 439--443, December
+  1962.
+\newblock ISSN 0031-9007.
+\newblock \doi{10.1103/PhysRevLett.9.439}.
+\newblock URL \url{http://adsabs.harvard.edu/abs/1962PhRvL...9..439G}.
+
+\bibitem[Horedt(2000)]{Horedt2000}
+G.~P. Horedt.
+\newblock {Pressure Effects in Line Accretion}.
+\newblock \emph{Astrophys. J.}, 541\penalty0 (2):\penalty0 821--830, October
+  2000.
+\newblock ISSN 0004-637X.
+\newblock \doi{10.1086/309443}.
+\newblock URL \url{http://iopscience.iop.org/0004-637X/541/2/821/fulltext/}.
+
+\bibitem[Illarionov and Sunyaev(1975)]{Illarionov1975}
+A.~F. Illarionov and R.~A. Sunyaev.
+\newblock {Why the Number of Galactic X-ray Stars Is so Small?}
+\newblock \emph{Astron. Astrophys.}, 39, 1975.
+\newblock URL \url{http://adsabs.harvard.edu/abs/1975A\%26A....39..185I}.
+
+\bibitem[Liu et~al.(2006)Liu, van Paradijs, and van~den Heuvel]{Liu2006}
+Q.~Z. Liu, J.~van Paradijs, and E.~P.~J. van~den Heuvel.
+\newblock {Catalogue of high-mass X-ray binaries in the Galaxy (4th edition)}.
+\newblock \emph{Astron. Astrophys.}, 455\penalty0 (3):\penalty0 1165--1168,
+  September 2006.
+\newblock ISSN 0004-6361.
+\newblock \doi{10.1051/0004-6361:20064987}.
+\newblock URL \url{http://adsabs.harvard.edu/abs/2006A\%26A...455.1165L}.
+
+\bibitem[{Matsuda, Takuya} et~al.(1987){Matsuda, Takuya}, {Inoue, Minoru},
+  {Sawada, Keisuke}, Matsuda, Inoue, and Sawada]{Matsuda1987}
+{Matsuda, Takuya}, {Inoue, Minoru}, {Sawada, Keisuke},  Takuya Matsuda,
+   Minoru Inoue, and  Keisuke Sawada.
+\newblock {Spin-up and spin-down of an accreting compact object}.
+\newblock \emph{Mon. Not. R. Astron. Soc. (ISSN 0035-8711)}, 226:\penalty0
+  785--811, 1987.
+\newblock URL \url{http://adsabs.harvard.edu/abs/1987MNRAS.226..785M}.
+
+\bibitem[Porth et~al.(2014)Porth, Xia, Hendrix, Moschou, and
+  Keppens]{Porth:2014wv}
+O.~Porth, C.~Xia, T.~Hendrix, S.~P. Moschou, and R.~Keppens.
+\newblock {MPI-AMRVAC for Solar and Astrophysics}.
+\newblock \emph{arXiv.org}, July 2014.
+\newblock URL \url{http://arxiv.org/abs/1407.2052
+  http://arxiv.org/abs/1407.2052v1}.
+
+\bibitem[Shenavrin et~al.(2011)Shenavrin, Taranova, and Nadzhip]{Shenavrin2011}
+V.~I. Shenavrin, O.~G. Taranova, and A.~E. Nadzhip.
+\newblock {Search for and study of hot circumstellar dust envelopes}.
+\newblock \emph{Astron. Reports}, 55\penalty0 (1):\penalty0 31--81, January
+  2011.
+\newblock ISSN 1063-7729.
+\newblock \doi{10.1134/S1063772911010070}.
+\newblock URL \url{http://cdsads.u-strasbg.fr/abs/2011ARep...55...31S}.
+
+\bibitem[Walborn et~al.(2010)Walborn, Howarth, Evans, Crowther, Moffat,
+  St-Louis, Fari\~{n}a, Bosch, Morrell, Barb\'{a}, van Loon, Farina, Bosch,
+  Morrell, Barba, and van Loon]{Walborn2010}
+Nolan~R. Walborn, Ian~D. Howarth, Christopher~J. Evans, Paul~A. Crowther,
+  Anthony F.~J. Moffat, Nicole St-Louis, Cecilia Fari\~{n}a, Guillermo~L.
+  Bosch, Nidia~I. Morrell, Rodolfo~H. Barb\'{a}, Jacco~Th. van Loon, Cecilia
+  Farina, Guillermo~L. Bosch, Nidia~I. Morrell, Rodolfo~H. Barba, and Jacco~Th.
+  van Loon.
+\newblock {The Onfp Class in the Magellanic Clouds}.
+\newblock \emph{Astron. J.}, 139\penalty0 (1980):\penalty0 27, March 2010.
+\newblock ISSN 0004-6256.
+\newblock \doi{10.1088/0004-6256/139/3/1283}.
+\newblock URL \url{http://arxiv.org/abs/1001.4032
+  http://adsabs.harvard.edu/abs/2010AJ....139.1283W}.
+
+\end{thebibliography}

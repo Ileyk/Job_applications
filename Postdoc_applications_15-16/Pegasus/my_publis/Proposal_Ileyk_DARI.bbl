@@ -1,0 +1,71 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{El Mellah} and Casse(2015{\natexlab{a}})]{ElMellah2015}
+I.~{El Mellah} and F.~Casse.
+\newblock {Numerical simulations of axisymmetric hydrodynamical Bondi–Hoyle
+  accretion on to a compact object}.
+\newblock \emph{Mon. Not. R. Astron. Soc.}, 454\penalty0 (3):\penalty0
+  2657--2667, oct 2015{\natexlab{a}}.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1093/mnras/stv2184}.
+\newblock URL \url{http://mnras.oxfordjournals.org/content/454/3/2657}.
+
+\bibitem[{El Mellah} and Casse(2015{\natexlab{b}})]{ElMellah2015a}
+I.~{El Mellah} and F.~Casse.
+\newblock {Numerical simulations of axisymmetric hydrodynamical Bondi–Hoyle
+  accretion on to a compact object}.
+\newblock \emph{Mon. Not. R. Astron. Soc.}, 454\penalty0 (3):\penalty0
+  2657--2667, 2015{\natexlab{b}}.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1093/mnras/stv2184}.
+\newblock URL \url{http://adsabs.harvard.edu/abs/2015MNRAS.454.2657E
+  http://adsabs.harvard.edu/abs/2015sf2a.conf..325E}.
+
+\bibitem[{El Mellah} and Casse(2015)]{ElMellah2015b}
+ I. {El Mellah} and  F. Casse.
+\newblock {Numerical simulations of axisymmetric Bondi-Hoyle accretion onto a
+  compact object}.
+\newblock \emph{SF2A-2015 Proc. Annu. Meet. French Soc. Astron. Astrophys. Eds.
+  F. Martins}, 2015.
+\newblock URL \url{http://adsabs.harvard.edu/abs/2015sf2a.conf..325E}.
+
+\bibitem[Rappaport et~al.(2012)Rappaport, Levine, Chiang, {El Mellah}, Jenkins,
+  Kalomeni, Kite, Kotson, Nelson, Rousseau-Nepton, and Tran]{Rappaport:2012wi}
+S.~Rappaport, a.~Levine, E.~Chiang, I.~{El Mellah}, J.~Jenkins, B.~Kalomeni,
+  E.~S. Kite, M.~Kotson, L.~Nelson, L.~Rousseau-Nepton, and K.~Tran.
+\newblock {Possible Disintegrating Short-Period Super-Mercury Orbiting Kic
+  12557548}.
+\newblock \emph{Astrophys. J.}, 752\penalty0 (1):\penalty0 1, jan 2012.
+\newblock ISSN 0004-637X.
+\newblock \doi{10.1088/0004-637X/752/1/1}.
+\newblock URL \url{http://arxiv.org/abs/1201.2662v2}.
+
+\bibitem[Rappaport et~al.(2013)Rappaport, Deck, Levine, Borkovits, Carter,
+  Mellah, Sanchis-Ojeda, Kalomeni, {El Mellah}, Sanchis-Ojeda, and
+  Kalomeni]{Rappaport2013}
+S.~Rappaport, K.~Deck, a.~Levine, T.~Borkovits, J.~Carter, I.~El Mellah,
+  R.~Sanchis-Ojeda, B.~Kalomeni, I.~{El Mellah}, R.~Sanchis-Ojeda, and
+  B.~Kalomeni.
+\newblock {Triple-Star Candidates Among the Kepler Binaries}.
+\newblock \emph{Astrophys. J.}, 768\penalty0 (v):\penalty0 33, feb 2013.
+\newblock ISSN 0004-637X.
+\newblock URL \url{http://adsabs.harvard.edu/abs/2013ApJ...768...33R
+  http://arxiv.org/abs/1302.0563v2}.
+
+\bibitem[Sanchis-Ojeda et~al.(2014)Sanchis-Ojeda, Rappaport, Winn, Kotson,
+  Levine, and Mellah]{SanchisOjeda:2014ww}
+Roberto Sanchis-Ojeda, Saul Rappaport, Joshua~N. Winn, Michael~C. Kotson, Alan
+  Levine, and Ileyk~El Mellah.
+\newblock {a Study of the Shortest-Period Planets Found With Kepler}.
+\newblock \emph{Astrophys. J.}, 787\penalty0 (1):\penalty0 47, mar 2014.
+\newblock ISSN 0004-637X.
+\newblock \doi{10.1088/0004-637X/787/1/47}.
+\newblock URL
+  \url{http://arxiv.org/abs/1403.2379$\backslash$nhttp://dx.doi.org/10.1088/0004-637X/787/1/47$\backslash$nhttp://stacks.iop.org/0004-637X/787/i=1/a=47?key=crossref.9ffab4c15a34cc00fa2eb5695d824429}.
+
+\end{thebibliography}

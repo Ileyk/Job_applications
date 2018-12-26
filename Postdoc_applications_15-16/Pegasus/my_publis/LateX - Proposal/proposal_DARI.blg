@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2011)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: proposal_DARI.aux
+The style file: plainnat.bst
+Database file #1: /Users/ielm/Documents/Bibtex/proposal_DARI_Ap_15.bib
+Warning--empty journal in Foglizzo1996
+You've used 13 entries,
+            2773 wiz_defined-function locations,
+            720 strings with 8161 characters,
+and the built_in function-call counts, 7116 in all, are:
+= -- 660
+> -- 485
+< -- 6
++ -- 163
+- -- 150
+* -- 667
+:= -- 1158
+add.period$ -- 71
+call.type$ -- 13
+change.case$ -- 89
+chr.to.int$ -- 13
+cite$ -- 27
+duplicate$ -- 265
+empty$ -- 481
+format.name$ -- 171
+if$ -- 1444
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 13
+newline$ -- 105
+num.names$ -- 52
+pop$ -- 126
+preamble$ -- 1
+purify$ -- 76
+quote$ -- 0
+skip$ -- 205
+stack$ -- 0
+substring$ -- 212
+swap$ -- 23
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 143
+warning$ -- 1
+while$ -- 56
+width$ -- 0
+write$ -- 238
+(There was 1 warning)

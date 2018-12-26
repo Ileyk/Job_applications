@@ -1,0 +1,90 @@
+Here is some feedback/input:
+
+
+1) Summary in layman's term:
+
+Mention specific missions by name (or upcoming one's), instead of saying `observational missions lifetimes'
+
+I do not know the word: Dantean
+
+I do not see the analogy with 'pies in the sky'
+
+
+2) List of bachelor etc you supervised:
+
+--> this is where you can state you may not have supervised a full thesis, but you have ample experience with teaching and guiding undergraduate students, end give more details on how much, and which kind of courses you participated in
+
+
+3) Other funding: only list what you may apply for at the same time of this pegasus (you can say e.g. that you plan to put in a research proposal in the upcoming European Marie Curie call in september)
+
+
+4) Awards: what about poster prizes (local/national/international?)
+
+5) Motivate the expert panel:
+--> you misinterpreted this question. You should not motivate why you selected the possible referees, but you must state why you will submit to Expert panel WT8 of FWO. See their scope:
+
+http://www.fwo.be/en/the-fwo/organisation/fwo-expertpanels/science-and-technology/wt8-sciences-of-the-earth-and-space/
+
+This is always easy: there is only one `expert' panel that has so-called expertise in astrophysics.
+
+You can state something like:
+
+WT8 has fundamental research in the Earth and Space Sciences as its primary scope. We here envision research on the enigmatic stellar systems known as X-ray binaries, where a neutron star or stellar mass black hole is accompanied by a mass-loosing stellar companion. This is a topic where high energy (astro)physics, shock-dominated gas and plasma dynamics, and modern high resolution, high cadence (X-ray) observations come together. Our approach to do so in a manner where analytical studies on shock stability unite with massively parallel computing exploiting extreme scale-resolving grid adaptivity, ensures that this research topic is at the forefront of contemporary theoretical astrophysical research. This research area is well covered and recognized by the members of the expert panel WT8. 
+
+
+6) Personal statement. 
+Nice text. Only comment in paragraph 2: you say to rank second, but out of how many? Is this local/national? Give some more details (but only if they make it look better).
+
+7) project itself:
+
+You alread have a lot of stuff. Just make it into one fluent story.
+
+Comment 1: do not exaggerate with the pictures either. A few (max 3) is enough to make the case.
+
+Comment 2: When splitting it up in work packages, no need to say explicitly that you will write X articles with person Y and Z. Just say you plan a first-authored peer-reviewed publication, and give a rough estimate on the time you reserve for it.
+Also, your planning now lists up to 6 articles, which may be ok (sounds a lot to me), but remember that it is then a paper every six months. Rather mention estimated times for completing runs (are these using say 500 CPUs for 1 month per run?), how long you plan to spend on analysis, and then mention write-up and presentations at conferences (which ones, any big conferences you plan to attend, like IAU general assembly or so?) Then also mention how you will apply for supercomputing time through the Flemish Supercomputing Centre 
+https://www.vscentrum.be/
+and the possibilities at European level to apply for PRACE supercomputing time on Tier 0 platforms.
+
+*) Transfer of knowledge between you and host institution
+
+You can use/say:
+
+A postdoctoral stay as a Pegasus fellow at the KU Leuven Centre for mathematical Plasma Astrophysics will allow me to join and interact with the core developer team of the open source code effort MPI-AMRVAC (Porth et al, ApJS, 2014). This software is ideally suited for high performance computing, and has a build-in versatility in its applications: these range from polytropic hydrodynamics, over full Euler to Navier-Stokes descriptions of gas dynamics, can include gas-dust coupling, allow to employ single fluid magnetohydrodynamic (MHD) modeling (up to hall-MHD), and all of these can be run in either Newtonian up to special relativistic settings. This versatility has been key for my own PhD research, where I added functionality that was not available in the public release: radially stretched grids. During my latest visit (april 2016) to the CmPA, we transferred this functionality to the public release, and can now fully exploit this feature in block grid-adaptive fashion. As a postdoc, I plan to make further improvements to the discretization schemes that are absolutely vital for my application on X-ray binary physics, such as encoding angular momentum conservation at machine precision (currently handled to truncation level only), making python tools for post-processing large data volumes, working with state-of-the-art visualization tools, etc.
+
+I plan to collaborate closely within the team of my host Prof. Rony Keppens. In this team, there is currently no focus on X-ray binary physics, but expertise is shared at the algorithmic level between solar physics research, Active Galactic Nuclei jet studies, pulsar wind nebulae, and particle acceleration scenarios in reconnecting current systems. The latter will be extremely useful to interact with, as we wish to quantify ultimately how intricate shock configurations perturbed by (magneto)hydrodynamic instabilities give rise to X-ray variability.
+
+
+
+
+*) How this research fits in host research group:
+
+The CmPA division is among worldleading institutes which pay specific attention to
+hydrodynamical and plasma physical processes that work across many spatial and temporal
+scales, ranging from those encountered in laboratory, magnetospheric, solar, or heliospheric gases and plasmas, all the way to the more exotic physics found in e.g. pulsar winds or in connection with Active Galactic Nuclei. The diversity in the plasma physical expertise 
+of its 40 team members ranges from pure analytic modeling of wave and instabilities in especially solar contexts, to the study of winds and jets associated with massive stars or accreting configurations, over fundamental know-how on magnetohydrodynamical descriptions of plasmas. In the last decade, CmPA has also gained worldwide recognition for its pioneering role in High Performance Computing, with several PRACE funded projects running on Tier 0 platforms. These also scale across fluid descriptions of plasma evolutions, to particle treatments in evolving electromagnetic fields, up to full-scale kinetic treatments using Particle in Cell approaches. This unique combination of expertise rivals that found in US national laboratories, with which CmPA has established strong links. The same is true for space weather related numerical simulations, where CmPA has been involved as a key (even coordinating) team for several FP7 projects. The step to full scale magnetohydrodynamic modeling of the X-ray binary accretion processes will thus fit seemlessly with the research ambitions of the division as whole, while it is as yet uncharted territory for the kind of numerical simulations we envision in this project.
+
+
+
+*) national and international context:
+
+The CmPA division in the KU Leuven Department of Mathematics has many local, national and international collaborations that will be beneficial to the current proposal. At KU Leuven level, CmPA collaborates as a team (currently 40 researchers)
+within an university-funded GOA project on 
+`Extreme energy transformations and transfers in astrophysical and laboratory plasmas'. 
+It is clear that the topic of X-ray binary physics is of direct relevance to this project,
+where from the computational viewpoint especially the multiscale aspect of
+our application represents a common research challenge where algorithmic innovations can be exchanged. At national level, CmPA (and my intended host Prof. R. Keppens) coordinates a
+ 7-team intra-university attraction pole CHARM (wis.kuleuven.be/CHARM), which links up teams between e.g. University of Gent that focus on galaxy-scale (radiation) hydrodynamics, up to cosmological scale simulations as pursued in the Eagle project (Institute for Computational Cosmology, Durham, UK). The current proposal further descends down the scales, to the level of feedback occuring in single X-ray binary systems. 
+On the international scene, CmPA has direct links with the Supercomputing Centre in Julich, through the partial affiliation of Prof. Paul Gibbon. Their Simulation Laboratory Plasma Physics provides ideal expertise and the needed HPC facilities to benchmark and demonstrate scalability of our implementation on modern HPC platforms. 
+The CmPA staff members are actively collaborating with many of the leading plasma physics laboraties worldwide, 
+have direct links with e.g. Nanjing University (China, concurrent professorship of 
+R. Keppens), and have been coordinating several European FP7 projects on space weather physics (SWIFF, Soteria, eHeroes, PI G. Lapenta). In July 2016, CmPA acts as host for the annual European Physical Society meeting on plasma physics (EPS 2016, the 43rd in the series). 
+CmPA staff members have co-authored reference works on magnetohydrodynamic descriptions of plasma processes (e.g. Goedbloed et al., Cambridge University Press, Advanced MHD, 2010).
+There is also a clear link with the French astrophysical community, through researchers like
+Dr. Z. Meliani, Dr. H. Baty, Dr. F. Casse, Dr. H. Meheut, who have all been visiting and collaborating with team members of CmPA in the past.
+
+Mention here also missions that you know of, that will give observational verifications.
+Mention other projects at french/ERC level that focus on this topic.
+E.g. L. Rezzolla's team at Frankfrut (Porth): 
+http://relastro.uni-frankfurt.de/
+

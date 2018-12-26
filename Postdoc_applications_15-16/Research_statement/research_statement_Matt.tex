@@ -1,0 +1,107 @@
+%%%%%%%%%%%%%%%%%  Debut du fichier Latex  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt,onecolumn]{article}
+
+%%% Pour un texte en francais
+
+%%\usepackage[applemac]{inputenc}
+%\usepackage[francais]{babel}
+	         % encodage des lettres accentuees
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}          % encodage des lettres accentuees
+%\usepackage{graphicx}
+%%\usepackage{graphicx} \def\BIB{}
+\usepackage[paper=a4paper,textwidth=140mm,left=2.0cm,right=2.0cm,top=2.0cm,bottom=2.0cm]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx,wrapfig,lipsum} \def\BIB{}
+\usepackage[pdftex]{hyperref}
+\usepackage[round]{natbib}
+\usepackage{perpage} %the perpage package
+\MakePerPage{footnote} %the perpage package command
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=blue     % can put red here to visualize the links
+}
+
+\DeclareUnicodeCharacter{00A0}{ }
+
+%%% Quelques raccourcis pour la mise en page
+\newcommand{\remarque}[1]{{\small \it #1}}
+\newcommand{\rubrique}{\bigskip \noindent $\bullet$ }
+
+\newcommand{\ignore}[1]{}
+
+\pagenumbering{gobble}
+
+%\bibliographystyle{abbrvnat}
+%\setcitestyle{authoryear,open={((},close={))}}
+
+%\renewcommand{\thefootnote}{\roman{footnote}}
+
+% -------------------------------------------------
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\vspace*{-2cm}
+\normalfont \tiny 
+%\textsc{Paris Diderot} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Research statement \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+\author{E{\sc l mellah} Ileyk} % Your name
+\date{\tiny }%\normalsize\today} % Today's date or a custom date
+% -------------------------------------------------
+
+%\makeatletter
+%\def\@xfootnote[#1]{%
+%  \protected@xdef\@thefnmark{#1}%
+%  \@footnotemark\@footnotetext}
+%\makeatother
+
+\begin{document}
+
+\bibpunct{[}{]}{;}{n}{,}{,}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%  PREMIERE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DANS CETTE PAGE, ON REMPLACE LES INDICATIONS ENTRE CROCHETS [...]
+%%% PAR LES INFORMATIONS DEMANDEES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\maketitle
+\thispagestyle{empty}
+
+\indent During my PhD, I have focused my research interest on numerical simulations of gas being accreted onto compact objects. The interest in this ubiquitous phenomenon has played a major role in the development of high energy Astrophysics over the last several decades. The wide spatial and temporal scales covered by accreting systems, from active galactic nuclei to protoplanets, provide a unique opportunity to demonstrate the diversity of landscapes that similar physical principles can deliver. The rapid increase since the late 2000's in the number of persistent X-ray binaries hosting a neutron star on a low eccentricity orbit around an OB-Supergiant companion, a.k.a. Sg\textsc{xb}s \citep{Walter15}, has ushered in a particularly exciting period to adress the specificities of wind accretion. Wind accretion in X-ray binaries can be seen as the low angular momentum counterpart of the much more comprehensively understood Roche lobe overflow accretion process. Since the first sketches of how wind accretion works in the 70's, a plethora of refined models has been proposed to account for the observed spectroscopic and photometric signatures of those systems, and these need to be put to the numerical test. In my PhD research, I have made the most of this junction between a harvest of new wind accreting X-ray binaries and the unprecedented computational power entailed by parallel computing to identify the conditions favourable to the formation of a disc around the accretor. The wind-captured discs may prove to be a fertile ground for new kinds of instabilities involving, for instance, torque reversals.\\
+
+\indent Under the supervision of Fabien Casse\footnote{AstroParticule \& Cosmology laboratory - Paris 7 Diderot University.}, I have designed a robust numerical setup of a planar supersonic flow being deflected by the gravitational field of a compact object, a.k.a. Bondi-Hoyle (B-H) flow \cite{Hoyle:1939fl,Bondi1944}. The small size of the compact object with respect to its accretion radius has long made numerical simulations of this flow prohibitively time-demanding. To address this issue, I have extensively modified the {\sc mpi-amrvac} code\footnote{For Message Passing Interface - Adaptive Mesh Refinement Versatile Advection Code. See \cite{Porth:2014wv}.}. It is a parallelized Fortran/Open{\sc mpi} set of modules to solve the conservative form of the equations of hydrodynamics and magnetohydrodynamics (\textsc{mhd}) - in a classical or in a relativistic framework - on a grid whose dimensionality can conveniently be modified. I have customized the geometry of the mesh and its boundary conditions, optimized the load balancing, and adapted the numerical scheme so as to suit the multi-scale needs of B-H flow on a compact object. On doing so, I have also gained unique experience in all stages of high performance computing (\textsc{hpc}), from the profiling of the code to scalability and multi-threading. Thanks to this preliminary work and to the 300 kh$\cdot$\textsc{cpu} I was granted on the national \href{https://www.cines.fr/en/}{\textsc{cines} cluster}, I have been able to run simulations with cell sizes spanning 5 orders of magnitude\footnote{The equivalent of 17 levels of refinement in \textsc{amr} but without the caveat of sharp discontinuities in the mesh.} \cite{ElMellah2015}. This unprecedented high dynamical range, from the accretion radius down to the vicinity of the compact body, has revealed features that semi-analytical studies had outlined, such as the anchoring of the sonic surface into the accretor or the evolution of the mass accretion rate with the Mach sonic number of the flow \cite{Foglizzo1996}.\\
+
+\indent I then went beyond the ideal B-H model to adapt this setup to wind accretion in Sg\textsc{xb}s. I have designed a model to couple the stellar, orbital, wind and accretion properties and comprehensively explore the different configurations at an affordable computational cost.  So as to obtain physically-motivated outer boundary conditions for full 3D simulations within a few accretion radii around the compact object, I designed an integrator to compute the trajectory of a ballistic radiatively-driven wind \citep{Castor1975} in a modified Roche potential. This code provides estimations of the mass and angular momentum accretion rates and of their dependence on a reduced set of 4 shape parameters (the mass ratio, the filling factor, the $\alpha$ force multiplier and the Eddington factor) and of 3 scale parameters (the mass of the compact object, the orbital period and the $Q$ force multiplier \cite{Gayley1995}). We can then use this elementary albeit consistently coupled toy-model to trace back a wide range of parameters, from the stellar mass outflow to the shearing of the accretion flow, from a handful of observables - typically the stellar temperature and surface gravity, the orbital period, the persistent X-ray luminosity and the terminal speed of the wind. The configurations susceptible to give rise to a disc are presently piped to \textsc{mpi-amrvac} to compute the hydrodynamical evolution of this supersonic inflow.\\
+
+\indent On the other hand, with Thierry Foglizzo\footnote{Astrophysics department of the \textit{Commissariat \`a l'\'energie atomique} (\textsc{cea}) - \textsc{cnrs}.}, I am carrying out a refined study of the axisymmetric stability of the steady-state flow that I obtained in \cite{ElMellah2015}. Indeed, the stability of the \textsc{b-h} flow has long been a matter of debate according to the diverging conclusions that numerical groups have drawn since the late 80's \cite{Foglizzo2005}. Motivated by the analytic expectations for an advective-acoustic cycle in the cavity delimited by the shock front and the sonic surface \citep{Foglizzo2009}, I interpolated the relaxed state we got using a much finer grid in the central parts and relied on a less diffusive numerical scheme. This new setup fits the needs for resolving wavelengths of perturbations corresponding to growth rates high enough for an amplification to take place in the cavity on a computationally affordable number of time steps. First results indicate suggestive breathing modes excited by the interplay between entropic disturbances adiabatically advected inwards and outflowing acoustic waves ; I am currently performing numerical and physical checks to confirm the origin of this cycle and to assess its saturation level, which might be high enough to excite, in three dimensions, transverse instabilities\footnote{The neutron star in the high mass X-ray binary \textsc{sfxt} 4U 1907+09 is believed to undergo spin-up and spin-down phases, possibly due to the accreted material.} \cite{Blondin:2012vf}.\\
+
+% J. Dexter
+%\indent Joining the Max Planck Institute for Extraterrestrial Physics would give me the opportunity to provide strong arguments for the disc structure depending on the background environment where it was formed. From there, I could contribute to probing the innermost regions of the flow being accreted onto a black hole, a burning question regarding, for example, black hole spin measurements \cite{Penna:2010tp} and the upcoming observational facilities\footnote{In particular the Event Horizon Telescope \cite{Doeleman2009} and the \textsc{gravity} experiment \cite{Eisenhauer2011} led by the \textsc{mpe} Infrared group.}. Coupled to a proper ray-tracing code such as Geokerr \cite{Dexter2009}, a \textsc{grhd} version of the setup I designed would already give exciting observables concerning the fate of gas falling either onto a stellar mass black hole in a \textsc{Roche} potential or onto a supermassive black hole sipping its turbulent environment \cite{Ricarte2014}. 
+
+% M. Pessah 
+%\indent Two-dimensional \textsc{b-h} flows have been long known to be the stage of transverse instabilities large enough to lead to the formation of disc-like structures \citep{Blondin2013}. However, the three-dimensional \textsc{b-h} flows turn out to be more stable, including when embedded in a non trivial potential. Instabilities such as the advective-acoustic one still offer a chance to produce large scale perturbations favourable to a winding of the flow. 
+\indent In X-ray binaries, the setup I have designed makes it possible to overcome the multi-scale difficulty of stellar winds being accreted onto a compact object. With the \textsc{hpc} methods I have got familiar with, it opens the doors to multi-Physics simulations of turbulent accretion processes and paves the way to use this process to constrain orbital and even stellar parameters. In other intrinsically coupled systems such as Young Stellar Objects surrounded by an accretion disc, this approach could also be profitable. The separated knowledge we have concerning the different pieces of the problem (the stellar spin, the soft X-ray emission, the accretion-ejection mechanism, the interaction with the disc, the magnetic field...) can now be assembled together, following a physically-motivated roadmap and so as it suits the requirements of our numerical tools. Joining the Theoretical Astrophysics group of the University of Exeter would give me the occasion to apply the methods I have developed to numerically similar configurations. I could help to design multi-scales and multi-physics simulations of plasmas or two-fluids flows and to pinpoint the triggering conditions for global and local instabilities. The renowned accomplishments of the group in \textsc{mhd} models and simulations of low-mass stars interacting with a disc convince me that, in Exeter, I could take part in strengthening and extending our understanding with robust and versatile numerical setups.
+
+%Indeed, once a disc starts to form or once the flow approaches the neutron star magnetosphere, \textsc{mhd} considerations will come into play. Models such as one suggested to explain the off-states of Vela X-1 could then be conclusively disentangled. Joining the theoretical Astrophysics group of the Niels Bohr International Academy would give me the occasion to apply the methods I have developed to numerically similar configurations. I could help to put on the shelves multi-scales and multi-physics simulations of plasmas or two-fluids flows and to pinpoint the triggering conditions for global and local instabilities. The renowned accomplishments of the group in \textsc{mhd} models and simulations of accretion discs convince me that, in Copenhagen, I could take part in strengthening and extending our understanding with robust and versatile numerical setups.
+
+% R. Sunyaev 
+%\indent Two-dimensional \textsc{b-h} flows have been long known to be the stage of transverse instabilities large enough to lead to the formation of disc-like structures \citep{Blondin2013}. However, the three-dimensional \textsc{b-h} flows turn out to be more stable, including when embedded in a non trivial potential. Instabilities such as the advective-acoustic one still offer a chance to produce large scale perturbations favourable to a winding of the flow. More generally, the setup I have designed and the \textsc{hpc} methods I have got familiar with open the doors to consistent simulations of flows with physically relevant speeds (i.e. $<10^4$km$\cdot$s$^{-1}$) being accreted onto a compact body.\\
+%\indent Joining the Max Planc Institute for Extraterrestrial Physics would give me the occasion to provide strong arguments for the disc structure and its very existence in the hardly explored realm of wind-formed discs. Furthermore, I could help to investigate the implications for the innermost regions of the flow being accreted onto a black hole, a burning question regarding, for example, the spin measurements \cite{Penna:2010tp} and the incoming observational facilities (in particular the \textsc{gravity} instrument \cite{Eisenhauer2011} and the Event Horizon Telescope \cite{Doeleman2009}). Coupled to a proper ray-tracing code such as \textit{Geokerr} \cite{Dexter2009}, a \textsc{grhd} version of the setup I designed would already give exciting observables concerning the fate of gas falling either onto a stellar mass black hole in a \textsc{Roche} potential or onto a supermassive black hole sipping its turbulent environment \cite{Ruffert1994b}. 
+
+\newpage
+
+%\newgeometry{left=2cm,right=2cm,top=2.5cm,bottom=2.5cm}
+\setlength{\bibsep}{5pt}
+\small
+\bibliographystyle{plainnat}
+\bibliography{/Users/ielm/Documents/Bibtex/research_statement_no_url}
+
+\end{document}
+%%%%%%%%%%%%%%%%%  Fin du fichier Latex  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

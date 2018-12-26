@@ -1,0 +1,103 @@
+\begin{thebibliography}{15}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Blondin and Raymer(2012)]{Blondin:2012vf}
+John~M. Blondin and Eric Raymer.
+\newblock \emph{Astrophys. J.}, 752\penalty0 (1):\penalty0 30, apr 2012.
+\newblock ISSN 0004-637X.
+\newblock \doi{10.1088/0004-637X/752/1/30}.
+
+\bibitem[Bondi and Hoyle(1944)]{Bondi1944}
+H~Bondi and F~Hoyle.
+\newblock \emph{Mon. Not. R. Astron. Soc.}, 104:\penalty0 273, 1944.
+
+\bibitem[Dexter and Agol(2009)]{Dexter2009}
+Jason Dexter and Eric Agol.
+\newblock \emph{Astrophys. J.}, 696\penalty0 (2):\penalty0 1616--1629, may
+  2009.
+\newblock ISSN 0004-637X.
+\newblock \doi{10.1088/0004-637X/696/2/1616}.
+
+\bibitem[Doeleman et~al.(2009)Doeleman, Agol, Backer, and et~al]{Doeleman2009}
+Sheperd Doeleman, Eric Agol, Don Backer, and Baganoff et~al.
+\newblock \emph{Astro2010 Astron. Astrophys. Decad. Surv.}, 2009.
+
+\bibitem[Eisenhauer et~al.(2011)Eisenhauer, Perrin, Brandner, and
+  et~al]{Eisenhauer2011}
+F.~Eisenhauer, G.~Perrin, W.~Brandner, and Straubmeier et~al.
+\newblock \emph{The Messenger}, 143:\penalty0 16--24, 2011.
+
+\bibitem[{El Mellah} and Casse(2015)]{ElMellah2015}
+I.~{El Mellah} and F.~Casse.
+\newblock \emph{Mon. Not. R. Astron. Soc.}, 454\penalty0 (3):\penalty0
+  2657--2667, oct 2015.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1093/mnras/stv2184}.
+
+\bibitem[Foglizzo(2009)]{Foglizzo2009}
+T.~Foglizzo.
+\newblock \emph{Astrophys. J.}, 694\penalty0 (2):\penalty0 820--832, apr 2009.
+\newblock ISSN 0004-637X.
+\newblock \doi{10.1088/0004-637X/694/2/820}.
+
+\bibitem[Foglizzo et~al.(2005)Foglizzo, Galletti, and Ruffert]{Foglizzo2005}
+T.~Foglizzo, P.~Galletti, and M.~Ruffert.
+\newblock \emph{Astron. Astrophys.}, 2201\penalty0 (2201):\penalty0 15, may
+  2005.
+\newblock ISSN 0004-6361.
+\newblock \doi{10.1051/0004-6361:20042201}.
+
+\bibitem[Foglizzo and Ruffert(1996)]{Foglizzo1996}
+Thierry Foglizzo and Maximilian Ruffert.
+\newblock \emph{Astron. Astrophys.}, 361:\penalty0 22, apr 1996.
+\newblock ISSN 00046361.
+
+\bibitem[Hoyle and Lyttleton(1939)]{Hoyle:1939fl}
+F.~Hoyle and R.~A. Lyttleton.
+\newblock \emph{Math. Proc. Cambridge Philos. Soc.}, 35\penalty0 (03):\penalty0
+  405--415, oct 1939.
+\newblock ISSN 0305-0041.
+\newblock \doi{10.1017/S0305004100021150}.
+
+\bibitem[Penna et~al.(2010)Penna, McKinney, Narayan, Tchekhovskoy, Shafee, and
+  McClintock]{Penna:2010tp}
+Robert~F. Penna, Jonathan~C. McKinney, Ramesh Narayan, Alexander Tchekhovskoy,
+  Rebecca Shafee, and Jeffrey~E. McClintock.
+\newblock \emph{Mon. Not. R. Astron. Soc.}, 408\penalty0 (June):\penalty0
+  752--782, mar 2010.
+\newblock ISSN 00358711.
+\newblock \doi{10.1111/j.1365-2966.2010.17170.x}.
+
+\bibitem[Porth et~al.(2014)Porth, Xia, Hendrix, Moschou, and
+  Keppens]{Porth:2014wv}
+O.~Porth, C.~Xia, T.~Hendrix, S.~P. Moschou, and R.~Keppens.
+\newblock \emph{Astrophys. J. Suppl. Ser.}, 214\penalty0 (1):\penalty0 4, jul
+  2014.
+\newblock ISSN 1538-4365.
+\newblock \doi{10.1088/0067-0049/214/1/4}.
+
+\bibitem[Ricarte and Dexter(2014)]{Ricarte2014}
+A.~Ricarte and J.~Dexter.
+\newblock \emph{Mon. Not. R. Astron. Soc.}, 446\penalty0 (2):\penalty0
+  1973--1987, nov 2014.
+\newblock ISSN 0035-8711.
+\newblock \doi{10.1093/mnras/stu2128}.
+
+\bibitem[Shakura and Sunyaev(1973)]{Shakura1973}
+N~I Shakura and R~a Sunyaev.
+\newblock \emph{Astron. Astrophys.}, 24:\penalty0 337--355, 1973.
+\newblock ISSN 0004-6361.
+\newblock \doi{10.1086/170270}.
+
+\bibitem[Walter et~al.(2015)Walter, Lutovinov, Bozzo, and Tsygankov]{Walter15}
+Roland Walter, Alexander~A. Lutovinov, Enrico Bozzo, and Sergey~S. Tsygankov.
+\newblock \emph{Astron. Astrophys. Rev.}, 23\penalty0 (1):\penalty0 2, aug
+  2015.
+\newblock ISSN 0935-4956.
+\newblock \doi{10.1007/s00159-015-0082-6}.
+
+\end{thebibliography}

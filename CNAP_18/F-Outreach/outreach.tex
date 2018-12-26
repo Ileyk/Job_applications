@@ -1,0 +1,97 @@
+\documentclass[paper=a4, fontsize=12pt,twoside]{scrartcl}
+\usepackage{enumerate}
+\usepackage{url,graphicx,tabularx,array,geometry}
+\usepackage[explicit]{titlesec}
+\usepackage{caption}
+\usepackage{sectsty} % Allows customizing section commands
+\usepackage[normalem]{ulem}
+\usepackage{wrapfig}
+%\sectionfont{\color{red}{}\fontfamily{phv}\selectfont\underline}
+\newcommand{\colorulem}[1][black]{\bgroup
+\ifdim\ULdepth=\maxdimen\settodepth\ULdepth{(j}\advance\ULdepth.4pt\fi
+\markoverwith{\kern0em\vtop{\kern\ULdepth {\color{#1}\hrule width .4em}}\kern0em}\ULon}
+ %  \sectionfont{\sffamily\itshape}
+    %\sectionfont{\MakeUppercase\rmfamily\center\underline}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{color} 
+\definecolor{heading}{rgb}{0.5,1,0}
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=blue     % can put red here to visualize the links
+}
+
+\setlength{\parskip}{1ex} %--skip lines between paragraphs
+
+%\usepackage{fancyhdr} % Custom headers and footers
+%%\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+%%\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+%\fancyhead{}
+%\fancyfoot{}
+%\fancyhf{}
+%\pagestyle{fancy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% The paper headers
+%\fancyhead[RO,LE]{\small\thepage}
+%\fancyhead[LO]{\small \textsc{El Mellah} Ileyk}% odd page header and number to right top
+%%\fancyhead[RE]{\small Degenerate stars}%Even page header and number at left top
+%\fancyfoot[L,R,C]{}
+%%\fancyfoot[C]{} % Empty center footer
+%%\fancyfoot[R]{\thepage} % Page numbering for right footer
+%
+%\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+%\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\pagenumbering{gobble}
+
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+\renewcommand*\rmdefault{iwona}
+
+\renewcommand \thesection{\colorulem[red]{\Roman{section}}}
+\renewcommand \thesubsection{\Roman{section}.\colorulem[green]{\arabic{subsection}}}
+
+% -------------------------------------------------
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\vspace*{-1cm}
+\normalfont \normalsize 
+El Mellah Ileyk \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Diffusion des connaissances\\ \& vulgarisation \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+%
+%\author{\textsc{El Mellah} Ileyk} % Your name
+%
+\date{} % Today's date or a custom date
+% -------------------------------------------------
+
+
+\begin{document}
+
+\maketitle
+%%
+\thispagestyle{empty}
+
+\vspace*{-2cm}
+
+\indent En Novembre 2017, j'ai particip\'e \`a une \'emission radiophonique, \href{https://www.mixcloud.com/faconde/faconde-s2e01-vulgarisation/}{la Faconde}, sur la radio universitaire de l'Universit\'e Libre de Bruxelles. J'y ai discut\'e de la communication scientifique et promu sa composante sensible et esth\'etique, par opposition \`a la transmission m\'ecanique de r\'esultats scientifiques format\'es qui d\'esenchante et, in fine, suscite un d\'etachement et un relativisme g\'en\'eralis\'e au sein de la population.\\
+
+\indent Dans une perspective plus p\'edagogique, j'ai anim\'e un atelier sur la notion de potentiel en m\'ecanique \`a destination d'\'el\`eves de lyc\'ee en Octobre 2016, \`a l'occasion de la F\^ete de la Science. Pour ce faire, j'ai mis \`a profit des maquettes de potentiels de Roche que j'ai pu imprim\'ees en 3D gr\^ace \`a l'assistance technique de Hubert Halloin et Marco Agnan et \`a un financement DIM ACAV\footnote{Domaine d'Int\'er\^et Majeur en Astrophysique et Conditions d'Apparition de la Vie.}. En parall\`ele, j'ai produit une \href{http://demonstrations.wolfram.com/TrajectoryOfATestMassInARochePotential/}{application int\'eractive en ligne} qui permet d'appr\'ehender empiriquement la notion de potentiel lorsqu'elle est utilis\'ee conjointement avec la maquette suscit\'ee : la maquette sert \`a visualiser le potentiel en 3D pour un param\`etre donn\'e (le rapport de masse entre les deux corps), alors que l'application en ligne permet de modifier ce param\`etre \`a souhait et de visualiser les trajectoires associ\'ees.
+
+
+% --------------------------------------------------
+
+\end{document}

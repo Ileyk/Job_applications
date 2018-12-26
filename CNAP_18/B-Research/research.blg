@@ -1,0 +1,73 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: research.aux
+The style file: agsm.bst
+Database file #1: /Users/Ileyk/Documents/Bibtex/research_statement_no_url.bib
+Warning--empty title in Blondin1990
+Warning--empty title in Bondi1944
+Warning--empty title in Bozzo2008
+Warning--empty title in Bozzo2016
+Warning--empty title in ElMellah2015
+Warning--empty title in ElMellah2016a
+Warning--empty title in ElMellah
+Warning--empty title in Foglizzo1997
+Warning--empty title in Ghosh1978
+Warning--empty title in Giacconi1962
+Warning--empty title in Gimenez-Garcia2016
+Warning--empty title in Grinberg2017
+Warning--empty title in Hoyle:1939fl
+Warning--empty title in Manousakis2015c
+Warning--empty title in Mohamed2011
+Warning--empty title in Negueruela2006
+Warning--empty title in Ness2012
+Warning--empty title in Owocki1984a
+Warning--empty title in Sander2017
+Warning--empty title in Sundqvist2017
+Warning--there's a number but no volume in Sundqvist2017
+Warning--empty title in Toth1996
+Warning--empty title in Toth1998
+Warning--empty title in Vincent2011
+Warning--empty title in Walter15
+Warning--empty title in Xia2017
+You've used 25 entries,
+            2909 wiz_defined-function locations,
+            780 strings with 7861 characters,
+and the built_in function-call counts, 184144 in all, are:
+= -- 30695
+> -- 2442
+< -- 0
++ -- 15293
+- -- 763
+* -- 16620
+:= -- 35700
+add.period$ -- 25
+call.type$ -- 25
+change.case$ -- 325
+chr.to.int$ -- 25
+cite$ -- 51
+duplicate$ -- 390
+empty$ -- 772
+format.name$ -- 864
+if$ -- 33097
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 25
+newline$ -- 78
+num.names$ -- 265
+pop$ -- 200
+preamble$ -- 1
+purify$ -- 375
+quote$ -- 0
+skip$ -- 268
+stack$ -- 0
+substring$ -- 44468
+swap$ -- 42
+text.length$ -- 350
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 100
+warning$ -- 26
+while$ -- 547
+width$ -- 0
+write$ -- 307
+(There were 26 warnings)

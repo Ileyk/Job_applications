@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2011)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: research_statement_Pessah.aux
+The style file: plainnat.bst
+Database file #1: /Users/ielm/Documents/Bibtex/research_statement_no_url.bib
+Warning--empty title in Blondin:2012vf
+Warning--empty title in Bondi1944
+Warning--empty title in ElMellah2015
+Warning--empty title in Foglizzo2009
+Warning--empty title in Foglizzo2005
+Warning--empty title in Foglizzo1996
+Warning--empty title in Hoyle:1939fl
+Warning--empty title in Porth:2014wv
+Warning--empty title in Shakura1973
+Warning--empty title in Walter15
+You've used 10 entries,
+            2773 wiz_defined-function locations,
+            674 strings with 6089 characters,
+and the built_in function-call counts, 4669 in all, are:
+= -- 427
+> -- 253
+< -- 7
++ -- 85
+- -- 75
+* -- 442
+:= -- 731
+add.period$ -- 37
+call.type$ -- 10
+change.case$ -- 45
+chr.to.int$ -- 10
+cite$ -- 30
+duplicate$ -- 203
+empty$ -- 372
+format.name$ -- 97
+if$ -- 956
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 10
+newline$ -- 65
+num.names$ -- 40
+pop$ -- 84
+preamble$ -- 1
+purify$ -- 45
+quote$ -- 0
+skip$ -- 150
+stack$ -- 0
+substring$ -- 159
+swap$ -- 18
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 110
+warning$ -- 10
+while$ -- 44
+width$ -- 0
+write$ -- 151
+(There were 10 warnings)

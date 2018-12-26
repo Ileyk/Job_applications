@@ -1,0 +1,162 @@
+%%%%%%%%%%%%%%%%%  Debut du fichier Latex  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt,onecolumn]{article}
+
+%%% Pour un texte en francais
+
+%%\usepackage[applemac]{inputenc}
+%\usepackage[francais]{babel}
+	         % encodage des lettres accentuees
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}          % encodage des lettres accentuees
+%\usepackage{graphicx}
+%%\usepackage{graphicx} \def\BIB{}
+\usepackage[paper=a4paper,textwidth=140mm,left=2.7cm,right=2.7cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx,wrapfig,lipsum} 
+%\def\BIB{}
+\usepackage[font=footnotesize]{caption}
+\usepackage{subcaption}
+\usepackage[pdftex]{hyperref}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage{changepage}
+\usepackage{xspace}
+\usepackage{perpage} %the perpage package
+\MakePerPage{footnote} %the perpage package command
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=blue     % can put red here to visualize the links
+}
+
+
+\DeclareUnicodeCharacter{00A0}{ }
+
+%%% Quelques raccourcis pour la mise en page
+\newcommand{\remarque}[1]{{\small \it #1}}
+\newcommand{\rubrique}{\bigskip \noindent $\bullet$ }
+
+\newcommand{\ignore}[1]{}
+
+\renewcommand*\rmdefault{iwona}
+
+\pagenumbering{gobble}
+
+\newcommand{\sgx}{SgXB\xspace}
+\newcommand{\sfxt}{\textsc{sfxt}}
+\newcommand{\sg}{Sg\xspace}
+\newcommand{\co}{CO\xspace}
+\newcommand*{\hmxb}{HMXB\@\xspace}
+\newcommand*{\rlof}{RLOF\@\xspace}
+\newcommand*{\ns}{NS\@\xspace}
+\newcommand*{\bh}{BH\@\xspace}
+\newcommand*{\eg}{e.g.\@\xspace}
+\newcommand*{\ie}{i.e.\@\xspace}
+\newcommand*{\aka}{a.k.a.\@\xspace}
+\newcommand*{\cc}{[C\,\textsc{\lowercase{ii}}]\@\xspace}
+\newcommand*{\hh}{[H\,\textsc{\lowercase{ii}}]\@\xspace}
+\newcommand*{\hhm}{H$_{2}$\@\xspace}
+
+%\bibliographystyle{abbrvnat}
+%\setcitestyle{authoryear,open={((},close={))}}
+
+%\renewcommand{\thefootnote}{\roman{footnote}}
+
+% -------------------------------------------------
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\vspace*{-2cm}
+\normalfont \normalsize 
+El Mellah Ileyk \\ [25pt] % Your university, school and/or department name(s)
+\vspace*{-0.4cm}
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge T\^{a}che de service\\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+%\author{El Mellah Ileyk} % Your name
+\date{\tiny }%\normalsize\today} % Today's date or a custom date
+% -------------------------------------------------
+
+%\makeatletter
+%\def\@xfootnote[#1]{%
+%  \protected@xdef\@thefnmark{#1}%
+%  \@footnotemark\@footnotetext}
+%\makeatother
+
+\begin{document}
+
+%\bibpunct{[}{]}{;}{n}{,}{,}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%  PREMIERE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DANS CETTE PAGE, ON REMPLACE LES INDICATIONS ENTRE CROCHETS [...]
+%%% PAR LES INFORMATIONS DEMANDEES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\maketitle
+\thispagestyle{empty}
+
+\vspace*{-2.8cm}
+
+\begin{table}[h!]
+\centering
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+Type (ANO1 \`{a} ANO6) & ANO5 \\ \hline
+Nom du service & SO5 - Plateforme MIS et Jets \\ \hline
+Nom de la t\^{a}che & ISM map inversion \\ \hline
+Labellisation & oui \\ \hline
+Nom du responsable scientifique correspondant & Franck Le Petit \\ \hline
+Laboratoire et OSU dont elle rel\`eve & Observatoire de Paris - LERMA \\ \hline
+\end{tabular}
+\end{table}
+
+%\vspace*{1.cm}
+
+Stellar systems in a galaxy are embedded in a diffuse environment called the InterStellar Medium (ISM). The densest and coldest components of the ISM such as molecular clouds condition stellar formation. They host the stellar nurseries where the Toomre's instability criterion is matched, causing the gravitational collapse of Jeans mass fragments of the cloud into stellar embryos. The stellar feedback on the ISM (\eg via stellar winds, planetary nebulae, supernovae) influences in return its structure and its evolution through time. Beyond this active role in the Galactic ecology, the ISM, omnipresent around us, alters the light which crosses it. It absorbs, diffuses and reemits light, leaving an imprint we have to identify to guarantee an unbiased analysis of the background objects we observe, either in or out of the Milky Way. 
+
+The wide scope of length scales and thermodynamical conditions witnessed in the ISM gives rise to a rich chemistry. The ISM is made mostly of neutral Hydrogen, which emits only at the 21cm spectral line. Since the latter has a low transition probability, it requires large amounts of Hydrogen to be seen. However, the interaction of massive clouds with the ambient UV radiation field produces a layer structure. Each of them is characterized by a chemical and ionization state and can give birth to species susceptible to emit light. For instance, \cc plays an important role in the cooling of the ISM through its fine structure 158$\mu m$-line. The absorption of the background UV field by the Galactic dust also produces a far infrared continuous emission. Together, these two emission processes offer an alternative way to probe the ISM and determine its properties. 
+
+In particular, zones of early stellar formation such as molecular clouds are surrounded by photodissociation regions (PDR) that separate the bulk of the cloud from the \hh regions ionized by the interstellar radiation field. Cosmic rays also provide a heat and ionization, enabling a rich sequence of chemical reactions to occur. Given the typical PDR densities, \hhm dissociation is not dominated by collisions but by photoabsorption of the incident UV radiation field. Deeper into the PDR, shelf-shielding of \hhm occurs but since Carbon has a lower ionization energy, it can still be ionized into \cc whose emission is a key testimony of the cloud environment and properties.
+
+Among others, the Herschel Space Observatory and the Spitzer Space Telescope have provided a harvest of data we need to analyze and interpret with advanced numerical tools. The interaction with the ambient radiation fields or cosmic rays produces a complex multi-scale environment which can only be addressed with sophisticated models. The complexity of the ISM properties (chemistry, MHD, turbulence, dust...) requires to develop syncretic frameworks coupling multiple databases, assumptions and physical processes. It is in this context that has been written the Meudon PDR code, a cornerstone of the \textit{Plateforme MIS et Jets}. It solves, for a given MHD solution of the ISM structure, the radiative transfer and chemical network equations within the clouds. The maintenance, development and diffusion of this code is the object of the present \textit{T\^{a}che de service} application.
+
+\section*{Description}
+
+\subsection*{Map inversion}
+
+\subsubsection*{Galactic ISM maps}
+
+The contemporary detectors used to study the ISM are spectral imaging instruments such as the Photoconductor Array Camera and Spectrometer (PACS) embarked on the Herschel Space Observatory. Each pixel of the CCD camera measures a spectrum, coupling 2D spatial photometry and spectroscopy. To deduce the properties of the ISM from these observations, we need to jointly invert the spectro-photometric information from each pixel. This map inversion requires both physical models of the ISM and mathematical optimization techniques. The former is provided by the thousands of models which have been considered in the Meudon PDR code to derive synthetic observations such as :
+\begin{itemize}
+\item line emission maps
+\item absorbing species column densities, from the integration of the photodissociation cross-sections with the interstellar radiation field
+\item dust absorption 
+\item molecular formation rates with computation of \hhm formation efficiency
+\end{itemize}
+
+The plethora of models and parameters to fit for makes the optimization step particularly challenging though. The likelihood computation to identify the most accurate models need to be done coupling the information from all the pixels together. Otherwise, the information on the consistency of the detector is lost and separate inversion of the information from each pixel is bound to yield a set of local optima with properties excessively discontinuous. Advanced methods of statistical analysis must be summoned such as genetic algorithms or simulated annealing in conjunction with smoothing terms to account for the connection between the pixels. 
+
+Ideally, such a task should be performed directly via a web interface, designed in cooperation with the engineering service of the PDR code. Users could provide formatted observations which would be fitted with the available models of the PDR code, yielding the best matching.
+
+\subsubsection*{Component separation for observations of extragalactic sources}
+
+The recent observations of the Cosmic Microwave Background (CMB) by Planck and BICEP2 reminded us the need to constrain the foreground Galactic dust distribution. More generally, observations of extragalactic sources bring up the issue of the component separation : as the sources get further, the risk of blending with foreground point or diffuse sources increases, and so does the requirement for a proper disentangling. Eventually, the massive amount of data on extragalactic sources could be processed by algorithms empirically designed based on machine learning methods. It would quickly identify the fraction of the emission due to interstellar shocks, diffuse emission or from molecular clouds.
+
+Among extragalactic observations which would enjoy such an improved component separation, one can find Active Galactic Nuclei (AGN). AGNs are believed to be accreting supermassive black holes, laying at the center of galaxies. Their spectacular luminosity makes them visible at high redshift and the source of their luminosity connects to one of my current research topics : accretion of low angular momentum gas onto a compact object.
+
+\subsection*{Virtual observatory}
+
+In an attempt to pool the available observational and synthetic data, the International Virtual Observatory Alliance (IVOA) has defined a set of standards to facilitate the cross-use of diverse sources of information. The Observatory of Paris has been involved in the definition of common formats through the Simulation Data Model, along with a set of meta-data to retrieve data from MHD or N-body simulations for instance (the Simulation Data Access Layer protocol). Now, we need to provide the Astrophysics and Cosmology communities with tools to make their codes produce suitably formatted outputs. This translation tool could also be part of the \textit{t\^{a}che de service}. As a user and developer of the \texttt{MPI-AMRVAC} code, similar to the RAMSES code, I am familiar with the importance of well-defined input/output formats. I could contribute to make this family of MHD finite volume codes compatible with the IVOA standards.
+
+\section*{Selected skills and conclusion}
+
+My PhD and postdoc work has been essentially devoted to numerically solving hyperbolic systems of partial differential equations on non necessarily Cartesian meshes, with features like Adaptive Mesh Refinement. Consequently, my expertise in statistical analysis did not build up on a daily use during my PhD. However, during my Master degree, I did get familiar with advanced data analysis techniques such as Internal Linear Combination\footnote{For an application to WMAP data, see Benett C. L. et al 2003 ApJS 148 97.}, which got extended by Tegmark \& Efstathiou in 1996 to take advantage of the correlation between neighboring pixels on the detector rather than subtracting foregrounds on a pixel by pixel basis. I used the latter to separate the different diffuse components in the WMAP data and retrieve the background CMB emission, under the supervision of Guilaine Lagache (LAM) and Alexandre Beelen (IAS). I realize that it is merely a scientific case and does not compare to the complexity of more advanced goals such as the one described in the present \textit{t\^{a}che de service}, but I believe it illustrates well enough the steep learning curve I am prepared to address. Furthermore, being a computational astrophysicist in close collaboration with observers, I am fully aware of the cautious synergy required between the theoretical models available and the data processing step to produce a consistent and scientifically satisfactory explanation.
+
+
+\end{document}
+%%%%%%%%%%%%%%%%%  Fin du fichier Latex  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

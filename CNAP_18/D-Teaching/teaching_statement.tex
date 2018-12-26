@@ -1,0 +1,103 @@
+\documentclass[paper=a4, fontsize=12pt,twoside]{scrartcl}
+\usepackage{enumerate}
+\usepackage{url,graphicx,tabularx,array,geometry}
+\usepackage[explicit]{titlesec}
+\usepackage{caption}
+\usepackage{sectsty} % Allows customizing section commands
+\usepackage[normalem]{ulem}
+\usepackage{wrapfig}
+%\sectionfont{\color{red}{}\fontfamily{phv}\selectfont\underline}
+\newcommand{\colorulem}[1][black]{\bgroup
+\ifdim\ULdepth=\maxdimen\settodepth\ULdepth{(j}\advance\ULdepth.4pt\fi
+\markoverwith{\kern0em\vtop{\kern\ULdepth {\color{#1}\hrule width .4em}}\kern0em}\ULon}
+ %  \sectionfont{\sffamily\itshape}
+    %\sectionfont{\MakeUppercase\rmfamily\center\underline}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{color} 
+\definecolor{heading}{rgb}{0.5,1,0}
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=blue     % can put red here to visualize the links
+}
+
+\setlength{\parskip}{1ex} %--skip lines between paragraphs
+
+%\usepackage{fancyhdr} % Custom headers and footers
+%%\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+%%\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+%\fancyhead{}
+%\fancyfoot{}
+%\fancyhf{}
+%\pagestyle{fancy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% The paper headers
+%\fancyhead[RO,LE]{\small\thepage}
+%\fancyhead[LO]{\small \textsc{El Mellah} Ileyk}% odd page header and number to right top
+%%\fancyhead[RE]{\small Degenerate stars}%Even page header and number at left top
+%\fancyfoot[L,R,C]{}
+%%\fancyfoot[C]{} % Empty center footer
+%%\fancyfoot[R]{\thepage} % Page numbering for right footer
+%
+%\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+%\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\pagenumbering{gobble}
+
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+\renewcommand*\rmdefault{iwona}
+
+\renewcommand \thesection{\colorulem[red]{\Roman{section}}}
+\renewcommand \thesubsection{\Roman{section}.\colorulem[green]{\arabic{subsection}}}
+
+% -------------------------------------------------
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\vspace*{-2.5cm}
+\normalfont \normalsize 
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Enseignement \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+%
+%\author{\textsc{El Mellah} Ileyk} % Your name
+%
+\date{} % Today's date or a custom date
+% -------------------------------------------------
+
+
+\begin{document}
+
+\maketitle
+%%
+\thispagestyle{empty}
+
+%\title{Compact objects}
+%\line
+%\leftright{\today}{Ileyk E{\sc l mellah}} %-- left and right positions in the header
+\vspace*{-3cm}
+
+\indent \indent Apr\`es une premi\`ere exp\'erience d'enseignement dans le cadre de mes \'etudes \`a l'ENS de Cachan, j'ai pass\'e l'Agr\'egation de Physique en 2011 o\`u j'ai \'et\'e class\'e second. La diversit\'e des sujets abord\'es pendant cette ann\'ee, ainsi que la n\'ecessit\'e de se les r\'eapproprier pour pouvoir les restituer en un cours construit, ont consid\'erablement renforc\'e ma culture en Physique g\'en\'erale et mon souhait de participer aux activit\'es d'enseignement sup\'erieur.\\
+\indent La 1$^{\text{e}}$ ann\'ee de mon monitorat de th\`ese, ma mission d'enseignement s'est d\'eroul\'ee pour moiti\'e (32h TD) en Premi\`ere Ann\'ee Commune aux Etudes de Sant\'e (PACES) sous la direction d'Isabelle Grenier. J'y \'etais responsable de 2 groupes de TD d'environ 40 \'etudiants chacun. Le programme de Physique de PACES porte sur un vaste panel de probl\`emes, de la m\'ecanique des fluides aux int\'eractions rayonnement-mati\`ere. Rendre abordables et compr\'ehensibles des notions aussi diverses et dont la ma\^itrise s\'erieuse n\'ecessite des outils math\'ematiques hors de port\'ee des \'etudiants en premi\`ere ann\'ee a repr\'esent\'e un effort aussi consid\'erable qu'instructif. D'Octobre \`a D\'ecembre 2013, j'encadrais les travaux pratiques associ\'es au cours de M1 "Traitement du signal - Signaux d\'eterministes" de Laurent Daudet, \`a hauteur de 32h TD. L'int\'er\^et p\'edagogique portait sur la transmission de savoirs plus avanc\'es, sur les plans th\'eorique (signaux discrets, analyse de Fourier, convolutions, spectre de puissance, filtrage, etc) et pratique (Matlab).\\
+\indent Les 2 ann\'ees suivantes, j'ai rejoint l'\'equipe de C\'ecile Roucelle \`a l'Universit\'e Paris 7 Diderot o\`u j'ai encadr\'e les TDs de M\'ecanique du point au niveau L1. Durant les 128h qui m'ont \'et\'e assign\'ees, j'ai eu le plaisir non seulement de participer \`a la r\'edaction des sujets d'exercice mais surtout \`a former les \'etudiants n\'eophytes aux sp\'ecificit\'es du raisonnement physique. A mon sens, la premi\`ere ann\'ee d'\'etudes sup\'erieures repr\'esente un moment charni\`ere dans le cursus des \'etudiants et requiert donc un encadrement \'etroit et exigeant pour \'eviter que les \'etudiants ne perdent un temps pr\'ecieux.\\
+\indent A Leuven, j'ai encadr\'e des projets scientifiques de Master dans l'unit\'e d'enseignement "Computational Methods for Astrophysical Applications" dirig\'ee par Rony Keppens ($\sim$60h TD au cours de ma premi\`ere ann\'ee de postdoctorat). Poursuivre mon travail de recherche tout en restant en contact avec les \'etudiants est une chance qui m'a permis de replacer mes travaux et les outils num\'eriques que j'utilise au quotidien dans une perspective plus didactique. L'organisation logistique de l'enseignement, en mettant en place un r\'eseau de machines virtuelles accessibles aux \'etudiants, a aussi \'et\'e une composante importante, \`a garder \`a l'esprit lorsque l'on souhaite int\'egrer la dimension num\'erique \`a l'enseignement.\\
+\indent L'outil num\'erique offre de nouvelles opportunit\'es pour l'activit\'e scientifique, \`a condition de s'assurer que les \'etudiants qui seront amen\'es \`a la porter dans les ann\'ees \`a venir aient pleinement conscience de sa centralit\'e. Il s'agit de rendre l'Informatique famili\`ere aux \'etudiants d\`es leur premi\`ere ann\'ee afin qu'elle nourrisse leur r\'eflexion scientifique au lieu d'appara\^itre comme une contrainte \`a laquelle ils seraient oblig\'es de se soumettre. Au quotidien, la recherche en Physique ne peut pas se passer de comp\'etences avanc\'ees en Informatique, pas plus qu'en Math\'ematiques. C'est pourquoi je souhaite soumettre aux \'etudiants une base de donn\'ee de sujets num\'eriques d'exercices. Ils seraient \'ecrits de fa\c con \`a encourager l'acquisition et le d\'eploiement de comp\'etences telle que la mise en ligne d'expos\'es int\'eractifs de leurs r\'eponses via la programmation d'applets. Au sein du Master de l'Observatoire de Paris-Meudon, je souhaiterais aussi initier les \'etudiants aux techniques modernes de calcul intensif (parall\'elisation, optimisation, visualisation et stockage des donn\'ees, etc), indispensables tant pour l'analyse de donn\'ees que pour la r\'esolution num\'erique de probl\`emes physiques. 
+
+
+
+
+% --------------------------------------------------
+
+\end{document}

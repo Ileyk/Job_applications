@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2011)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: DARI_modele_pj_rapport_activite.aux
+The style file: plainnat.bst
+Database file #1: /Users/ielm/Documents/Bibtex/article_bhl_25D_no_url.bib
+Warning--empty title in Bondi1944
+Warning--empty title in Foglizzo1996
+You've used 2 entries,
+            2773 wiz_defined-function locations,
+            607 strings with 5099 characters,
+and the built_in function-call counts, 833 in all, are:
+= -- 70
+> -- 42
+< -- 2
++ -- 14
+- -- 12
+* -- 68
+:= -- 134
+add.period$ -- 5
+call.type$ -- 2
+change.case$ -- 8
+chr.to.int$ -- 2
+cite$ -- 6
+duplicate$ -- 40
+empty$ -- 70
+format.name$ -- 18
+if$ -- 168
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 2
+newline$ -- 17
+num.names$ -- 8
+pop$ -- 17
+preamble$ -- 1
+purify$ -- 8
+quote$ -- 0
+skip$ -- 32
+stack$ -- 0
+substring$ -- 19
+swap$ -- 3
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 22
+warning$ -- 2
+while$ -- 8
+width$ -- 0
+write$ -- 31
+(There were 2 warnings)

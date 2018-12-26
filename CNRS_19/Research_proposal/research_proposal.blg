@@ -1,0 +1,85 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: research_proposal.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: research_proposal-blx.bib
+Database file #2: /Users/Ileyk/Documents/Bibtex/CNRS_19.bib
+Warning--I didn't find a database entry for "Sana2012"
+Warning--I didn't find a database entry for "Tauris2017"
+Warning--I didn't find a database entry for "ElMellah2018"
+Warning--I didn't find a database entry for "Ghosh1978"
+Warning--I didn't find a database entry for "Shakura2012"
+Warning--I didn't find a database entry for "Hemphill2013"
+Warning--I didn't find a database entry for "Kumar2015"
+Warning--I didn't find a database entry for "ElMellah2016a"
+Warning--I didn't find a database entry for "ElMellah2018a"
+Warning--I didn't find a database entry for "Xia2017"
+Warning--I didn't find a database entry for "Rappaport:2012wi"
+Warning--I didn't find a database entry for "Rappaport2013"
+Warning--I didn't find a database entry for "SanchisOjeda:2014ww"
+Biblatex version: 3.3
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Warning--you've exceeded 250, the entry-string-size, for entry TheLIGOScientificCollaboration2017
+while executing--line 2630 of file biblatex.bst
+*Please notify the bibstyle designer*
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Warning--you've exceeded 250, the entry-string-size, for entry TheLIGOScientificCollaboration2017
+while executing--line 2658 of file biblatex.bst
+*Please notify the bibstyle designer*
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 22 entries,
+            6256 wiz_defined-function locations,
+            1477 strings with 54818 characters,
+and the built_in function-call counts, 1416953 in all, are:
+= -- 133451
+> -- 12285
+< -- 608
++ -- 58288
+- -- 7230
+* -- 114784
+:= -- 200524
+add.period$ -- 0
+call.type$ -- 22
+change.case$ -- 266
+chr.to.int$ -- 43
+cite$ -- 42
+duplicate$ -- 157029
+empty$ -- 104354
+format.name$ -- 14827
+if$ -- 251983
+int.to.chr$ -- 0
+int.to.str$ -- 48
+missing$ -- 0
+newline$ -- 8235
+num.names$ -- 929
+pop$ -- 21480
+preamble$ -- 1
+purify$ -- 2839
+quote$ -- 0
+skip$ -- 9845
+stack$ -- 0
+substring$ -- 260661
+swap$ -- 20763
+text.length$ -- 1757
+text.prefix$ -- 3
+top$ -- 1
+type$ -- 736
+warning$ -- 0
+while$ -- 25705
+width$ -- 0
+write$ -- 8214
+(There were 15 warnings)

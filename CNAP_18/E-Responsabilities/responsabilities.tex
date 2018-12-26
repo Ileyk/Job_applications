@@ -1,0 +1,106 @@
+\documentclass[paper=a4, fontsize=12pt,twoside]{scrartcl}
+\usepackage{enumerate}
+\usepackage{url,graphicx,tabularx,array,geometry}
+\usepackage[explicit]{titlesec}
+\usepackage{caption}
+\usepackage{sectsty} % Allows customizing section commands
+\usepackage[normalem]{ulem}
+\usepackage{wrapfig}
+%\sectionfont{\color{red}{}\fontfamily{phv}\selectfont\underline}
+\newcommand{\colorulem}[1][black]{\bgroup
+\ifdim\ULdepth=\maxdimen\settodepth\ULdepth{(j}\advance\ULdepth.4pt\fi
+\markoverwith{\kern0em\vtop{\kern\ULdepth {\color{#1}\hrule width .4em}}\kern0em}\ULon}
+ %  \sectionfont{\sffamily\itshape}
+    %\sectionfont{\MakeUppercase\rmfamily\center\underline}
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{color} 
+\definecolor{heading}{rgb}{0.5,1,0}
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=blue     % can put red here to visualize the links
+}
+
+\setlength{\parskip}{1ex} %--skip lines between paragraphs
+
+%\usepackage{fancyhdr} % Custom headers and footers
+%%\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+%%\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+%\fancyhead{}
+%\fancyfoot{}
+%\fancyhf{}
+%\pagestyle{fancy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% The paper headers
+%\fancyhead[RO,LE]{\small\thepage}
+%\fancyhead[LO]{\small \textsc{El Mellah} Ileyk}% odd page header and number to right top
+%%\fancyhead[RE]{\small Degenerate stars}%Even page header and number at left top
+%\fancyfoot[L,R,C]{}
+%%\fancyfoot[C]{} % Empty center footer
+%%\fancyfoot[R]{\thepage} % Page numbering for right footer
+%
+%\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+%\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\pagenumbering{gobble}
+
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+\renewcommand*\rmdefault{iwona}
+
+\renewcommand \thesection{\colorulem[red]{\Roman{section}}}
+\renewcommand \thesubsection{\Roman{section}.\colorulem[green]{\arabic{subsection}}}
+
+% -------------------------------------------------
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\vspace*{-1cm}
+\normalfont \normalsize 
+El Mellah Ileyk \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Responsabilit\'es diverses \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+%
+%\author{\textsc{El Mellah} Ileyk} % Your name
+%
+\date{} % Today's date or a custom date
+% -------------------------------------------------
+
+
+\begin{document}
+
+\maketitle
+%%
+\thispagestyle{empty}
+
+\vspace*{-2cm}
+
+%\title{Compact objects}
+%\line
+%\leftright{\today}{Ileyk E{\sc l mellah}} %-- left and right positions in the header
+\indent En collaboration avec Rony Keppens et Jon Sundqvist, j'encadre cette ann\'ee la th\`ese de M2 de Nicolas Moens sur les vents d'\'etoiles massives. Je l'assiste dans la phase d'impl\'ementation des mod\`eles physiques de lancement dit "radiatif" de ces vents dans le code de r\'esolution sur grille des syst\`emes d'\'equations hyperboliques, \texttt{MPI-AMRVAC}. Apr\`es avoir test\'e avec succ\`es un premier mod\`ele, nous souhaitons d\'esormais d\'ecrire de fa\c con plus r\'ealiste le transport radiatif dans le vent avec un algorithme de \textit{flux-limited diffusion}. A terme, cette option devrait permettre \`a \texttt{MPI-AMRVAC} de traiter le refroidissement dans les environnements optiquement \'epais.\\
+
+\indent Afin de tisser des liens forts entre jeunes chercheurs, la Soci\'et\'e Fran\c caise de Physique a initi\'e en 2013, sous l'\'egide de Samuel Guibal (Paris 7), un \'ev\`enement annuel intitul\'e les Rencontres Jeunes Physiciens (RJP). En deuxi\`eme ann\'ee de th\`ese, je me suis engag\'e au sein du comit\'e d'organisation des RJP 2015 en tant que community manager. Mon r\^ole \'etait d'assurer aux RJP une visibilit\'e m\'ediatique maximum, tant sur les r\'eseaux sociaux qu'\`a travers sa principale vitrine, \href{http://rjp.sfp-paris.fr/index2015.html}{son site Web}, dont j'ai adapt\'e la mise en page et le contenu. Pour garantir la p\'erennit\'e des RJP, j'ai aussi proc\'ed\'e, avec l'aide du personnel du Conservatoire National des Arts et M\'etiers o\`u se d\'eroulait l'\'ev\`enement, \`a la captation audio et vid\'eo des interventions orales qui rythmaient la journ\'ee, ainsi qu'\`a leur traitement puis \`a leur diffusion. L'\'ev\`enement, qui a rassembl\'e quelque 200 doctorants et post-doctorants d'Ile-de-France, a re\c cu le soutien de nombreuses universit\'es, \'ecoles doctorales et institutions. Gr\^ace \`a elles, nous avons pu rassembler pr\`es de 15k\texteuro\, qui nous ont permis de faire de cette journ\'ee un temps fort de la vie sociale des jeunes physiciens et physiciennes d'Ile-de-France. En tant que membre du comit\'e d'organisation, j'ai aussi particip\'e \`a la s\'election des 16 interventions orales parmi la quarantaine de r\'esum\'es qui nous avaient \'et\'e soumis.\\
+
+\indent Dans mon laboratoire de th\`ese, l'APC, j'ai anim\'e des Pr\'esentations hebdomadaires des Doctorants (ou \textit{PhD}) d\'evolues \`a des aspects m\'ethodologiques de l'activit\'e scientifique telles que \href{https://phdiderot.wordpress.com/2015/10/30/presentation-hebdomadaire-des-doctorants-phd-atom-text-editor-workshop-oc-15/}{les \'editeurs de codes}, la veille bibliographique ou encore la gestion de versions avec des outils comme Git. Afin de s'assurer que chaque doctorant soit op\'erationnel \`a l'issue de ces pr\'esentations, nous organisions des ateliers d'une dur\'ee de 3h o\`u chacun ramenait sa propre machine de travail sur laquelle avaient \'et\'e install\'es au pr\'ealable les outils n\'ecessaires \`a la session. Moins formels et plus sp\'ecialis\'es que les ateliers de formation g\'en\'eriques propos\'es \`a tous les doctorants de l'universit\'e, ces sessions permettaient de partager rapidement et efficacement des m\'ethodes de travail qui apportent des gains de temps consid\'erables.\\
+
+\indent Pendant ma th\`ese, j'ai aussi publi\'e une \href{http://homes.esat.kuleuven.be/~ileyk//index.html}{page personnelle} \`a m\^eme de rendre compte de mes travaux au sein de la communaut\'e scientifique.
+
+
+
+
+% --------------------------------------------------
+
+\end{document}
