@@ -17,69 +17,48 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: research_proposal-blx.bib
-Database file #2: /Users/Ileyk/Documents/Bibtex/CNRS_19.bib
-Warning--I didn't find a database entry for "Sana2012"
-Warning--I didn't find a database entry for "Tauris2017"
-Warning--I didn't find a database entry for "ElMellah2018"
-Warning--I didn't find a database entry for "Ghosh1978"
-Warning--I didn't find a database entry for "Shakura2012"
-Warning--I didn't find a database entry for "Hemphill2013"
-Warning--I didn't find a database entry for "Kumar2015"
-Warning--I didn't find a database entry for "ElMellah2016a"
-Warning--I didn't find a database entry for "ElMellah2018a"
-Warning--I didn't find a database entry for "Xia2017"
-Warning--I didn't find a database entry for "Rappaport:2012wi"
-Warning--I didn't find a database entry for "Rappaport2013"
-Warning--I didn't find a database entry for "SanchisOjeda:2014ww"
+Database file #2: /Users/Ileyk/Documents/Bibtex/CNRS_19_fixed.bib
 Biblatex version: 3.3
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
-Warning--you've exceeded 250, the entry-string-size, for entry TheLIGOScientificCollaboration2017
-while executing--line 2630 of file biblatex.bst
-*Please notify the bibstyle designer*
-Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Warning--you've exceeded 250, the entry-string-size, for entry TheLIGOScientificCollaboration2017
-while executing--line 2658 of file biblatex.bst
-*Please notify the bibstyle designer*
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 22 entries,
+You've used 30 entries,
             6256 wiz_defined-function locations,
-            1477 strings with 54818 characters,
-and the built_in function-call counts, 1416953 in all, are:
-= -- 133451
-> -- 12285
-< -- 608
-+ -- 58288
-- -- 7230
-* -- 114784
-:= -- 200524
+            1473 strings with 48303 characters,
+and the built_in function-call counts, 268903 in all, are:
+= -- 20972
+> -- 3642
+< -- 773
++ -- 8156
+- -- 1581
+* -- 21536
+:= -- 31216
 add.period$ -- 0
-call.type$ -- 22
-change.case$ -- 266
-chr.to.int$ -- 43
-cite$ -- 42
-duplicate$ -- 157029
-empty$ -- 104354
-format.name$ -- 14827
-if$ -- 251983
+call.type$ -- 30
+change.case$ -- 423
+chr.to.int$ -- 49
+cite$ -- 58
+duplicate$ -- 29661
+empty$ -- 23630
+format.name$ -- 2918
+if$ -- 52023
 int.to.chr$ -- 0
-int.to.str$ -- 48
+int.to.str$ -- 68
 missing$ -- 0
-newline$ -- 8235
-num.names$ -- 929
-pop$ -- 21480
+newline$ -- 1845
+num.names$ -- 1346
+pop$ -- 11129
 preamble$ -- 1
-purify$ -- 2839
+purify$ -- 761
 quote$ -- 0
-skip$ -- 9845
+skip$ -- 5169
 stack$ -- 0
-substring$ -- 260661
-swap$ -- 20763
-text.length$ -- 1757
-text.prefix$ -- 3
+substring$ -- 37797
+swap$ -- 6486
+text.length$ -- 780
+text.prefix$ -- 29
 top$ -- 1
-type$ -- 736
+type$ -- 1008
 warning$ -- 0
-while$ -- 25705
+while$ -- 3999
 width$ -- 0
-write$ -- 8214
-(There were 15 warnings)
+write$ -- 1816

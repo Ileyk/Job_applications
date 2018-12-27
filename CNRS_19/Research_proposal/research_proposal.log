@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  26 DEC 2018 19:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 DEC 2018 22:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -150,8 +150,10 @@ Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/blx-dm.def)
-Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex citestyle data model...
+Package biblatex Info: ... file 'authoryear.dbx' not found.
+Package biblatex Info: Trying to load biblatex bibstyle data model...
+Package biblatex Info: ... file 'phys.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count132
@@ -255,6 +257,22 @@ File: biblatex.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
 \c@biburllcpenalty=\count269
 \c@smartand=\count270
 )
+Package biblatex Info: Trying to load natbib compatibility...
+Package biblatex Info: ... file 'blx-natbib.def' found.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/blx-natbib.def
+File: blx-natbib.def 2016/05/14 v3.4 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load bibliography style 'phys'...
+Package biblatex Info: ... file 'phys.bbx' found.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex-phys/phys.bbx
+File: phys.bbx 2016/03/13 v1.0a biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
+Package biblatex Info: ... file 'numeric-comp.bbx' found.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/bbx/numeric-comp.bbx
+File: numeric-comp.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
@@ -267,35 +285,27 @@ Package biblatex Info: ... file 'standard.bbx' found.
 File: standard.bbx 2016/05/14 v3.4 biblatex bibliography style (PK/JW/AB)
 \c@bbx:relatedcount=\count271
 \c@bbx:relatedtotal=\count272
-))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
+))))
+Package biblatex Info: Trying to load citation style 'authoryear'...
+Package biblatex Info: ... file 'authoryear.cbx' found.
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2016/05/14 v3.4 biblatex citation style (PK/JW/AB)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/cbx/authoryear.cbx
+File: authoryear.cbx 2016/05/14 v3.4 biblatex citation style (PK/JW/AB)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
 Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
-)
-
-Package biblatex Warning: 'firstinits' option is deprecated, use 'giveninits' i
-nstead.
-
-) (/usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1enc.def
@@ -841,7 +851,7 @@ Package: perpage 2014/10/25 2.0 Reset/sort counters per page
 \c@abspage=\count301
 )
 \c@pp@a@footnote=\count302
-Package hyperref Info: Option `colorlinks' set `true' on input line 67.
+Package hyperref Info: Option `colorlinks' set `true' on input line 71.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
@@ -928,23 +938,28 @@ File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
 \@quotelevel=\count311
 \@quotereset=\count312
 
+
+Package biblatex Warning: Conflicting options.
+(biblatex)                'giveninits' conflicts with 'uniquename=full'.
+(biblatex)                Setting 'uniquename=init' on input line 191.
+
 (./research_proposal.aux)
 \openout1 = `research_proposal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 187.
-LaTeX Font Info:    ... okay on input line 187.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 191.
+LaTeX Font Info:    ... okay on input line 191.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -956,9 +971,19 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'research_proposal.bbl' found.
  (./research_proposal.bbl
+LaTeX Font Info:    Try loading font information for U+msa on input line 83.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 83.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 
 Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'TheLIGOScientificCollaboration2017':
+(biblatex)                with 'Berger2014':
 (biblatex)                - Invalid format of field 'month'.
 
 
@@ -968,17 +993,7 @@ Package biblatex Warning: Biber reported the following issues
 
 
 Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'Abbott2016':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'Hulse1974':
-(biblatex)                - Invalid format of field 'month'.
-
-
-Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'Berger2014':
+(biblatex)                with 'Eichler1989':
 (biblatex)                - Invalid format of field 'month'.
 
 
@@ -988,7 +1003,42 @@ Package biblatex Warning: Biber reported the following issues
 
 
 Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'Eichler1989':
+(biblatex)                with 'Gill2018':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Hulse1974':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Lattimer1974':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Metzger2017':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Metzger2015':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Murguia-Berthier2014':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Murguia-Berthier2017a':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Philippov2014':
 (biblatex)                - Invalid format of field 'month'.
 
 
@@ -1008,12 +1058,17 @@ Package biblatex Warning: Biber reported the following issues
 
 
 Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'Metzger2017':
+(biblatex)                with 'Abbott2016':
 (biblatex)                - Invalid format of field 'month'.
 
 
 Package biblatex Warning: Biber reported the following issues
-(biblatex)                with 'Lattimer1974':
+(biblatex)                with 'TheLIGOScientificCollaboration2017':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Troja2018':
 (biblatex)                - Invalid format of field 'month'.
 
 
@@ -1022,8 +1077,8 @@ Package biblatex Warning: Biber reported the following issues
 (biblatex)                - Invalid format of field 'month'.
 
 )
-Package biblatex Info: Reference section=0 on input line 187.
-Package biblatex Info: Reference segment=0 on input line 187.
+Package biblatex Info: Reference section=0 on input line 191.
+Package biblatex Info: Reference segment=0 on input line 191.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1033,15 +1088,15 @@ Package biblatex Info: Reference segment=0 on input line 187.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
-* v-part:(T,H,B)=(108.405pt, 628.23685pt, 108.405pt)
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(99.58464pt, 645.87756pt, 99.58464pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=452.9679pt
-* \textheight=628.23685pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-0.86499pt
+* \textwidth=455.24411pt
+* \textheight=645.87756pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-9.68535pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -1103,7 +1158,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 144.
 )
-Package hyperref Info: Link coloring ON on input line 187.
+Package hyperref Info: Link coloring ON on input line 191.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1113,9 +1168,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count319
 )
-LaTeX Info: Redefining \ref on input line 187.
-LaTeX Info: Redefining \pageref on input line 187.
-LaTeX Info: Redefining \nameref on input line 187.
+LaTeX Info: Redefining \ref on input line 191.
+LaTeX Info: Redefining \pageref on input line 191.
+LaTeX Info: Redefining \nameref on input line 191.
 
 (./research_proposal.out) (./research_proposal.out)
 \@outlinefile=\write5
@@ -1123,28 +1178,30 @@ LaTeX Info: Redefining \nameref on input line 187.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 187.
+(lastpage)             ! on input line 191.
 
+<Figures/sketch_GRB_kilonova.jpg, id=37, 2148.025pt x 2272.49pt>
+File: Figures/sketch_GRB_kilonova.jpg Graphic file (type jpg)
 
-LaTeX Warning: Citation 'Sana2012' on page 1 undefined on input line 210.
+<use Figures/sketch_GRB_kilonova.jpg>
+Package pdftex.def Info: Figures/sketch_GRB_kilonova.jpg used on input line 232
+.
+(pdftex.def)             Requested size: 227.62204pt x 240.7857pt.
+File: Figures/sketch_GRB_kilonova.jpg Graphic file (type jpg)
+ <use Figures/sketch_GRB_kilonova.jpg>
+Package pdftex.def Info: Figures/sketch_GRB_kilonova.jpg used on input line 232
+.
+(pdftex.def)             Requested size: 227.62204pt x 240.7857pt.
+File: Figures/sketch_GRB_kilonova.jpg Graphic file (type jpg)
 
+<use Figures/sketch_GRB_kilonova.jpg>
+Package pdftex.def Info: Figures/sketch_GRB_kilonova.jpg used on input line 232
+.
+(pdftex.def)             Requested size: 227.62204pt x 240.7857pt.
 
-LaTeX Warning: Citation 'Tauris2017' on page 1 undefined on input line 212.
-
-
-LaTeX Warning: Citation 'ElMellah2018' on page 1 undefined on input line 212.
-
-
-LaTeX Warning: Citation 'Ghosh1978' on page 1 undefined on input line 212.
-
-
-LaTeX Warning: Citation 'Shakura2012' on page 1 undefined on input line 212.
-
-
-LaTeX Warning: Reference `fig:spin' on page 1 undefined on input line 214.
-
-
-LaTeX Warning: Citation 'Hemphill2013' on page 1 undefined on input line 214.
+Overfull \hbox (9.99997pt too wide) detected at line 232
+ [] 
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1155,157 +1212,846 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 222.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 222.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-LaTeX Warning: Citation 'Kumar2015' on page 2 undefined on input line 222.
-
-<Figures/sketch_GRB_kilonova.jpg, id=43, 2148.025pt x 2272.49pt>
-File: Figures/sketch_GRB_kilonova.jpg Graphic file (type jpg)
-
-<use Figures/sketch_GRB_kilonova.jpg>
-Package pdftex.def Info: Figures/sketch_GRB_kilonova.jpg used on input line 238
-.
-(pdftex.def)             Requested size: 199.16928pt x 210.68748pt.
-File: Figures/sketch_GRB_kilonova.jpg Graphic file (type jpg)
- <use Figures/sketch_GRB_kilonova.jpg>
-Package pdftex.def Info: Figures/sketch_GRB_kilonova.jpg used on input line 238
-.
-(pdftex.def)             Requested size: 199.16928pt x 210.68748pt.
-File: Figures/sketch_GRB_kilonova.jpg Graphic file (type jpg)
-
-<use Figures/sketch_GRB_kilonova.jpg>
-Package pdftex.def Info: Figures/sketch_GRB_kilonova.jpg used on input line 238
-.
-(pdftex.def)             Requested size: 199.16928pt x 210.68748pt.
-
-Overfull \hbox (12.27618pt too wide) detected at line 238
- [] 
- []
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 240.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 246.
-
- (/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [3 <./Figures/sketch_GRB_kilonova.jpg>]
-Underfull \hbox (badness 1509) in paragraph at lines 262--262
-[]\T1/cmr/m/n/12 Figure 2: |Rates of NS ro-ta-
- []
-
-<Figures/spinning-down_luminosity.png, id=92, 611.4042pt x 553.5882pt>
+) [2 <./Figures/sketch_GRB_kilonova.jpg>] [3]
+<Figures/spinning-down_luminosity.png, id=107, 611.4042pt x 553.5882pt>
 File: Figures/spinning-down_luminosity.png Graphic file (type png)
 
 <use Figures/spinning-down_luminosity.png>
 Package pdftex.def Info: Figures/spinning-down_luminosity.png used on input lin
-e 262.
+e 258.
 (pdftex.def)             Requested size: 284.52756pt x 257.62701pt.
-
-Underfull \hbox (badness 1509) in paragraph at lines 262--262
-[]\T1/cmr/m/n/12 Figure 2: |Rates of NS ro-ta-
- []
-
 File: Figures/spinning-down_luminosity.png Graphic file (type png)
+
 <use Figures/spinning-down_luminosity.png>
 Package pdftex.def Info: Figures/spinning-down_luminosity.png used on input lin
-e 262.
+e 258.
 (pdftex.def)             Requested size: 284.52756pt x 257.62701pt.
-
-Underfull \hbox (badness 1509) in paragraph at lines 262--262
-[]\T1/cmr/m/n/12 Figure 2: |Rates of NS ro-ta-
- []
-
 File: Figures/spinning-down_luminosity.png Graphic file (type png)
+
 <use Figures/spinning-down_luminosity.png>
 Package pdftex.def Info: Figures/spinning-down_luminosity.png used on input lin
-e 262.
+e 258.
 (pdftex.def)             Requested size: 284.52756pt x 257.62701pt.
 
-Overfull \hbox (12.27618pt too wide) detected at line 262
+Overfull \hbox (9.99997pt too wide) detected at line 258
  [] 
  []
 
+[4 <./Figures/spinning-down_luminosity.png>] [5]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Citation 'ElMellah2016a' on page 4 undefined on input line 266.
-
-
-LaTeX Warning: Citation 'ElMellah2018a' on page 4 undefined on input line 266.
+Package biblatex Warning: Option 'omitnumbers' requires 'defernumbers=true'.
+(biblatex)                Ignoring 'omitnumbers=true' on input line 300.
 
 
-LaTeX Warning: Citation 'Xia2017' on page 4 undefined on input line 266.
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
 
 
-LaTeX Warning: Citation 'Rappaport:2012wi' on page 4 undefined on input line 26
-6.
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
 
 
-LaTeX Warning: Citation 'Rappaport2013' on page 4 undefined on input line 266.
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
 
 
-LaTeX Warning: Citation 'SanchisOjeda:2014ww' on page 4 undefined on input line
- 266.
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
 
-[4] 
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
 AED: lastpage setting LastPage
-[5 <./Figures/spinning-down_luminosity.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 278.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 278.
+[6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 303.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 303.
  (./research_proposal.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 278.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 278.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 303.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 303.
 Package rerunfilecheck Info: File `research_proposal.out' has not changed.
-(rerunfilecheck)             Checksum: 21A49954444E67698E9D0AAF8DE26C50;156.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                research_proposal
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: 84BB418100BB1EC3543BD8FA19AD32C9;280.
 Package logreq Info: Writing requests to 'research_proposal.run.xml'.
 \openout1 = `research_proposal.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 14920 strings out of 493014
- 242939 string characters out of 6133351
- 941796 words of memory out of 5000000
- 18230 multiletter control sequences out of 15000+600000
- 13135 words of font info for 39 fonts, out of 8000000 for 9000
+ 15035 strings out of 493014
+ 245828 string characters out of 6133351
+ 643915 words of memory out of 5000000
+ 18325 multiletter control sequences out of 15000+600000
+ 12439 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,69p,1809b,1298s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,11n,70p,1704b,1186s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
 sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
 local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/t
+al/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on research_proposal.pdf (5 pages, 989938 bytes).
+ve/2016/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on research_proposal.pdf (6 pages, 966579 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 27 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 213 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 
