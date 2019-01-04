@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 DEC 2018 22:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  4 JAN 2019 11:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1038,6 +1038,11 @@ Package biblatex Warning: Biber reported the following issues
 
 
 Package biblatex Warning: Biber reported the following issues
+(biblatex)                with 'Peres2013':
+(biblatex)                - Invalid format of field 'month'.
+
+
+Package biblatex Warning: Biber reported the following issues
 (biblatex)                with 'Philippov2014':
 (biblatex)                - Invalid format of field 'month'.
 
@@ -1218,7 +1223,7 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 240.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ) [2 <./Figures/sketch_GRB_kilonova.jpg>] [3]
-<Figures/spinning-down_luminosity.png, id=107, 611.4042pt x 553.5882pt>
+<Figures/spinning-down_luminosity.png, id=109, 611.4042pt x 553.5882pt>
 File: Figures/spinning-down_luminosity.png Graphic file (type png)
 
 <use Figures/spinning-down_luminosity.png>
@@ -2016,6 +2021,42 @@ Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
 uffix. Using \mkbibnamesuffix.
 
 
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
 AED: lastpage setting LastPage
 [6]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 303.
@@ -2030,13 +2071,13 @@ Package logreq Info: Writing requests to 'research_proposal.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15035 strings out of 493014
- 245828 string characters out of 6133351
- 643915 words of memory out of 5000000
- 18325 multiletter control sequences out of 15000+600000
+ 15038 strings out of 493014
+ 245913 string characters out of 6133351
+ 645881 words of memory out of 5000000
+ 18327 multiletter control sequences out of 15000+600000
  12439 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,11n,70p,1704b,1186s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,11n,70p,1732b,1190s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
@@ -2048,10 +2089,10 @@ al/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local
 exlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texli
 ve/2016/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on research_proposal.pdf (6 pages, 966579 bytes).
+Output written on research_proposal.pdf (6 pages, 966769 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 185 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
+ 216 PDF objects out of 1000 (max. 8388607)
+ 188 compressed objects within 2 object streams
+ 46 named destinations out of 1000 (max. 500000)
  43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

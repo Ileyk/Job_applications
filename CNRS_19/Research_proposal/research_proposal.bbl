@@ -1435,7 +1435,7 @@
     \list{publisher}{1}{%
       {IOP Publishing}%
     }
-    \keyw{,gamma-ray burst,gamma-ray burst:
+    \keyw{gamma-ray burst,gamma-ray burst:
   general,general,hydrodynamics,neutron,outflows,relativistic
   processes,stars,stars: neutron,stars: winds,winds}
     \strng{namehash}{MBA+1}
@@ -1518,6 +1518,72 @@
     \endverb
     \field{journaltitle}{SF2A Proc.}
     \field{year}{2011}
+  \endentry
+
+  \entry{Peres2013}{article}{}
+    \name{author}{4}{}{%
+      {{hash=PB}{%
+         family={Peres},
+         family_i={P\bibinitperiod},
+         given={Bruno},
+         given_i={B\bibinitperiod},
+      }}%
+      {{hash=PAJ}{%
+         family={Penner},
+         family_i={P\bibinitperiod},
+         given={Andrew\bibnamedelima Jason},
+         given_i={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=NJ}{%
+         family={Novak},
+         family_i={N\bibinitperiod},
+         given={Jerome},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bonazzola},
+         family_i={B\bibinitperiod},
+         given={Silvano},
+         given_i={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PB+2}
+    \strng{fullhash}{PBPAJNJBS1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2014}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    We present a new code, Lorene's Ghost (for Lorene's gravitational handling
+  of spectral transport) developed to treat the problem of neutrino transport
+  in supernovae with the use of spectral methods. First, we derive the
+  expression for the nonrelativistic Liouville operator in doubly spherical
+  coordinates (r, theta, phi, epsilon, Theta, Phi){\$}, and further its general
+  relativistic counterpart. We use the 3 + 1 formalism with the conformally
+  flat approximation for the spatial metric, to express the Liouville operator
+  in the Eulerian frame. Our formulation does not use any approximations when
+  dealing with the angular arguments (theta, phi, Theta, Phi), and is fully
+  energy-dependent. This approach is implemented in a spherical shell, using
+  either Chebyshev polynomials or Fourier series as decomposition bases. It is
+  here restricted to simplified collision terms (isoenergetic scattering) and
+  to the case of a static fluid. We finish this paper by presenting test
+  results using basic configurations, including general relativistic ones in
+  the Schwarzschild metric, in order to demonstrate the convergence properties,
+  the conservation of particle number and correct treatment of some
+  general-relativistic effects of our code. The use of spectral methods enables
+  to run our test cases in a six-dimensional setting on a single processor.%
+    }
+    \field{issn}{0264-9381}
+    \field{number}{4}
+    \verb{url}
+    \verb http://arxiv.org/abs/1307.1666 http://dx.doi.org/10.1088/0264-9381/31
+    \verb /4/045012
+    \endverb
+    \field{volume}{31}
+    \field{journaltitle}{Class. Quantum Gravity}
+    \field{eprinttype}{arXiv}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
   \endentry
 
   \entry{Philippov2014}{article}{}
