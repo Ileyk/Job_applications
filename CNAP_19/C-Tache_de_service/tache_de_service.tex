@@ -1,0 +1,307 @@
+%%%%%%%%%%%%%%%%%  Debut du fichier Latex  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,onecolumn]{article}
+%\usepackage[style=numeric,maxnames=1,uniquelist=false]{biblatex}
+%\usepackage[backend=bibtex,style=numeric,minnames=4,maxnames=4,firstinits=true,sorting=none]{biblatex} 
+\usepackage[backend=bibtex,bibstyle=phys,citestyle=authoryear,maxcitenames=1,minbibnames=3,maxbibnames=3,giveninits=true,natbib,doi=false,isbn=false]{biblatex} 
+%\usepackage[authordate,bibencoding=auto,strict,backend=biber,natbib]{biblatex}
+
+ %backend=biber is 'better'  
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+\renewbibmacro{in:}{} % to not have the "In:" to indicate the review
+\AtEveryBibitem{\clearfield{title}} % to remove the titles in the biblio
+% no page info
+\AtEveryBibitem{%
+  \ifentrytype{article}{%
+    \clearfield{pages}%
+  }{%
+  }%
+}
+% no language info
+\AtEveryBibitem{\clearlist{language}}
+% no language no page
+\AtEveryBibitem{%
+  \clearfield{volume}%
+  \clearfield{number}}
+% To avoid parenthesis if no year entry in bib file
+\renewbibmacro*{issue+date}{%
+  \ifboolexpr{not test {\iffieldundef{year}} or not test {\iffieldundef{issue}}}
+    {\printtext[parens]{%
+       \iffieldundef{issue}
+         {\usebibmacro{date}}
+         {\printfield{issue}%
+          \setunit*{\addspace}%
+          \usebibmacro{date}}}}
+    {}%
+  \newunit}
+
+
+\ExecuteBibliographyOptions{isbn=false,url=false,doi=false,eprint=false}
+
+%\bibliography{/Users/Ileyk/Documents/Bibtex/Hubble_fellowship_no_url} 
+\addbibresource{/Users/Ileyk/Documents/Bibtex/CNRS_19_fixed.bib}
+%%% Pour un texte en francais
+
+
+%%\usepackage[applemac]{inputenc}
+%\usepackage[francais]{babel}
+	         % encodage des lettres accentuees
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}          % encodage des lettres accentuees
+%\usepackage{graphicx}
+%%\usepackage{graphicx} \def\BIB{}
+\usepackage[paper=a4paper,left=2.1cm,right=2.1cm,top=3.2cm,bottom=3.2cm]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx,wrapfig,lipsum} 
+%\def\BIB{}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[pdftex]{hyperref}
+%\usepackage{natbib}
+\usepackage{url}
+\usepackage{perpage} %the perpage package
+\MakePerPage{footnote} %the perpage package command
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=blue     % can put red here to visualize the links
+}
+
+\usepackage{enumitem}
+\usepackage{amssymb}
+
+%\renewcommand{\refname}{}
+
+\usepackage{floatrow}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Research summary}
+\lhead{El Mellah Ileyk}
+\rfoot{\thepage / \pageref{LastPage}}
+
+\DeclareUnicodeCharacter{00A0}{ }
+
+\usepackage{xspace}
+
+%%% Quelques raccourcis pour la mise en page
+\newcommand{\remarque}[1]{{\small \it #1}}
+\newcommand{\rubrique}{\bigskip \noindent $\bullet$ }
+\newcommand{\sgx}{SgXB\xspace}
+\newcommand{\sgxs}{SgXBs\xspace}
+\newcommand{\ulx}{ULX\xspace}
+\newcommand{\sfxt}{SFXT}
+\newcommand{\sg}{Sg\xspace}
+\newcommand{\co}{CO\xspace}
+\newcommand{\gw}{GW\xspace}
+\newcommand{\gws}{GWs\xspace}
+\newcommand{\grb}{GRB\xspace}
+\newcommand{\grbs}{GRBs\xspace}
+\newcommand{\eos}{EOS\xspace}
+\newcommand{\mhd}{MHD\xspace}
+\newcommand*{\hmxb}{HMXB\@\xspace}
+\newcommand*{\hmxbs}{HMXBs\@\xspace}
+\newcommand*{\lmxb}{LMXB\@\xspace}
+\newcommand*{\rlof}{RLOF\@\xspace}
+\newcommand*{\ns}{NS\@\xspace}
+\newcommand*{\nss}{NSs\@\xspace}
+\newcommand*{\bh}{BH\@\xspace}
+\newcommand*{\bhs}{BHs\@\xspace}
+\newcommand*{\eg}{e.g.\@\xspace}
+\newcommand*{\ie}{i.e.\@\xspace}
+\newcommand*{\aka}{a.k.a. \@\xspace}
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand{\mystar}{{\fontfamily{lmr}\selectfont$\star$}}
+\newcommand*{\msun}{$M_{\odot}$\@\xspace}
+\newcommand*{\mdotstar}{$\dot{M}_{\text{\mystar}}$\@\xspace}
+\newcommand*{\mdotacc}{$\dot{M}_{\text{acc}}$\@\xspace}
+\newcommand*{\ledd}{$L_{\text{Edd}}$\@\xspace}
+
+
+\newcommand{\ignore}[1]{}
+
+%\renewcommand*\rmdefault{iwona}
+
+%\pagenumbering{gobble}
+
+%\bibliographystyle{abbrvnat}
+%\setcitestyle{authoryear,open={((},close={))}}
+
+%\renewcommand{\thefootnote}{\roman{footnote}}
+
+% -------------------------------------------------
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\vspace*{-2.5cm}
+%\normalfont \tiny 
+%%\textsc{Paris Diderot} \\ [25pt] % Your university, school and/or department name(s)
+%\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+%\Large Speeding up the spinning top\\
+%\large How accretion sets the pace in High Mass X-ray Binaries  \\ % The assignment title
+%\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+\author{\tiny} % Your name
+\date{\tiny }%\normalsize\today} % Today's date or a custom date
+% -------------------------------------------------
+
+%\makeatletter
+%\def\@xfootnote[#1]{%
+%  \protected@xdef\@thefnmark{#1}%
+%  \@footnotemark\@footnotetext}
+%\makeatother
+
+%\usepackage[square,numbers,sort]{natbib}
+%\usepackage{har2nat} % "natbib" is loaded automatically
+
+%
+%\let\oldthebibliography\thebibliography
+%\renewcommand{\thebibliography}[1]{%
+%  \oldthebibliography{#1}
+%  \let\oldbibitem\bibitem
+%  \let\oldtextsc\textsc
+%  \def\oldbbland{et}
+%  \newcounter{authorcount}
+%  \def\bibitem[##1]##2{%
+%    \let\textsc\oldtextsc
+%    \let\bbland\oldbbland
+%    \oldbibitem[##1]{##2}%
+%    \let\textsc\mytextsc%
+%    \let\bbland\mybbland
+%    \setcounter{authorcount}{0}
+%  }
+%  \def\mybbland{\setcounter{authorcount}{0}\oldbbland}
+%  \def\dropetal##1.{ \bbletal}
+%  \def\mytextsc##1{%
+%    \oldtextsc{##1}%
+%    \stepcounter{authorcount}%
+%    \ifnum\value{authorcount}=2\relax%
+%      \expandafter\dropetal%
+%    \fi%
+%  }%
+%}
+
+
+\begin{document}
+
+%\bibpunct{[}{]}{;}{n}{,}{,}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%  PREMIERE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DANS CETTE PAGE, ON REMPLACE LES INDICATIONS ENTRE CROCHETS [...]
+%%% PAR LES INFORMATIONS DEMANDEES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\headrulewidth}{1pt}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Tâche de service}
+\lhead{El Mellah Ileyk}
+\rfoot{\thepage / \pageref{LastPage}}
+
+\begin{center}
+\Large \textbf{Tâche de service SVOM/ECLAIRs}
+\end{center}
+\normalfont
+\vspace*{-0.4cm}
+\begin{table}[h!]
+\centering
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+Type (ANO1 \`{a} ANO6) & ANO2 \\ \hline
+Nom du service & SO2 - Instrumentation spatiale \\ \hline
+Nom de la t\^{a}che & SVOM/ECLAIRs \\ \hline
+Labellisation & oui \\ \hline
+Nom du responsable scientifique correspondant & Bertrand Cordier \\ \hline
+Laboratoire et OSU dont elle rel\`eve & IRAP - OMP \\ \hline
+\end{tabular}
+\end{table}
+
+%Tandis que les sursauts courts, d'une durée en gamma inférieure à 2 secondes, sont provoqués par la coalescence entre une étoile à neutron et une autre étoile à neutron ou un trou noir, les sursauts longs proviennent d'étoiles massives en fin de vie dont le c\oe{}ur s'effondre brusquement.
+
+Les sursauts gamma comptent parmi les phénomènes les plus lumineux dans l'Univers. Observés à des distances cosmologiques depuis les années 60, ils sont probablement associés au lancement d'un jet ultra-relativiste depuis le voisinage immédiat d'un objet compact nouvellement formé. Outre qu'ils nous renseignent sur la première génération d'étoiles, les sursauts longs sondent l'Univers primordial et l'époque de la réionisation et pourraient un jour servir comme chandelles standards jusqu'à des distances bien plus importantes que les supernovae Ia, apportant ainsi de nouvelles contraintes sur les paramètres cosmologiques et la nature de l'énergie noire. Les sursauts courts ont connu un regain d'intérêt en 2017 après la détection d'un signal d'onde gravitationnelle produit par la coalescence de deux étoiles à neutrons dans l'Univers local : pour la première fois, la détection s'est accompagnée d'une contrepartie photonique avec un sursaut gamma court suivi d'une kilonova. Les découvertes à venir grâce à cette nouvelle astronomie multi-messager sont considérables, parmi lesquelles la structure interne des étoiles à neutrons et leur équation d'état, le mécanisme de formation des trous noirs et de lancement des jets ou encore la nucléosynthèse des éléments les plus riches en neutrons.
+
+Au cours des 15 dernières années, le satellite \textit{Swift} a détecté plus d'un millier de sursauts gamma dont seulement un tiers ont une mesure de décalage vers le rouge. Avec la détection de nombreuses sources transitoires à venir grâce au LSST (\textit{Large Synoptic Survey Telescope}) et à SKA (\textit{Square Kilometre Array}), un satellite agile et multi-longueurs d'onde capable de fournir rapidement et de façon automatique les positions précises de ces sources (notamment des sursauts gamma) afin de mesurer leur distance est indispensable à l'essor de l'astronomie multi-messagers pour la prochaine décennie. \textbf{Le satellite multi-longeurs d'onde sino-français SVOM} (\textit{Space-borne multi-band Variable Object Monitor}), dont le lancement est prévu pour 2021, intègre à la fois des instruments de détection à grand champ de vue (entre 4keV et 5MeV) pour une localisation préliminaire de la source, et des instruments à petit champ de vue pour affiner la boîte d'erreur et assurer le suivi temporel de la contrepartie du visible aux rayons X. Ce dispositif spatial sera complété par un réseau de télescopes robotiques au sol.
+
+La présente tâche de service porte essentiellement sur 2 composantes sous la responsabilité scientifique de l'IRAP : \textbf{le télescope grand champ X et gamma ECLAIRs} embarqué sur SVOM, semblable à l'instrument BAT (\textit{Burst Alert Telescope}) sur Swift, et \textbf{le segment sol associé, l'EIC} (\textit{ECLAIRs Instrument Center}). 
+Le plan de détection développé à l'IRAP doit être livré au CNES début 2020 pour intégration à l'instrument complet ECLAIRs, \textbf{ce qui nécessite dès maintenant l'étalonnage du plan de détection et le développement des outils numériques pour ce faire}, afin d'assurer la réussite scientifique de l'instrument. Je me propose de participer à la préparation des essais menés sur le modèle de vol du plan de détection, au développement logiciel, notamment en contribuant à \textbf{étalonner le modèle numérique des réponses spectrale et temporelle de l'instrument ECLAIRs} à partir de données expérimentales, et à la validation des performances scientifiques d'ECLAIRs. Au sein de l'EIC, je prendrai part au \textbf{développement des fichiers auxiliaires de calibration requis pour l'analyse des données d'ECLAIRs} et aux \textbf{activités scientifiques d'avocat sursaut sous la responsabilité du FSC} (\textit{French Scientific Center}).
+
+\section{SVOM : charge utile et segment sol}
+
+La mission SVOM rassemble un satellite éponyme et un segment sol composé de télescopes robotiques de suivi au sol et d'un réseau d'antennes radio au sol VHF (\textit{Very High Frequency}) pour assurer le relai avec le satellite et communiquer à la communauté scientifique les informations nécessaires au suivi au sol en moins d'une minute. Le satellite comporte plusieurs instruments :
+
+\begin{itemize}
+\setlength\itemsep{0em}
+\item Développé par l'IRAP, l'IRFU et l'APC et sous ma\^itrise d'\oe uvre du CNES, \textbf{l'imageur grand champ X durs / gamma ECLAIRs} est doté d'un masque codé qui surplombe un plan focal de détection DPIX, une plaque refroidie à -20$^{\circ}$C sur laquelle sont disposés 6400 détecteurs en tellurure de Cadmium. Le flux des sources dans le champ de vue passe par le masque et active les détecteurs du DPIX. Ce dispositif confère à ECLAIRs à la fois un large champ de vue et une résolution angulaire suffisamment bonne pour apporter une localisation préliminaire de la source ($\lesssim13$ minutes d'arc). Une unité de gestion et de traitement scientifique embarquée, l'UGTS (\textit{Unit for detector manaGement, Triggering and Scientific processing}) scanne en temps réel le ciel à la recherche de nouveaux signaux transitoires apparaissant dans son champ de vue de manière autonome. Dès qu'une détection est confirmée et qu'une position a pu être calculée, ECLAIRs envoie cette information à la plateforme pour initier la séquence d'alerte: certains paramètres de la source (\eg position et flux) sont immédiatement communiquées via les antennes VHF tandis que la plateforme calcule l'itinéraire le plus rapide permettant de pointer les instruments à petits champs de vue vers la position identifiée par ECLAIRs (en moins de cinq minutes dans 50\% des cas).
+\item Un premier instrument à petit champ de vue (un degré carré), le \textbf{télescope X MXT} (\textit{Micro-channel X-ray Telescope}, 0.2-10keV), doté d'une meilleure résolution angulaire qu'ECLAIRs, de l'ordre de quelques secondes d'arc. % meilleure qu'une arcminute. Sa sensibilité et se résolution spectrale permettront de suivre le comportement spectroscopique de la source dans les X mous pendant la journée qui suivra l'alerte. 
+\item Un second instrument à petit champ de vue, \textbf{le télescope VT} (\textit{Visible Telescope}), qui apportera une localisation encore meilleure, inférieure à l'arcseconde dans le visible. %, et ce dans deux bandes spectrales dans le visible et proche infra rouge.
+\item Enfin, \textbf{le GRM} (\textit{Gamma Ray Burst Monitor}) dont les 3 détecteurs permettront la localisation grossière de la source par triangulation dans un champ de vue plus large que celui d'ECLAIRs et la mesure du spectre de l'émission prompte jusqu'à 5 MeV, en particulier pour les sursauts gamma courts. % L'objectif est d'apporter une aide précieuse à la recherche de contreparties photoniques aux ondes gravitationnelles.
+\end{itemize}
+
+\section{Contenu et équipe d'accueil}
+
+L'IRAP est considérablement impliqué (i) dans le développement de l'instrument ECLAIRs (conception du plan de détection DPIX et de ses électroniques de lecture, et étalonnage scientifique) dont le laboratoire est PI avec son responsable scientifique Jean-Luc Atteia et (ii) dans le segment sol via l'EIC sous la responsabilité d'Olivier Godet. L'EIC représente 20 personnels scientifiques équivalent temps plein sur la période 2017-2022 et apporte un support scientifique et technique sous différentes formes : préparation du commissionnement de l'instrument (vérification des performances après le lancement et ajustement), surveillance de l'état et de la calibration de l'instrument en vol, suivi de l'évolution des performances de l'instrument, mise à jour des fichiers de configuration pour le bord (opérabilité de la caméra) et auxiliaires (pour le traitement et l'analyse des données), maintenance du logiciel de bord et gestion des alarmes.
+
+Afin d'assurer la livraison du modèle de vol du plan de détecteurs DPIX au CNES début 2020 puis de l'instrument ECLAIRs en Chine pour intégration au satellite fin 2020, il est impératif d'effectuer au plus vite une série de mesures de performance instrumentale. Pour étalonner les \textbf{modèles numériques de la réponse spectrale d'ECLAIRs}, je me propose de prendre comme référence des spectres de sources radioactives simulés par le code Geant4 et de les comparer à ceux mesurés. Je développerai les outils logiciels d'analyse nécessaires pour mener à bien cet étalonnage et pour \textbf{calculer certaines tables de configuration pour le bord} telles que les tables des seuils bas des ASICs (\textit{Application-Specific Integrated Circuit}), d'efficacité, de gain, d'offset ou de pixels bruyants/morts. \textbf{Le contrôle du bruit} intrinsèque et propagé introduit par les ASICs du DPIX est un enjeu majeur pour éviter que de fausses alertes ne soient déclenchées. Je caractériserai la \textbf{réponse temporelle} d'ECLAIRs en calculant les temps morts des détecteurs afin d'en évaluer l'impact sur les flux mesurés. Dans un second temps, ces outils seront en partie intégrés à l'EIC pour \textbf{construire les fichiers de calibration en vol}.
+
+%En tant que membre de l'EIC, je développerai des scripts de tests pour vérifier le fonctionnement en vol du satellite, ainsi que des outils d'analyse pour en exploiter au mieux les données. 
+%
+%qui sera utilisée au FSC par les observateurs pour ajuster les spectres construits à partir des données ECLAIRs
+
+%\textbf{Le contrôle du bruit} introduit par les ASICs (\textit{Application-Specific Integrated Circuits}) du plan focal de détection DPIX est un enjeu majeur pour éviter que de fausses alertes ne soient déclenchées. J'évaluerai le niveau de bruit intrinsèque de chaque pixel mais aussi la capacité du bruit à se propager d'un pixel à l'autre en calculant la matrice de corrélations croisées du DPIX. J'identifierai des zones fiables homogènes où le bruit est faible et m'assurerai de la constance dans le temps de ces propriétés.
+
+%Bonne homogénéité des détecteurs et des ASICs, mais quelques pourcents de pixels bruyants qui s'expriment au hasard dans le temps, de façon transitoire, et pourraient provoquer le déclenchement d'alertes faux-positives. Cross-talk propagates the noise. Zone sur le DPIX où les pixels montrent un bas niveau de bruit : contrôle de la constance dans le temps dans conditions de vol.
+
+%Pour peu qu'un sursaut soit suffisamment proche et brillant, la durée qui suit l'absorption d'un photon pendant lequel le détecteur ne peut plus absorber (ou temps mort) peut amener à sous-estimer le flux mesuré. Je modéliserai ce temps mort afin d'en évaluer l'impact sur les flux mesurés. En tant que membre de l'EIC, je développerai des scripts de tests pour vérifier le fonctionnement en vol du satellite, ainsi que des outils d'analyse pour en exploiter au mieux les données. 
+
+%Target of Opportunity - Multi-Messenger (ToO-MM). Hebdomadaire. 
+%Dans un second temps, les ToO occuperont une place plus importante dans la mission (jusqu'à 40\% de l'activité). ToO-MM avec Jean Jaubert (CNES, Toulouse) : Optimisation de la stratégie d'observation pour capturer un maximum de contreparties photoniques associées aux sursauts courts. Principalement avec MXT et VT. Simulations requises pour inclure toutes les contraintes relatives à la présence du Soleil, de la Lune ou de la Terre à proximité du champ de vue, au repositionnement des panneaux solaires, etc. Interface de requête ToO-MM. Méthode dite "\textit{smart}" pour optimiser les performances observationelles.
+
+\section{Evolution de la tâche de service}
+
+%Dans la seconde phase de la mission SVOM, les \textit{Targets of Opportunity} (ToO) représenteront une part plus importante de l'activité du satellite. Je pourrais travailler à \textbf{l'optimisation de la présente stratégie d'observation} du MXT et du VT dite "\textit{smart}" pour capturer un maximum de contreparties photoniques associées aux sursauts courts, avec le \textit{ToO - Multi-Messenger} (ToO-MM, Jean Jaubert, CNES Toulouse), ainsi qu'à la \textbf{maintenance de l'interface de requête ToO-MM}.
+
+Dans un second temps se posera la question du legs de la mission avec \textbf{l'archivage des données SVOM et leur mise à la disposition} de la communauté scientifique mais aussi des étudiants et du public, du ressort d'une t\^{a}che de service ANO5 (Centres de traitement, d'archivage et de diffusion de données). Je souhaiterais participer de deux manières : (i) en développant des outils numériques pour \textbf{constituer un catalogue et détecter a posteriori de nouvelles sources}, et (ii) \textbf{en organisant les données issues de SVOM dans des formats qui respectent les standards de l'IVOA} (\textit{International Virtual Observatory Alliance}), de fa\c con semblable à ce qui a été réalisé à l'Observatoire de Paris-Meudon par Zakaria Meliani, Franck Le Petit et leurs collaborateurs pour des données de simulation.
+
+A plus long terme, je souhaite mettre à profit l'expérience que j'aurai accumulée avec SVOM pour contribuer à \textbf{l'instrument X-IFU} (\textit{X-ray Integral Field Unit}; PI: Didier Barret, IRAP) du satellite Athena (\textit{Advanced Telescope for High ENergy Astrophysics}, Agence Spatiale Européenne) dont le lancement est prévu après 2030. Présentement, Edoardo Cucchetti (IRAP), Etienne Pointecouteau (IRAP) et leurs collaborateurs produisent des observations synthétiques à partir de simulations cosmologiques hydrodynamiques et du simulateur de télescopes X \textit{Sixte}. A terme, le simulateur \textit{end-to-end} d'X-IFU et les outils d'analyse bénéficieront de ceux développés pour la mission SVOM.
+
+%Bonus (CEA et APC) : MXT embarqués sur SVOM, le réseau d'alerte VHF, le télescope de suivi au sol GFT-2 (\textit{Ground Follow-up Telescope}). Je participerai à la vérification du bon fonctionnement du réseau VHF. Je prendrai part au contrôle du télescope franco-mexicain de suivi au sol GFT-2 dont la construction a été actée l'an dernier. 
+%
+%En complément, je pourrais travailler à l'optimisation de la présente stratégie d'observation du MXT et du VT dite "\textit{smart}" pour capturer un maximum de contreparties photoniques associées aux sursauts courts, avec le \textit{Target of Opportunity - Multi-Messenger} (ToO-MM, Jean Jaubert, CNES Toulouse), ainsi qu'à la conception de l'interface de requête ToO-MM.
+
+\section{Compétences pour la tâche de service}
+
+Mon activité scientifique ces cinq dernières années a été résolument tournée vers la programmation de modules destinés à produire et analyser des données de simulation en tout point semblables à celles issues des expériences que j'ai menées à bien pendant mon cursus (en particulier pendant l'année de préparation à l'Agrégation). La gestion en temps réel de données volumineuses est un problème que je résous régulièrement en recourant à des méthodes de parallélisation des t\^{a}ches allouées à différents processeurs (\eg avec le protocole de communication MPI et l'interface pour architectures à mémoire partagée OpenMP). J'ai su m'adapter à des environnements de travail pré-existants tels que des packages et des codes particulièrement sophistiqués dont la documentation n'était pas toujours exhaustive. J'ai appris à développer rapidement en équipe des ensembles de scripts complexes, documentés en détail (\eg avec Doxygen) et robustes en me servant des systèmes de contrôle de versions et de partage des tâches (\eg Git), une qualité précieuse pour garantir la livraison d'ECLAIRs dans les temps. Ma versatilité numérique garantit que je pourrai être opérationnel dès mon affectation, quels que soient les langages et conventions au sein de l'équipe d'accueil.
+
+Pendant mon cursus, j'ai aussi acquis les connaissances théoriques et pratiques pour caractériser la réponse spectrale d'une matrice de pixels. Lors des dix jours d'observation qui m'ont été alloués à l'Observatoire du Mont Mégantic (Canada) par exemple, j'ai réalisé des mesures de vitesses radiales sur des systèmes binaires d'étoiles en recourant à une caméra CCD que j'ai d'abord dû calibrer. %, bien que de fa\c con considérablement plus simple que ce qui est demandé dans la présente t\^{a}che de service. 
+
+%De par le contenu de mon activité de recherche (cf \textit{Research proposal}), je bénéficie d'une bonne connaissance des observables nécessaires à la validation des modèles à notre disposition. Les observations réalisées par SVOM pourront directement être confrontées avec les prédictions issues des simulations numériques d'accrétion sur des objets compacts que j'ai réalisées ces dernières années. Réciproquement, je serai à même d'aider à la définition de la priorité d'une ToO-MM et d'identifier les stratégies d'observations adéquates pour apporter de nouvelles contraintes à l'étude théorique des sursauts gamma, en particulier des sursauts courts en lien avec les détections à venir d'ondes gravitationnelles associées à la coalescence d'une étoile à neutrons et d'un autre objet compact. En particulier, le sursaut gamma issu de la coalescence d'étoiles à neutrons en 2017 est très atypique (sursaut faible, longue rémanence X, kilonova brillante) et sa nature reste encore incertaine.
+%
+%Enfin, mon expertise numérique garantit que je pourrai être opérationnel dès mon affectation quels que soient les langages et conventions au sein de l'équipe d'accueil. Mes connaissances en hardware et en calculs de haute performance (e.g. architecture des super-calculateurs, méthodes de parallélisation massive et de multithreading) me permettront de développer les outils d'analyse en temps réel indispensables à la coordination des observations de sursauts gamma. 
+
+%La culture technique 
+%
+%Colibri to observe the early optical afterglow durting the slew of the satellite
+%To provide fast accurate positions of faint and dark GRBs and redshift estimator
+%
+%Polyvalent
+%
+%Agrégation
+%
+%co-PI XMM-Newton : collaboration avec l'équipe en charge du développement du MXT (PI: Diego G\"{o}tz, CEA)
+%
+%APC
+%
+%Expertise numérique :
+%	- code
+%	- hardware (HPC, parallélization)
+
+\end{document}
+%%%%%%%%%%%%%%%%%  Fin du fichier Latex  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

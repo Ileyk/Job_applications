@@ -1,0 +1,583 @@
+\documentclass[a4paper,oneside]{cv}
+
+\usepackage[pdftex]{graphicx}
+\usepackage[pdftex]{hyperref}
+\usepackage{vmargin} %left, top, right, bottom
+\usepackage{wrapfig} % Pour placer les images
+\usepackage{ucs}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}       %% Pour la césure des mots accentués
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{changepage}
+\usepackage{setspace}
+%\usepackage{showframe}
+
+\newcommand{\lieu}[1]{{#1}\ }
+\newcommand{\activite}[1]{\textbf{#1}\ }
+\newcommand{\comment}[1]{\textsl{#1}\ }
+\addtolength{\textheight}{+70pt}
+\usepackage[paper=a4paper,left=2.1cm,right=2.1cm,top=2.5cm,bottom=2.5cm]{geometry}
+%\usepackage[usenames,dvipsnames]{color}
+
+\setmarginsrb{2cm}{2cm}{2cm}{2cm}{0cm}{0cm}{0cm}{0cm}
+
+% ligne horizontale sur toute la page. Usage : \ligne{Largeur}
+\newcommand{\ligne}[1]{\rule[0.5ex]{\textwidth}{#1}\\}
+\newcommand{\interRubrique}{\bigskip}
+\newcommand{\styleRub}[1]{\noindent\textbf{\large #1}\par}
+\newcommand{\indentStd}{\noindent\hspace{\lenA}}
+
+\let\origfontsize\fontsize
+\def\fontsize#1#2{\origfontsize{12}{13.5}}
+
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=blue     % can put red here to visualize the links
+}
+%\urlstyle{same}
+%\definecolor{mygrey}{gray}{.85}
+%\definecolor{mygreylink}{gray}{.30}
+%\textheight=9.0in
+%\raggedbottom
+%\raggedright
+%\setlength{\tabcolsep}{0in}
+
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		#3 & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+\renewcommand*\rmdefault{iwona}
+
+\begin{document}
+
+\vspace*{-1cm}
+\begin{chapeau}
+%\begin{etatcivil}
+%	Born on 23/04/1989\\
+%	French citizen
+%\end{etatcivil}
+\begin{flushright}
+\begin{adresse}
+	\begin{Large}
+	\textbf{Ileyk El Mellah}\\%
+	\end{Large}	
+	\begin{large}
+	born on 5$^{\text{th}}$ April, 1989\\%
+	French citizen\\%
+	\end{large}
+	\ligne\\%
+	\begin{large}
+	+32 499 50 82 89\\%
+	\texttt{\href{mailto:ileyk.elmellah@kuleuven.be}{ileyk.elmellah@kuleuven.be}}\\
+	\href{http://homes.esat.kuleuven.be/~ileyk}{http://homes.esat.kuleuven.be/\textasciitilde ileyk}\\
+	\end{large}
+\end{adresse}
+\end{flushright}
+\end{chapeau}
+\vspace*{-2.5cm}
+\\ \\ \\ \\ \\ \\
+
+\begin{rubriquetableau}[2.2cm]{Research} \\
+
+Since 2016
+		& \activite{FWO $[$Pegasus$]^2$ Marie Sk\l{}odowska-Curie fellowship with Rony Keppens}\\
+		& Center for mathematical Plasma Astrophysics - KU Leuven\\ \\
+		
+2013-16
+		& \activite{PhD with Fabien Casse \& Andrea Goldwurm}  - Paris Diderot University\\
+		& \activite{\emph{Wind accretion onto compact bodies}}\\ \\
+
+2011-12
+        & \activite{One-year volunteer internship supervised by Saul Rappaport on}\\
+        & \activite{\emph{Monitoring of close-in binaries and short period exoplanets with Kepler}}\\
+        & Kavli Institute for Astrophysics - MIT\\ \\
+
+Ap-Ag 2010
+        & \activite{BSc internship supervised by Jean-Fran\c cois Lestrade on}\\
+        & \activite{\emph{Gravitational perturbations of debris discs by a passing-by star}}\\
+        & LESIA - Paris Observatory\\ \\
+        
+Jn-Jl 2009
+        & \activite{BSc internship supervised by G\'erard Belmont \& Patrick Robert on}\\ 
+        &\activite{\emph{Resampling of the CLUSTER satellites data}}\\ 
+        & Plasma Physics Laboratory - Paris \\ \\
+        
+\end{rubriquetableau}
+
+\begin{rubriquetableau}[1,8cm]{Education}
+\\		
+2013-16
+		& \activite{PhD with Fabien Casse \& Andrea Goldwurm}  - Paris Diderot University\\
+		& \activite{\emph{Wind accretion onto compact bodies}}\\ \\
+
+2012-13
+	& \activite{Master degree in Astrophysics, with distinction} - Paris Observatory \\ \\
+		
+2010-12	
+	& \activite{Normalien at the \emph{Ecole Normale Sup\'erieure} of Cachan}\\  \\
+
+2011-12
+	& \activite{Research internship and graduate courses} - MIT, Cambridge \\ \\
+	
+2010-11
+	& \activite{French \emph{Agr\'egation} of Physics \& Chemistry} - ENS of Cachan, FR \\ 
+	& Rank : 2$^{\text{nd}}$ in 1,409 candidates\\ \\
+	
+2008-10
+	& \activite{Bachelor degree in Fundamental Physics, with honours} - ENS  \\ \\
+	
+2006-08
+	& \activite{Preparatory classes to \emph{Grandes Ecoles}} - Lyc\'ee Janson-de-Sailly, Paris \\ \\
+	
+\\
+\end{rubriquetableau}
+
+{\setstretch{1.}
+\noindent\makebox[\textwidth][c]{
+\begin{minipage}{1.0\textwidth}
+\begin{rubriquetableau}[2.7cm]{Communication} 
+
+
+%& \vspace{0,4cm} \hspace{-2,1cm} \activite{Oral contributions\footnote{The stars indicate an invited talk.}}\\ \\
+
+& \hspace{-3.4cm} \activite{Conferences}\\
+
+\hspace*{0.35cm}Jn 2019
+        & \hspace*{-0.8cm} European Week of Astronomy and Space Science - Lyon, Fr\\
+        
+\hspace*{0.35cm}Fb 2019
+        & \hspace*{-0.8cm} 12$^{\text{th}}$ INTEGRAL conference - Geneva, SW\\
+        
+\hspace*{0.35cm}Oc 2018
+        & \hspace*{-0.8cm} Stellar Winds in Massive X-ray Binaries workshop - Santander, SP\\
+
+\hspace*{0.35cm}Oc 2018
+        & \hspace*{-0.8cm} Leuven-Amsterdam-Bonn massive stars meeting - Leuven, BE\\
+
+\hspace*{0.35cm}Ag 2018
+        & \hspace*{-0.8cm} IAU General Assembly - High Mass X-ray Binaries symposium - Vienna, AT\\
+
+\hspace*{0.35cm}Jl 2018
+        & \hspace*{-0.8cm} COSPAR Assembly - Pasadena, US\\
+
+\hspace*{0.35cm}Jn 2018
+        & \hspace*{-0.8cm} Belgium FNRS meeting - Brussels, BE\\
+                
+\hspace*{0.35cm}Sp 2017
+        & \hspace*{-0.8cm} Frontiers of Astrophysical Modeling - Leuven, BE\\
+        
+\hspace*{0.35cm}Ag 2017
+        & \hspace*{-0.8cm} Numerical techniques in MHD simulations - Cologne, DE\\ 
+
+\hspace*{0.35cm}Jl 2017
+        & \hspace*{-0.8cm} French Astronomy Society meeting - Paris, FR\\ 
+
+\hspace*{0.35cm}Jn 2017
+        & \hspace*{-0.8cm} European Week of Astronomy and Space Science - Prague, CZ\\ 
+        
+\hspace*{0.35cm}Mr 2017
+        & \hspace*{-0.8cm}  CHARM meeting - Brussels, BE\\
+
+\hspace*{0.35cm}Fb 2017
+        & \hspace*{-0.8cm} Stellar Winds in Massive X-ray Binaries workshop - ISSI Bern, SW\\
+
+\hspace*{0.35cm}Oc 2016
+        & \hspace*{-0.8cm} CHARM meeting - Ghent, BE\\
+        
+\hspace*{0.35cm}Sp 2016
+        & \hspace*{-0.8cm} Super-Eddington accretion on compact objects - Arbatax, IT\\ 
+
+\hspace*{0.35cm}My 2016
+        & \hspace*{-0.8cm} International school of Computational Astrophysics - Les Houches, FR\\ 
+
+\hspace*{0.35cm}Dc 2015
+        & \hspace*{-0.8cm} Texas symposium - Geneva, SW\\
+                                                    
+\hspace*{0.35cm}Jn 2015
+        & \hspace*{-0.8cm} French Astronomy Society meeting - Toulouse, FR\\
+        
+\hspace*{0.35cm}Mr 2015
+        & \hspace*{-0.8cm} Turbulence, magnetic fields and self organization - Les Houches, FR\\
+
+\hspace*{0.35cm}Nv 2014
+        & \hspace*{-0.8cm} Magnetic fields from the sun to black holes - Paris, FR\\
+                                              
+\hspace*{0.35cm}My 2013
+        & \hspace*{-0.8cm} Cosmic Accelerators - Institute for scientific studies - Carg\'{e}se, FR\\
+                                                        
+& \hspace{-3,4cm} \activite{Seminars}\\
+
+\hspace*{0.35cm}Fb 2019
+        & \hspace*{-0.8cm}APC laboratory - FR\\
+
+\hspace*{0.35cm}Fb 2019
+        & \hspace*{-0.8cm}Observatory of Geneva - SW\\
+
+\hspace*{0.35cm}Nv 2018
+        & \hspace*{-0.8cm}IRAP Toulouse - FR\\
+
+\hspace*{0.35cm}Jl 2018
+        & \hspace*{-0.8cm}TAPIR Caltech - US\\ 
+
+\hspace*{0.35cm}Fb 2018
+        & \hspace*{-0.8cm}LUPM Montpellier - FR\\ 
+                
+\hspace*{0.35cm}Dc 2017
+        & \hspace*{-0.8cm}Radboud University Nijmegen - NL\\ 
+
+\hspace*{0.35cm}Nv 2017
+        & \hspace*{-0.8cm}ESAC Madrid - SP\\
+        
+\hspace*{0.35cm}Sp 2017
+        & \hspace*{-0.8cm}Observatory of Paris - FR\\ 
+
+\hspace*{0.35cm}Sp 2016
+        & \hspace*{-0.8cm}Aarhus University - DK\\ 
+    
+\hspace*{0.35cm}Ap 2016
+        & \hspace*{-0.8cm}Paris 7 University - FR\\         
+
+\hspace*{0.35cm}Ap 2016
+        & \hspace*{-0.8cm}KU Leuven - BE\\ 
+
+\hspace*{0.35cm}Oc 2015
+        & \hspace*{-0.8cm}CEA Paris, AIM laboratory - FR\\
+                        
+& \hspace{-3,4cm} \activite{Posters}\\
+
+\hspace*{0.35cm}Jl 2018
+        & \hspace*{-0.8cm}Formation of wind-captured discs in high mass X-ray binaries - COSPAR\\       
+
+\hspace*{0.35cm}Jn 2017
+        & \hspace*{-0.8cm}Clumpy wind accretion in Supergiant X-ray binaries - EWASS\\       
+
+\hspace*{0.35cm}Dc 2015
+        & \hspace*{-0.8cm}Wind accretion onto compact objects - Texas symposium\\ 
+        
+\hspace*{0.35cm}Nv 2014
+        & \hspace*{-0.8cm}Wind accretion undergoing flip-flop instability - IAP Paris\\        
+  
+\vspace{0,8cm}
+                              
+\end{rubriquetableau}
+
+\end{minipage}
+
+}
+}
+
+{\setstretch{1.}
+\noindent\makebox[\textwidth][c]{
+\begin{minipage}{1.0\textwidth}
+\begin{rubriquetableau}[1.9cm]{Grants \& awards}
+
+2016
+	& 3-years FWO $[$Pegasus$]^2$ Marie Sk\l{}odowska-Curie fellowship\\
+		
+2013-16
+	& 3-years PhD fellowship from the Ecole Normale Sup\'erieure of Cachan\\
+
+2013-16
+	& 3-years teaching assistant grant from the Universit\'e of Paris 7 Diderot\\
+	
+2011	
+	& French \emph{Agr\'egation} of Physics and Chemistry - Rank : 2$^{\textbf{nd}}$\\
+  
+2010-12
+	& 2-years \emph{normalien} study fellowship from the ENS of Cachan\\
+
+\end{rubriquetableau}
+
+\end{minipage}
+
+}
+}
+
+{\setstretch{1.}
+\noindent\makebox[\textwidth][c]{
+\begin{minipage}{1.0\textwidth}
+\begin{rubriquetableau}[1.9cm]{Computing \& observing time}
+
+2018
+        & Mapping the wind and accretion in Vela X-1 - XMM-Newton (co-I.)\\  
+
+2017-18
+	& Computing time on the Flemish Tier-1 VSC cluster : 2.5 Mh$\cdot$\textsc{cpu}\\
+
+2015-16
+	& Computing time on the French CINES Tier-1 cluster : 600 kh$\cdot$\textsc{cpu}\\
+
+2012
+	& 1-week observing time at the Mont M\'egantic Observatory (Canada)\\
+  
+\end{rubriquetableau}
+
+\end{minipage}
+
+}
+}
+
+%\clearpage
+%
+%\restoregeometry
+
+\begin{rubriquetableau}[1.9cm]{Supervision \& teaching} \\
+      
+2018-22
+        & Teaching qualification in section 34 - Astronomy \& Astrophysics\\
+\\
+&\hspace{-3,1cm} \activite{Supervision}\\
+
+2018-... & Co-supervisor with Jon Sundqvist of a graduate student, Nicolas Moens\\
+
+2018-... & Member of the supervisory committee of a graduate student, Luka Poniatowski\\
+
+2018 & Reader for Florian Driessen's Master thesis supervised by Jon Sundqvist\\
+
+2018 & Reader for Prem Kumar Bulusu's Master thesis supervised by Hugues Sana\\ \\
+
+&\hspace{-3,1cm} \activite{Teaching}\\
+
+2018-19
+        & Lecturer in Computational methods for Astrophysics, 5$^{\text{th}}$ year - KU Leuven\\
+        
+2017-18 & Teaching assistant (TA) Linear Algebra, 1$^{\text{st}}$ year - KU Leuven\\
+
+2016-17
+        & TA Computational methods for Astrophysics, 5$^{\text{th}}$ year - KU Leuven\\
+        
+2014-16
+        & TA Classical Mechanics, 1$^{\text{st}}$ year - Univ. of Paris 7 Diderot\\
+
+2013
+        & TA Physics for Medical studies, 1$^{\text{st}}$ year - Univ. of Paris 7 Diderot\\
+
+2013
+        & TA Deterministic systems and signals, 4$^{\text{th}}$ year - Univ. of Paris 7 Diderot\\
+
+2012-13
+        & Private lessons with the company \emph{Cours Thal\`es} - Paris\\
+
+2011
+        & French \emph{Agr\'egation} of Physics \& Chemistry \\
+        
+2009-10
+        & High school Gustave Eiffel - Cachan\\ \\
+        
+\end{rubriquetableau}
+        
+\begin{rubriquetableau}[1.9cm]{Community service} \\
+
+&\hspace{-3,1cm} \activite{Reviewing}\\
+
+2019 & Reviewer for Astronomy \& Astrophysics\\
+
+2018 & Reviewer for The Astrophysical Journal\\
+
+2018 & Reviewer for DiRAC High Performance Computing Tier-1\\ \\
+      
+& \hspace{-3.1cm} \activite{Outreach}\\
+
+Oc 2017
+        & 1h30 radio interview on scientific communication in \emph{Faconde} - Brussels\\
+        
+Nv 2015
+        & Community manager and webmaster of the Young Physicists Meeting - Paris\\
+
+Oc 2015
+        & Festival of Science - Paris Diderot University\\
+
+% http://demonstrations.wolfram.com/TrajectoryOfATestMassInARochePotential/
+Sp 2015 
+        & 3D-printed models and Wolfram interactive applet for the Roche potential\\
+
+2013
+        & Java applet on Turing theory of morphogenesis - Paris Observatory\\
+                                    
+\end{rubriquetableau}
+
+\clearpage 
+
+{\setstretch{0.9}
+%\newgeometry{top=1.5cm,bottom=1.5cm}
+\begin{adjustwidth*}{-5cm}{0cm}
+
+\noindent\makebox[\textwidth][c]{
+\begin{minipage}{1.0\textwidth}
+\begin{rubriquetableau}[1.7cm]{Publications in peer-reviewed journals} \\
+
+%&\vspace{0,1cm} \hspace{-2,2cm} \activite{Peer-reviewed publications}\\ \\
+
+~      & \hspace*{-2.0cm}[1] \textbf{El Mellah I.}, Sundqvist J. O. \& Keppens R.\\ 
+~      & \hspace*{-1.5cm}\emph{Wind Roche lobe overflow in high mass X-ray binaries : }\\
+~      & \hspace*{-1.5cm}\emph{A possible mass transfer mechanism for Ultraluminous X-ray sources} - A\&A 2019\\ \\
+
+~      & \hspace*{-2.0cm}[2] Decin L., Homan W., Danilovich T., de Koter A., Engels D., Waters L. B. F. M.,\\ 
+~      & \hspace*{-1.6cm} Muller S., Gielen C., Garc\'{i}a-Hern\'{a}ndez D. A., Stancliffe R. J., Van de Sande M.,\\ 
+~      & \hspace*{-1.6cm} Molenberghs G., Kerschbaum F., Zijlstra A. A., \textbf{El Mellah I.}\\
+~      & \hspace*{-1.5cm}\emph{Reduced maximum mass-loss rate of OH/IR stars}\\
+~      & \hspace*{-1.5cm}\emph{due to overlooked binary interaction} - Nature Astronomy 2019\\ \\
+
+~      & \hspace*{-2.0cm}[3] \textbf{El Mellah I.}, Sander A. A. C., Sundqvist J. O. \& Keppens R.\\ 
+~      & \hspace*{-1.5cm}\emph{Formation of wind-captured discs in Supergiant X-ray binaries :}\\
+~      & \hspace*{-1.5cm}\emph{Consequences for Vela X-1 and Cygnus X-1} - A\&A 2019\\ \\
+
+~      & \hspace*{-2.0cm}[4] \textbf{El Mellah I.}, Sundqvist J. O. \& Keppens R.\\ 
+~      & \hspace*{-1.5cm}\emph{Accretion from a clumpy massive-star wind in Supergiant X-ray binaries}\\
+~      & \hspace*{-1.6cm} MNRAS 2018\\ \\
+
+~      & \hspace*{-2.0cm}[5] Xia C., Teunissen J., \textbf{El Mellah I.}, Chan\'{e} E. \& Keppens R.\\ 
+~      & \hspace*{-1.5cm}\emph{MPI-AMRVAC 2.0 for solar and astrophysical applications} - ApJS 2018\\ \\
+
+~      & \hspace*{-2.0cm}[6] Grinberg V., Hell N., \textbf{El Mellah I.}, Neilsen J., Sander A. A. C., Leutenegger M. A.,\\
+~      & \hspace*{-1.6cm} F\"{u}rst F., Huenemoerder D. P., Kretschmar P., K\"{u}hnel M., Mart\'{i}nez-N\'{u}\~{n}ez S.,\\
+~      & \hspace*{-1.6cm} Niu S., Pottschmidt K., Schulz N. S., Wilms J. \& Nowak M. A.\\ 
+~      & \hspace*{-1.55cm}\emph{The clumpy absorber in the high mass X-ray binary Vela X-1} - A\&A 2017\\ \\
+
+~      & \hspace*{-2.0cm}[7] \textbf{El Mellah I.} \& Casse F. \\ 
+~      & \hspace*{-1.5cm}\emph{A numerical investigation of wind accretion in persistent Supergiant X-ray Binaries}\\
+~      & \hspace*{-1.6cm} \emph{I - Structure of the flow at the orbital scale} - MNRAS 2017\\ \\
+
+~      & \hspace*{-2.0cm}[8] \textbf{El Mellah I.} \& Casse F. \\ 
+~      & \hspace*{-1.5cm}\emph{Numerical simulations of axisymmetric hydrodynamical Bondi-Hoyle accretion}\\
+~      & \hspace*{-1.6cm} \emph{on to a compact object} - MNRAS 2015\\ \\
+
+~      & \hspace*{-2cm}[9] Sanchis-Ojeda R., Rappaport S., Winn J., Kotson M., Levine A., \textbf{El Mellah I.}\\
+~      & \hspace*{-1.5cm}\emph{The shortest-period planets found with Kepler} - ApJ 2014\\ \\
+
+~      & \hspace*{-2.0cm}[10] Rappaport S., Deck K., Levine A., Borkovits T., Carter J., \textbf{El Mellah I.}, \\
+~      & \hspace*{-1.35cm} Sanchis-Ojeda R., Kalomeni B.\\ 
+~      & \hspace*{-1.25cm}\emph{Triple-star candidates among the Kepler binaries} - ApJ 2013\\ \\
+
+~      & \hspace*{-2.2cm}[11] Rappaport S., Levine A., Chiang E., \textbf{El Mellah I.}, Jenkins J., Kalomeni B., Kite E. S.,\\
+~      & \hspace*{-1.6cm} Kotson M., Nelson L., Rousseau-Nepton L., Tran K. \\ 
+~      & \hspace*{-1.55cm}\emph{Possible disintegrating short-period super-Mercury orbiting KIC12557548} - ApJ 2012\\ \\
+
+\newpage 
+
+\end{rubriquetableau}
+\end{minipage}
+}
+
+\noindent\makebox[\textwidth][c]{
+\begin{minipage}{1.0\textwidth}
+%&\vspace{-0,2cm} \hspace{-2,2cm} \activite{Proceedings}\\ \\
+\begin{rubriquetableau}[1.7cm]{Proceedings} \\
+
+~      & \hspace*{-2.2cm}[12] \textbf{El Mellah I.}, Sundqvist J. O. \& Keppens R.\\ 
+~      & \hspace*{-1.5cm}\emph{Wind-captured discs in Supergiant X-ray binaries} - IAU Vienna 2018\\ \\
+
+~      & \hspace*{-2.2cm}[13] F\"{u}rst F., Kretschmar P., Grinberg V., Pottschmidt Katja, Wilms J., K\"{u}hnel M.,\\
+~ 		&\hspace*{-1.6cm} \textbf{El Mellah I.}, Mart\'{i}nez-N\'{u}\~{n}ez S.\\ 
+~      & \hspace*{-1.5cm}\emph{Variability in High Mass X-ray Binaries} - XMM-Newton workshop 2018\\ \\
+
+~      & \hspace*{-2.2cm}[14] \textbf{El Mellah I.}, Sundqvist J. O. \& Keppens R.\\ 
+~      & \hspace*{-1.5cm}\emph{Clumpy wind accretion in Supergiant X-ray binaries} - SF2A 2017\\ \\
+
+%~      & \hspace*{-2.0cm}\href{http://adsabs.harvard.edu/abs/2017arXiv170709165E}{[10]} \textbf{El Mellah I.}\\ 
+%~      & \hspace*{-1.4cm}\emph{Wind accretion onto compact objects} (2017) - PhD manuscript\\ \\
+
+~      & \hspace*{-2.2cm}[15] \textbf{El Mellah I.} \& Casse F. \\ 
+~      & \hspace*{-1.5cm}\emph{Numerical simulations of Bondi-Hoyle accretion onto a compact object} - SF2A 2015\\ \\
+
+\end{rubriquetableau}
+\end{minipage}
+}
+
+\end{adjustwidth*}
+}
+%\begin{rubriquetableau}[1,3cm]{Conferences \& schools}
+%\\
+%
+%Sp 2016
+%	& \activite{} - ,  \\
+%~	
+%	& Talk \\ \\
+%
+%
+%Sp 2016
+%	& \activite{} - ,  \\
+%~	
+%	& Talk \\ \\
+%		
+%Sp 2016
+%	& \activite{} - ,  \\
+%~	
+%	& Talk \\ \\
+%	
+%Sp 2016
+%	& \activite{Super-Eddington accretion on compact objects} - Arbatax, IT \\
+%~	
+%	& Talk \\ \\
+%
+%My 2016
+%	& \activite{6$^{\text{th}}$ Les Houches school in Numerical Physics} - Les Houches, FR \\
+%~	
+%	& Poster \\ \\
+%
+%Dc 2015
+%	& \activite{28$^{\text{th}}$ Texas symposium on Relativistic Astrophysics} - Geneva, SW \\
+%~	
+%	& Poster \\ \\
+%	
+%Jn 2015
+%	& \activite{Journ\'ees de la Soci\'et\'e Fran\c caise d'Astronomie et d'Astrophysique} \\
+%~	
+%	&  Toulouse, FR - 20' talk \\ \\
+%		
+%Mr 2015
+%	& \activite{Ecole des Houches : Turbulence, magnetic fields and self organization}\\
+%~
+%	& \activite{in laboratory and astrophysical plasmas} - Les Houches, FR - 20' talk\\ \\
+%
+%Nv 2014
+%	& \activite{Magnetic fields from the Sun to black holes,}\\
+%~
+%	& \activite{in memory of Jean Heyvaerts} - Paris, FR - Poster\\ \\
+%	
+%Sp 2014
+%	& \activite{The many faces of compact stars, the newComp star school}\\
+%~
+%	& Barcelona, SP\\ \\
+%	
+%Jn 2014
+%	& \activite{Journ\'ees de la SF2A} - Paris, FR \\ \\
+%	
+%My 2013
+%	& \activite{International Cargese school on cosmic accelerators} - Cargese, FR\\ \\
+%		
+%\\
+%\end{rubriquetableau}
+
+%\begin{rubrique}{Selected skills}
+%~
+%
+%\textbf{Programming languages}\\
+%\hspace*{1cm}\textbf{Fortran}, C, C++, \textbf{Python}, Idl, Java, Perl, \textsc{xml}, \textbf{Csh}, Bash, \textbf{\textsc{html}}, \textbf{\textsc{css}}, JavaScript, \\
+%\hspace*{1cm}CoffeeScript, {\sc html5}\\ 
+%
+%\textbf{Codes \& softwares}\\
+%\hspace*{1cm}{\sc mpi}-{\sc amrvac}, Mathematica, VisIt, Paraview, Vampir, VampirTrace, Atom, Emacs, Pyke,\\
+%\hspace*{1cm}Inkscape, Gnuplot, DS9\\
+%
+%\textbf{Data analysis}\\
+%\hspace*{1cm}Extended Fourier and wavelet analysis, resampling and interpolation of time/space series\\
+%%\hspace*{1cm}internal linear combination\\ 
+%
+%\textbf{Languages}\\
+%\hspace*{1cm} French (native), English (fluent), Italian (B1)
+%
+%\end{rubrique}
+
+
+\end{document}

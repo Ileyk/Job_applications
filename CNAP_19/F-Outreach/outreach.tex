@@ -1,0 +1,222 @@
+%%%%%%%%%%%%%%%%%  Debut du fichier Latex  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,onecolumn]{article}
+%\usepackage[style=numeric,maxnames=1,uniquelist=false]{biblatex}
+%\usepackage[backend=bibtex,style=numeric,minnames=4,maxnames=4,firstinits=true,sorting=none]{biblatex} 
+\usepackage[backend=bibtex,bibstyle=phys,citestyle=authoryear,maxcitenames=1,minbibnames=3,maxbibnames=3,giveninits=true,natbib,doi=false,isbn=false]{biblatex} 
+%\usepackage[authordate,bibencoding=auto,strict,backend=biber,natbib]{biblatex}
+
+ %backend=biber is 'better'  
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+\renewbibmacro{in:}{} % to not have the "In:" to indicate the review
+\AtEveryBibitem{\clearfield{title}} % to remove the titles in the biblio
+% no page info
+\AtEveryBibitem{%
+  \ifentrytype{article}{%
+    \clearfield{pages}%
+  }{%
+  }%
+}
+% no language info
+\AtEveryBibitem{\clearlist{language}}
+% no language no page
+\AtEveryBibitem{%
+  \clearfield{volume}%
+  \clearfield{number}}
+% To avoid parenthesis if no year entry in bib file
+\renewbibmacro*{issue+date}{%
+  \ifboolexpr{not test {\iffieldundef{year}} or not test {\iffieldundef{issue}}}
+    {\printtext[parens]{%
+       \iffieldundef{issue}
+         {\usebibmacro{date}}
+         {\printfield{issue}%
+          \setunit*{\addspace}%
+          \usebibmacro{date}}}}
+    {}%
+  \newunit}
+
+
+\ExecuteBibliographyOptions{isbn=false,url=false,doi=false,eprint=false}
+
+%\bibliography{/Users/Ileyk/Documents/Bibtex/Hubble_fellowship_no_url} 
+\addbibresource{/Users/Ileyk/Documents/Bibtex/CNRS_19_fixed.bib}
+%%% Pour un texte en francais
+
+
+%%\usepackage[applemac]{inputenc}
+%\usepackage[francais]{babel}
+	         % encodage des lettres accentuees
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}          % encodage des lettres accentuees
+%\usepackage{graphicx}
+%%\usepackage{graphicx} \def\BIB{}
+\usepackage[paper=a4paper,left=2.1cm,right=2.1cm,top=3.2cm,bottom=3.2cm]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx,wrapfig,lipsum} 
+%\def\BIB{}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[pdftex]{hyperref}
+%\usepackage{natbib}
+\usepackage{url}
+\usepackage{perpage} %the perpage package
+\MakePerPage{footnote} %the perpage package command
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=blue     % can put red here to visualize the links
+}
+
+\usepackage{enumitem}
+\usepackage{amssymb}
+
+%\renewcommand{\refname}{}
+
+\usepackage{floatrow}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\usepackage{lmodern,textcomp}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Research summary}
+\lhead{El Mellah Ileyk}
+\rfoot{\thepage / \pageref{LastPage}}
+
+\DeclareUnicodeCharacter{00A0}{ }
+
+\usepackage{xspace}
+
+%%% Quelques raccourcis pour la mise en page
+\newcommand{\remarque}[1]{{\small \it #1}}
+\newcommand{\rubrique}{\bigskip \noindent $\bullet$ }
+\newcommand{\sgx}{SgXB\xspace}
+\newcommand{\sgxs}{SgXBs\xspace}
+\newcommand{\ulx}{ULX\xspace}
+\newcommand{\sfxt}{SFXT}
+\newcommand{\sg}{Sg\xspace}
+\newcommand{\co}{CO\xspace}
+\newcommand{\gw}{GW\xspace}
+\newcommand{\gws}{GWs\xspace}
+\newcommand{\grb}{GRB\xspace}
+\newcommand{\grbs}{GRBs\xspace}
+\newcommand{\eos}{EOS\xspace}
+\newcommand{\mhd}{MHD\xspace}
+\newcommand*{\hmxb}{HMXB\@\xspace}
+\newcommand*{\hmxbs}{HMXBs\@\xspace}
+\newcommand*{\lmxb}{LMXB\@\xspace}
+\newcommand*{\rlof}{RLOF\@\xspace}
+\newcommand*{\ns}{NS\@\xspace}
+\newcommand*{\nss}{NSs\@\xspace}
+\newcommand*{\bh}{BH\@\xspace}
+\newcommand*{\bhs}{BHs\@\xspace}
+\newcommand*{\eg}{e.g.\@\xspace}
+\newcommand*{\ie}{i.e.\@\xspace}
+\newcommand*{\aka}{a.k.a. \@\xspace}
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand{\mystar}{{\fontfamily{lmr}\selectfont$\star$}}
+\newcommand*{\msun}{$M_{\odot}$\@\xspace}
+\newcommand*{\mdotstar}{$\dot{M}_{\text{\mystar}}$\@\xspace}
+\newcommand*{\mdotacc}{$\dot{M}_{\text{acc}}$\@\xspace}
+\newcommand*{\ledd}{$L_{\text{Edd}}$\@\xspace}
+
+
+\newcommand{\ignore}[1]{}
+
+%\renewcommand*\rmdefault{iwona}
+
+%\pagenumbering{gobble}
+
+%\bibliographystyle{abbrvnat}
+%\setcitestyle{authoryear,open={((},close={))}}
+
+%\renewcommand{\thefootnote}{\roman{footnote}}
+
+% -------------------------------------------------
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\vspace*{-2.5cm}
+%\normalfont \tiny 
+%%\textsc{Paris Diderot} \\ [25pt] % Your university, school and/or department name(s)
+%\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+%\Large Speeding up the spinning top\\
+%\large How accretion sets the pace in High Mass X-ray Binaries  \\ % The assignment title
+%\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+\author{\tiny} % Your name
+\date{\tiny }%\normalsize\today} % Today's date or a custom date
+% -------------------------------------------------
+
+%\makeatletter
+%\def\@xfootnote[#1]{%
+%  \protected@xdef\@thefnmark{#1}%
+%  \@footnotemark\@footnotetext}
+%\makeatother
+
+%\usepackage[square,numbers,sort]{natbib}
+%\usepackage{har2nat} % "natbib" is loaded automatically
+
+%
+%\let\oldthebibliography\thebibliography
+%\renewcommand{\thebibliography}[1]{%
+%  \oldthebibliography{#1}
+%  \let\oldbibitem\bibitem
+%  \let\oldtextsc\textsc
+%  \def\oldbbland{et}
+%  \newcounter{authorcount}
+%  \def\bibitem[##1]##2{%
+%    \let\textsc\oldtextsc
+%    \let\bbland\oldbbland
+%    \oldbibitem[##1]{##2}%
+%    \let\textsc\mytextsc%
+%    \let\bbland\mybbland
+%    \setcounter{authorcount}{0}
+%  }
+%  \def\mybbland{\setcounter{authorcount}{0}\oldbbland}
+%  \def\dropetal##1.{ \bbletal}
+%  \def\mytextsc##1{%
+%    \oldtextsc{##1}%
+%    \stepcounter{authorcount}%
+%    \ifnum\value{authorcount}=2\relax%
+%      \expandafter\dropetal%
+%    \fi%
+%  }%
+%}
+
+
+\begin{document}
+
+%\bibpunct{[}{]}{;}{n}{,}{,}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%  PREMIERE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DANS CETTE PAGE, ON REMPLACE LES INDICATIONS ENTRE CROCHETS [...]
+%%% PAR LES INFORMATIONS DEMANDEES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\headrulewidth}{1pt}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{}
+\lhead{El Mellah Ileyk}
+\rfoot{\thepage / \pageref{LastPage}}
+
+\begin{center}
+\Large \textbf{DIFFUSION DES CONNAISSANCES}
+\end{center}
+\normalfont
+
+\indent En Novembre 2017, j'ai particip\'e \`a une \'emission radiophonique, la Faconde, sur la radio universitaire de l'Universit\'e Libre de Bruxelles. J'y ai discut\'e de la communication scientifique et promu sa composante sensible et esth\'etique, par opposition \`a la transmission m\'ecanique de r\'esultats scientifiques format\'es qui d\'esenchante et, in fine, suscite un d\'etachement et un relativisme g\'en\'eralis\'e au sein de la population.\\
+
+\indent Dans une perspective plus p\'edagogique, j'ai anim\'e un atelier sur la notion de potentiel en m\'ecanique \`a destination d'\'el\`eves de lyc\'ee en Octobre 2016, \`a l'occasion de la F\^ete de la Science. Pour ce faire, j'ai mis \`a profit des maquettes de potentiels de Roche que j'ai pu imprim\'ees en 3D gr\^ace \`a l'assistance technique de Hubert Halloin et Marco Agnan et \`a un financement DIM ACAV\footnote{Domaine d'Int\'er\^et Majeur en Astrophysique et Conditions d'Apparition de la Vie.}. En parall\`ele, j'ai produit une application int\'eractive en ligne qui permet d'appr\'ehender empiriquement la notion de potentiel lorsqu'elle est utilis\'ee conjointement avec la maquette suscit\'ee : la maquette sert \`a visualiser le potentiel en 3D pour un param\`etre donn\'e (le rapport de masse entre les deux corps), alors que l'application en ligne permet de modifier ce param\`etre \`a souhait et de visualiser les trajectoires associ\'ees.\\
+
+\indent Pendant ma th\`ese, j'ai aussi publi\'e une page personnelle \`a m\^eme de rendre compte de mes travaux au sein de la communaut\'e scientifique mais aussi auprès du grand public.
+
+\end{document}
+%%%%%%%%%%%%%%%%%  Fin du fichier Latex  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

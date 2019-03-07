@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: research_proposal.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 10421 items from 5000.
+Database file #1: research_proposal-blx.bib
+Database file #2: /Users/Ileyk/Work/Job_applications/CNAP_19/CNRS_19_fixed.bib
+Repeated entry---line 81 of file /Users/Ileyk/Work/Job_applications/CNAP_19/CNRS_19_fixed.bib
+ : @article{Crinquand2018
+ :                       ,
+I'm skipping whatever remains of this entry
+Biblatex version: 3.3
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 39 entries,
+            6256 wiz_defined-function locations,
+            1514 strings with 51283 characters,
+and the built_in function-call counts, 329229 in all, are:
+= -- 25427
+> -- 4564
+< -- 1008
++ -- 9724
+- -- 1932
+* -- 26202
+:= -- 37772
+add.period$ -- 0
+call.type$ -- 39
+change.case$ -- 519
+chr.to.int$ -- 52
+cite$ -- 76
+duplicate$ -- 36153
+empty$ -- 29234
+format.name$ -- 3601
+if$ -- 64131
+int.to.chr$ -- 0
+int.to.str$ -- 90
+missing$ -- 0
+newline$ -- 2183
+num.names$ -- 1738
+pop$ -- 14467
+preamble$ -- 1
+purify$ -- 921
+quote$ -- 0
+skip$ -- 6542
+stack$ -- 0
+substring$ -- 45706
+swap$ -- 7835
+text.length$ -- 1021
+text.prefix$ -- 38
+top$ -- 1
+type$ -- 1314
+warning$ -- 0
+while$ -- 4793
+width$ -- 0
+write$ -- 2145
+(There was 1 error message)

@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/* CSS Document */
+/* COUL orange /!\ NE CHANGER QUE : les ref couleurs et la partie faisant référence au couleurs dans les noms des images de fond */
+
+/* @group Sous menu n-1 & n-2 */
+
+div.leftcolumn .submenu{
+	background-color: #596f62;
+}
+	div.leftcolumn .submenu li a{
+			border-top:1px solid #687b6f;
+		}
+		/* Niveau N -2 */
+		div.leftcolumn .submenu li.select {
+			background-color :#687b6f;
+		}
+
+
+/* @end */
+
+/* @group Coeur de page */
+
+/* @group Titre */
+
+div.breadcrumbandtitle .title-section{
+	color: #596f62;
+}
+
+/* @end */
+
+/* @group Content
+ */
+div.contentcolumn .innertube{
+	background-image : url(../img/fd_appendice_content.gif);
+}
+
+div.contentcolumn .researchandaccess{ background-color:#596f62; }
+
+div.contentcolumn{
+	background-image : url(../img/page-top-background.gif);
+}
+
+div.content{
+	background-image:  url(../img/page-contentcolumn-appendix-vertgris.gif);
+}
+div.content-left a{
+	color: #596f62;
+}
+	div.content-left a.link-learnmore{
+		background-image: url(../img/page-fl-vertgris.gif);
+	}
+
+/* @group En savoir + */
+div.content-left h4.more-infos{
+	/* voir feuille de style couleur */
+	color: #596f62;
+	border-bottom: 1px solid #596f62;
+	margin-bottom:10px;
+}
+
+
+
+/* @end */
+
+
+/* @end */
+
+/* @group Focus */
+
+/* @group Même rubrique */
+
+div.content-focus .same-rub{
+	color:  #596f62;
+	background :#dde8e1 url(../img/content-focus-appendix.png) no-repeat right 20px;
+	border-top: 1px solid  #596f62;
+	border-bottom: 1px solid  #596f62;
+}
+	div.content-focus .same-rub .innertube{
+		background : url(../img/content-focus-title-same_rubrique-vertgris.gif) no-repeat 16px 15px;
+	}
+div.content-focus .same-rub .innertube li a{
+	color: #596f62;
+}
+
+/* @end */
+	
+
+/* @end */
+
+/* @end */
+

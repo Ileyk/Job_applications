@@ -1,0 +1,388 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{nty/global/}
+  \entry{Blondin1991}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BJM}{%
+         family={Blondin},
+         family_i={B\bibinitperiod},
+         given={John\bibnamedelima M.},
+         given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=SIR}{%
+         family={Stevens},
+         family_i={S\bibinitperiod},
+         given={Ian\bibnamedelima R.},
+         given_i={I\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=KTR}{%
+         family={Kallman},
+         family_i={K\bibinitperiod},
+         given={Timothy\bibnamedelima R.},
+         given_i={T\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+    }
+    \keyw{Accretion Disks,Black Holes (Astronomy),Gas Dynamics,Giant
+  Stars,Neutron Stars,Stellar Mass,Stellar Orbits,Stellar Winds,Two Dimensional
+  Models,X Ray Binaries}
+    \strng{namehash}{BJM+1}
+    \strng{fullhash}{BJMSIRKTR1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{1991}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    The tidal effects created by the presence of a compact companion are
+  expected to induce a stream of enhanced wind from the early-type primary star
+  in massive X-ray binary systems. In this paper, two-dimensional gasdynamical
+  simulations of such streams are presented. It is found that the wind
+  enhancement is a sensitive function of the binary separation, and develops
+  into a tidal stream as the primary approaches its critical surface. For
+  typical system parameters, the Coriolis force deflects the stream
+  sufficiently that it does not impact directly on the compact companion but
+  passes behind it. The density in the stream can reach values of 20-30 times
+  the ambient wind density, leading to strong attenuation of the X-ray flux
+  that passes through the tidal stream, providing a possible explanation of the
+  enhanced absorption events seen at later phases in the X-ray observations of
+  massive X-ray binary systems such as Vela X-1. In contrast to the
+  time-variable accretion wake, the tidal stream is relatively stationary,
+  producing absorption features that should remain fixed from orbit to orbit.
+  For systems with a strong tidal stream, the large asymmetry in the accreting
+  wind results in the accretion of angular momentum of constant sign, as
+  opposed to systems without streams, where the sign of the accreted angular
+  momentum can change.%
+    }
+    \field{issn}{0004-637X}
+    \field{pages}{684\bibrangedash 695}
+    \verb{url}
+    \verb http://adsabs.harvard.edu/abs/1991ApJ...371..684B http://adsabs.harva
+    \verb rd.edu/abs/1991ApJ...371..684B{\%}5Cnhttp://adsabs.harvard.edu/cgi-bi
+    \verb n/nph-data{\_}query?bibcode=1991ApJ...371..684B{\&}link{\_}type=ARTIC
+    \verb LE
+    \endverb
+    \field{volume}{371}
+    \verb{file}
+    \verb :Users/Ileyk/Library/Application Support/Mendeley Desktop/Downloaded/
+    \verb Blondin, Stevens, Kallman - 1991 - Enhanced winds and tidal streams i
+    \verb n massive X-ray binaries.pdf:pdf
+    \endverb
+    \field{journaltitle}{Astrophys. J.}
+    \field{year}{1991}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Bozzo2008}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BE}{%
+         family={Bozzo},
+         family_i={B\bibinitperiod},
+         given={E.},
+         given_i={E\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Falanga},
+         family_i={F\bibinitperiod},
+         given={M.},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Stella},
+         family_i={S\bibinitperiod},
+         given={L.},
+         given_i={L\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \list{publisher}{1}{%
+      {IOP Publishing}%
+    }
+    \strng{namehash}{BE+1}
+    \strng{fullhash}{BEFMSL1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2008}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{issn}{0004-637X}
+    \field{number}{2}
+    \field{pages}{1031\bibrangedash 1044}
+    \verb{url}
+    \verb http://iopscience.iop.org/article/10.1086/589990
+    \endverb
+    \field{volume}{683}
+    \verb{file}
+    \verb :Users/Ileyk/Library/Application Support/Mendeley Desktop/Downloaded/
+    \verb Bozzo, Falanga, Stella - 2008 - Are There Magnetars in High‚ÄêMass X‚
+    \verb ÄêRay Binaries The Case of Supergiant Fast X‚ÄêRay Transients.pdf:pdf
+    \endverb
+    \field{journaltitle}{Astrophys. J.}
+    \field{year}{2008}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Furst2018}{article}{}
+    \name{author}{8}{}{%
+      {{hash=FF}{%
+         family={F{\"{u}}rst},
+         family_i={F\bibinitperiod},
+         given={Felix},
+         given_i={F\bibinitperiod},
+      }}%
+      {{hash=KP}{%
+         family={Kretschmar},
+         family_i={K\bibinitperiod},
+         given={Peter},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=GV}{%
+         family={Grinberg},
+         family_i={G\bibinitperiod},
+         given={Victoria},
+         given_i={V\bibinitperiod},
+      }}%
+      {{hash=PK}{%
+         family={Pottschmidt},
+         family_i={P\bibinitperiod},
+         given={Katja},
+         given_i={K\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wilms},
+         family_i={W\bibinitperiod},
+         given={J{\"{o}}rn},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={K{\"{u}}hnel},
+         family_i={K\bibinitperiod},
+         given={Matthias},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=EI}{%
+         family={{El Mellah}},
+         family_i={E\bibinitperiod},
+         given={I.},
+         given_i={I\bibinitperiod},
+      }}%
+      {{hash=MNS}{%
+         family={Mart{\'{i}}nez-N{\'{u}}{\~{n}}ez},
+         family_i={M\bibinitperiod-N\bibinitperiod},
+         given={S.},
+         given_i={S\bibinitperiod},
+      }}%
+    }
+    \keyw{accretion,accretion
+  disks,binaries,magnetohydrodynamics,neutron,outflows,stars,winds,x-rays}
+    \strng{namehash}{FF+1}
+    \strng{fullhash}{FFKPGVPKWJKMEIMNS1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2018}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{number}{April 2016}
+    \verb{file}
+    \verb :Users/Ileyk/Library/Application Support/Mendeley Desktop/Downloaded/
+    \verb F{\"{u}}rst et al. - 2018 - Variability in High Mass X-ray Binaries.p
+    \verb df:pdf
+    \endverb
+    \field{journaltitle}{XMM-Newton workshop proceedings}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Ghosh1979}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GP}{%
+         family={Ghosh},
+         family_i={G\bibinitperiod},
+         given={P.},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=LFK}{%
+         family={Lamb},
+         family_i={L\bibinitperiod},
+         given={F.\bibnamedelima K.},
+         given_i={F\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+    }
+    \keyw{Angular Velocity,Kepler Laws,Magnetic
+  Stars,Magnetohydrodynamics,Neutron Stars,Numerical Analysis,Periodic
+  Variations,Spin Reduction,Stellar Luminosity,Stellar Magnetic Fields,Stellar
+  Mass Accretion,Stellar Rotation,Stellar Winds,Torque,X Ray Sources}
+    \strng{namehash}{GP+1}
+    \strng{fullhash}{GPLFK1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{1979}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    The solutions of the two-dimensional hydromagnetic equations are used to
+  calculate the torque on a magnetic neutron star accreting from a Keplerian
+  disk. It is found that the magnetic coupling between the star and the plasma
+  in the outer transition zone is appreciable; that as a result, the spin-up
+  torque on fast rotators is substantially less than that on slow rotators, and
+  that for sufficiently high stellar angular velocities or sufficiently low
+  mass accretion rates, the rotation of the star can be braked while accretion
+  continues. These results are applied to pulsating X-ray sources, revealing
+  that at high luminosities a star of given spin period rotating in the same
+  direction as the disk can experience either spin-up or spin-down, depending
+  on its luminosity. Also considered are the general problem of interpreting
+  period changes in pulsating X-ray sources, and the dipole magnetic moments of
+  nine pulsating X-ray sources are estimated by fitting the theoretical spin-up
+  equation to estimates of the average luminosity and spin-up rate of each
+  source.%
+    }
+    \field{issn}{0004-637X}
+    \field{pages}{296}
+    \verb{url}
+    \verb http://adsabs.harvard.edu/doi/10.1086/157498
+    \endverb
+    \field{volume}{234}
+    \verb{file}
+    \verb :Users/Ileyk/Library/Application Support/Mendeley Desktop/Downloaded/
+    \verb Ghosh, Lamb - 1979 - Accretion by rotating magnetic neutron stars. II
+    \verb I - Accretion torques and period changes in pulsating X-ray sources.p
+    \verb df:pdf
+    \endverb
+    \field{journaltitle}{Astrophys. J.}
+    \field{year}{1979}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Mohamed2011}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MS}{%
+         family={Mohamed},
+         family_i={M\bibinitperiod},
+         given={S},
+         given_i={S},
+      }}%
+      {{hash=PP}{%
+         family={Podsiadlowski},
+         family_i={P\bibinitperiod},
+         given={Ph},
+         given_i={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MS+1}
+    \strng{fullhash}{MSPP1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2011}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    We investigate mass transfer in binaries consisting of a mass-losing Mira
+  variable and an accreting compact companion. Although these systems are
+  generally assumed to interact via Bondi-Hoyle-Littleton (BHL) wind accretion,
+  this mechanism cannot adequately explain the observations of the nearest and
+  best-studied symbiotic binary, Mira. We propose a new mass-transfer mode, "
+  wind Roche-Lobe Overflow " (wind RLOF), which we demonstrate with 3-D
+  numerical hydrodynamic simulations. We show that this mode occurs when the
+  wind acceleration zone lies close to, or is a significant fraction of, the
+  Roche-lobe radius. The circumstellar outflows which result tend to be highly
+  aspherical and strongly focused towards the binary orbital plane. The
+  mass-transfer rates are also at least an order of magnitude greater than the
+  analogous BHL values. We discuss the implications of these results for
+  symbiotic binaries and other related systems, e.g. barium stars, bipolar
+  planetary nebulae, and Ia supernovae. The binary Mira consists of a cool,
+  pulsating AGB star (o Ceti) and a hot companion, generally assumed to be a
+  white dwarf. The stars appear to be strongly interacting with detections of,
+  for example, a hook-like extension from Mira A towards Mira B, dust clumps in
+  the direction of Mira B, and evidence for a bipolar outflow (Karovska et al.
+  1997; Karitskaya et al. 2005; Marengo et al. 2001; Josselin et al. 2000).
+  These observations pose a considerable challenge for standard mass-transfer
+  theories: given the large binary separation, a ‚âà 100 AU, the highly
+  aspherical outflow is inconsistent with BHL wind accretion and, because the
+  radius of Mira is at least an order of magni-tude smaller than its Roche-lobe
+  radius (R L), the observations cannot be explained by standard RLOF. We
+  propose a new mass-transfer mode, wind RLOF, which occurs when the wind
+  acceleration radius, i.e. the dust formation radius (R dust) in Miras, is
+  comparable to or larger than R L , i.e. when R dust /R L 1 (Mohamed {\&}
+  Podsiadlowski 2007; Mohamed 2010). In this case the wind material, lifted
+  from the AGB surface by pulsation-induced shocks, does not have sufficient
+  velocity to escape spherically from the primary's Roche lobe, i.e. v wind (R
+  L) {\textless} v esc (R L). Instead it flows onto the companion through the
+  inner Lagrangian point, L 1 , as demonstrated by model M1 (Figure 1). The
+  companion ac-cretes about half of the mass lost by the primary ‚Äì much more
+  than the typical BHL fraction of a few percent. The material which does
+  escape forms a highly equatorial outflow traversed by spiral shocks. Dust
+  grains condense out of the dense, cool gas be-hind these shocks, forming
+  dusty, spiral arms and arcs that trace dust-free cavities. As R dust /R L
+  decreases, the outflow geometry becomes more spherical though still
+  contain-ing strong asymmetries (see model M2 in Fig. 1). Dust shells are
+  ejected periodically 355%
+    }
+    \field{volume}{445}
+    \verb{file}
+    \verb :Users/Ileyk/Library/Application Support/Mendeley Desktop/Downloaded/
+    \verb Mohamed, Podsiadlowski - 2011 - Wind Roche‚ÄìLobe Overflow A New Mass
+    \verb  Transfer Mode for Mira-type Binaries.pdf:pdf
+    \endverb
+    \field{journaltitle}{ASP Conf. Ser.}
+    \field{year}{2011}
+  \endentry
+
+  \entry{Tauris2003a}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TTM}{%
+         family={Tauris},
+         family_i={T\bibinitperiod},
+         given={Thomas\bibnamedelima M.},
+         given_i={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=vdHE}{%
+         prefix={van\bibnamedelima den},
+         prefix_i={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+         family={Heuvel},
+         family_i={H\bibinitperiod},
+         given={Ed},
+         given_i={E\bibinitperiod},
+      }}%
+    }
+    \keyw{Evolution,Formation,Stellar X-Ray Sources}
+    \strng{namehash}{TTM+1}
+    \strng{fullhash}{TTMHEvd1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2006}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    In this chapter we review the formation and evolution of compact binaries
+  with neutron star and/or black hole components (i.e. LMXBs, HMXBs, binary
+  pulsars). After an introduction we discuss stellar evolution in binaries and
+  the processes involved in the mass-transfer phases of close binaries (RLO,
+  CE, ang.mom.loss) with radiative/convective hydrogen or helium donor stars.
+  We also describe the effects of accretion, asymmetric SN and systems merging
+  as a result of gravitational wave radiation.%
+    }
+    \field{isbn}{978-0-521-82659-4}
+    \field{issn}{0140-6736}
+    \field{pages}{623\bibrangedash 665}
+    \verb{url}
+    \verb http://arxiv.org/abs/astro-ph/0303456
+    \endverb
+    \field{volume}{39}
+    \field{journaltitle}{Compact stellar X-ray sources}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{astro-ph}
+    \field{year}{2006}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+\endsortlist
+\endinput

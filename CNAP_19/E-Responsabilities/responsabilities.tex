@@ -1,0 +1,228 @@
+%%%%%%%%%%%%%%%%%  Debut du fichier Latex  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,onecolumn]{article}
+%\usepackage[style=numeric,maxnames=1,uniquelist=false]{biblatex}
+%\usepackage[backend=bibtex,style=numeric,minnames=4,maxnames=4,firstinits=true,sorting=none]{biblatex} 
+\usepackage[backend=bibtex,bibstyle=phys,citestyle=authoryear,maxcitenames=1,minbibnames=3,maxbibnames=3,giveninits=true,natbib,doi=false,isbn=false]{biblatex} 
+%\usepackage[authordate,bibencoding=auto,strict,backend=biber,natbib]{biblatex}
+
+ %backend=biber is 'better'  
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+\renewbibmacro{in:}{} % to not have the "In:" to indicate the review
+\AtEveryBibitem{\clearfield{title}} % to remove the titles in the biblio
+% no page info
+\AtEveryBibitem{%
+  \ifentrytype{article}{%
+    \clearfield{pages}%
+  }{%
+  }%
+}
+% no language info
+\AtEveryBibitem{\clearlist{language}}
+% no language no page
+\AtEveryBibitem{%
+  \clearfield{volume}%
+  \clearfield{number}}
+% To avoid parenthesis if no year entry in bib file
+\renewbibmacro*{issue+date}{%
+  \ifboolexpr{not test {\iffieldundef{year}} or not test {\iffieldundef{issue}}}
+    {\printtext[parens]{%
+       \iffieldundef{issue}
+         {\usebibmacro{date}}
+         {\printfield{issue}%
+          \setunit*{\addspace}%
+          \usebibmacro{date}}}}
+    {}%
+  \newunit}
+
+
+\ExecuteBibliographyOptions{isbn=false,url=false,doi=false,eprint=false}
+
+%\bibliography{/Users/Ileyk/Documents/Bibtex/Hubble_fellowship_no_url} 
+\addbibresource{/Users/Ileyk/Documents/Bibtex/CNRS_19_fixed.bib}
+%%% Pour un texte en francais
+
+
+%%\usepackage[applemac]{inputenc}
+%\usepackage[francais]{babel}
+	         % encodage des lettres accentuees
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}          % encodage des lettres accentuees
+%\usepackage{graphicx}
+%%\usepackage{graphicx} \def\BIB{}
+\usepackage[paper=a4paper,left=2.1cm,right=2.1cm,top=3.2cm,bottom=3.2cm]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx,wrapfig,lipsum} 
+%\def\BIB{}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[pdftex]{hyperref}
+%\usepackage{natbib}
+\usepackage{url}
+\usepackage{perpage} %the perpage package
+\MakePerPage{footnote} %the perpage package command
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=blue     % can put red here to visualize the links
+}
+
+\usepackage{enumitem}
+\usepackage{amssymb}
+
+%\renewcommand{\refname}{}
+
+\usepackage{floatrow}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\usepackage{lmodern,textcomp}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Research summary}
+\lhead{El Mellah Ileyk}
+\rfoot{\thepage / \pageref{LastPage}}
+
+\DeclareUnicodeCharacter{00A0}{ }
+
+\usepackage{xspace}
+
+%%% Quelques raccourcis pour la mise en page
+\newcommand{\remarque}[1]{{\small \it #1}}
+\newcommand{\rubrique}{\bigskip \noindent $\bullet$ }
+\newcommand{\sgx}{SgXB\xspace}
+\newcommand{\sgxs}{SgXBs\xspace}
+\newcommand{\ulx}{ULX\xspace}
+\newcommand{\sfxt}{SFXT}
+\newcommand{\sg}{Sg\xspace}
+\newcommand{\co}{CO\xspace}
+\newcommand{\gw}{GW\xspace}
+\newcommand{\gws}{GWs\xspace}
+\newcommand{\grb}{GRB\xspace}
+\newcommand{\grbs}{GRBs\xspace}
+\newcommand{\eos}{EOS\xspace}
+\newcommand{\mhd}{MHD\xspace}
+\newcommand*{\hmxb}{HMXB\@\xspace}
+\newcommand*{\hmxbs}{HMXBs\@\xspace}
+\newcommand*{\lmxb}{LMXB\@\xspace}
+\newcommand*{\rlof}{RLOF\@\xspace}
+\newcommand*{\ns}{NS\@\xspace}
+\newcommand*{\nss}{NSs\@\xspace}
+\newcommand*{\bh}{BH\@\xspace}
+\newcommand*{\bhs}{BHs\@\xspace}
+\newcommand*{\eg}{e.g.\@\xspace}
+\newcommand*{\ie}{i.e.\@\xspace}
+\newcommand*{\aka}{a.k.a. \@\xspace}
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand{\mystar}{{\fontfamily{lmr}\selectfont$\star$}}
+\newcommand*{\msun}{$M_{\odot}$\@\xspace}
+\newcommand*{\mdotstar}{$\dot{M}_{\text{\mystar}}$\@\xspace}
+\newcommand*{\mdotacc}{$\dot{M}_{\text{acc}}$\@\xspace}
+\newcommand*{\ledd}{$L_{\text{Edd}}$\@\xspace}
+
+
+\newcommand{\ignore}[1]{}
+
+%\renewcommand*\rmdefault{iwona}
+
+%\pagenumbering{gobble}
+
+%\bibliographystyle{abbrvnat}
+%\setcitestyle{authoryear,open={((},close={))}}
+
+%\renewcommand{\thefootnote}{\roman{footnote}}
+
+% -------------------------------------------------
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\vspace*{-2.5cm}
+%\normalfont \tiny 
+%%\textsc{Paris Diderot} \\ [25pt] % Your university, school and/or department name(s)
+%\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+%\Large Speeding up the spinning top\\
+%\large How accretion sets the pace in High Mass X-ray Binaries  \\ % The assignment title
+%\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+\author{\tiny} % Your name
+\date{\tiny }%\normalsize\today} % Today's date or a custom date
+% -------------------------------------------------
+
+%\makeatletter
+%\def\@xfootnote[#1]{%
+%  \protected@xdef\@thefnmark{#1}%
+%  \@footnotemark\@footnotetext}
+%\makeatother
+
+%\usepackage[square,numbers,sort]{natbib}
+%\usepackage{har2nat} % "natbib" is loaded automatically
+
+%
+%\let\oldthebibliography\thebibliography
+%\renewcommand{\thebibliography}[1]{%
+%  \oldthebibliography{#1}
+%  \let\oldbibitem\bibitem
+%  \let\oldtextsc\textsc
+%  \def\oldbbland{et}
+%  \newcounter{authorcount}
+%  \def\bibitem[##1]##2{%
+%    \let\textsc\oldtextsc
+%    \let\bbland\oldbbland
+%    \oldbibitem[##1]{##2}%
+%    \let\textsc\mytextsc%
+%    \let\bbland\mybbland
+%    \setcounter{authorcount}{0}
+%  }
+%  \def\mybbland{\setcounter{authorcount}{0}\oldbbland}
+%  \def\dropetal##1.{ \bbletal}
+%  \def\mytextsc##1{%
+%    \oldtextsc{##1}%
+%    \stepcounter{authorcount}%
+%    \ifnum\value{authorcount}=2\relax%
+%      \expandafter\dropetal%
+%    \fi%
+%  }%
+%}
+
+
+\begin{document}
+
+%\bibpunct{[}{]}{;}{n}{,}{,}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%  PREMIERE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DANS CETTE PAGE, ON REMPLACE LES INDICATIONS ENTRE CROCHETS [...]
+%%% PAR LES INFORMATIONS DEMANDEES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\headrulewidth}{1pt}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{}
+\lhead{El Mellah Ileyk}
+\rfoot{\thepage / \pageref{LastPage}}
+
+\begin{center}
+\Large \textbf{RESPONSABILIT\'{E}S}
+\end{center}
+\normalfont
+
+L'an dernier, j'ai co-encadré avec Rony Keppens et Jon Sundqvist la th\`ese de M2 de Nicolas Moens sur les vents d'\'etoiles massives. Avec mon aide, il a implémenté avec succès des mod\`eles physiques de lancement dit "radiatif" de ces vents dans le code de r\'esolution sur grille des syst\`emes d'\'equations hyperboliques, \texttt{MPI-AMRVAC}. De son propre chef, il s'est ensuite attelé à la création d'un nouveau module de transport radiatif basé sur un algorithme de flux-limité diffusif qui permet maintenant \`a \texttt{MPI-AMRVAC} de traiter le refroidissement dans les environnements optiquement \'epais. Suite à cette expérience fructueuse, Nicolas a commencé en Octobre 2018 une thèse sous la direction conjointe de Jon Sundqvist et moi-même au département de Physique et d'Astronomie de KU Leuven.\\
+
+Aux côtés de Leen Decin (KU Leuven), Stanley Owocki (University of Delaware), Alex de Koter (University of Amsterdam) et Hugues Sana (KU Leuven), je suis membre du comité de suivi de thèse de Luka Poniatowski (encadré par Jon Sundqvist). J'ai aussi été rapporteur en Juin 2018 pour les thèses de Florian Driessen (\textit{First empirical constraints on the low H$\alpha$ mass-loss rates of magnetic O-stars}) et Prem Kumar Bulusu (\textit{XMM-Newton observations of the highly eccentric binary system HD 93129A towards its periastron passage}).\\
+
+A la suite de sollicitations, j'ai référé des articles pour \textit{The Astrophysical Journal} et \textit{Astronomy \& Astrophysics}. Une désignation comme expert compétent par un$\cdot$e membre de la communauté m'a amené à évaluer une demande de temps de calcul sur le supercalculateur britannique DiRAC.\\
+
+\indent Afin de tisser des liens forts entre jeunes chercheurs, la Soci\'et\'e Fran\c caise de Physique a initi\'e en 2013, sous l'\'egide de Samuel Guibal (MPQ, Paris 7), un \'ev\`enement annuel intitul\'e les Rencontres Jeunes Physiciens (RJP). En deuxi\`eme ann\'ee de th\`ese, je me suis engag\'e au sein du comit\'e d'organisation des RJP 2015 en tant que community manager. Mon r\^ole \'etait d'assurer aux RJP une visibilit\'e m\'ediatique maximum, tant sur les r\'eseaux sociaux qu'\`a travers sa principale vitrine, son site Web, dont j'ai adapt\'e la mise en page et le contenu. Pour garantir la p\'erennit\'e des RJP, j'ai aussi proc\'ed\'e, avec l'aide du personnel du Conservatoire National des Arts et M\'etiers o\`u se d\'eroulait l'\'ev\`enement, \`a la captation audio et vid\'eo des interventions orales qui rythmaient la journ\'ee, ainsi qu'\`a leur traitement puis \`a leur diffusion. L'\'ev\`enement, qui a rassembl\'e quelque 200 doctorants et post-doctorants d'Ile-de-France, a re\c cu le soutien de nombreuses universit\'es, \'ecoles doctorales et institutions. Gr\^ace \`a elles, nous avons pu rassembler pr\`es de 15k€, qui nous ont permis de faire de cette journ\'ee un temps fort de la vie sociale des jeunes physiciens et physiciennes d'Ile-de-France. En tant que membre du comit\'e d'organisation, j'ai aussi particip\'e \`a la s\'election des 16 interventions orales parmi la quarantaine de r\'esum\'es qui nous avaient \'et\'e soumis.\\
+
+\indent Dans mon laboratoire de th\`ese, l'APC, j'ai anim\'e des Pr\'esentations hebdomadaires des Doctorants (ou \textit{PhD}) d\'evolues \`a des aspects m\'ethodologiques de l'activit\'e scientifique telles que les \'editeurs de codes, la veille bibliographique ou encore la gestion de versions avec des outils comme Git. Afin de s'assurer que chaque doctorant soit op\'erationnel \`a l'issue de ces pr\'esentations, nous organisions des ateliers d'une dur\'ee de 3h o\`u chacun ramenait sa propre machine de travail sur laquelle avaient \'et\'e install\'es au pr\'ealable les outils n\'ecessaires \`a la session. Moins formels et plus sp\'ecialis\'es que les ateliers de formation g\'en\'eriques propos\'es \`a tous les doctorants de l'universit\'e, ces sessions permettaient de partager rapidement et efficacement des m\'ethodes de travail qui apportent des gains de temps consid\'erables.\\
+
+
+
+\end{document}
+%%%%%%%%%%%%%%%%%  Fin du fichier Latex  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

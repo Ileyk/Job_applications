@@ -1,0 +1,786 @@
+/*
+ *  Copyright 2012 Anyware Services
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+
+/* begin Page */
+/* Created by Artisteer v3.0.0.41778 */
+
+.hidden-L
+{
+	position: absolute;
+	left: -20000px;
+	top: -20000px;
+}
+
+/* search highlight */
+span.highlight {
+	color: #000000;
+	background-color: #fcfc00;
+}
+
+/* --------- */
+div.page-wai-links
+{
+	position: absolute;
+
+	width: 100%;
+
+	height: 0;
+	text-align: center;
+	z-index: 50000;
+}
+
+div.page-wai-links a,
+div.page-wai-links a:focus,
+div.page-wai-links a:active,
+div.page-wai-links a:visited,
+div.page-wai-links a:hover
+{
+	position: relative;
+	left: -20000px;
+	top: -20000px;
+	text-decoration: underline;
+	background-color: #FFFFFF;
+	color: #000000;
+	padding: 5px;
+}
+div.page-wai-links a:active,
+div.page-wai-links a:focus,
+div.page-wai-links a:hover
+{
+	left: 0;
+	top: 0;
+}
+
+/* --------- */
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li
+{
+    margin: 0;
+    padding: 0;
+}
+
+.ametys-cms-content p
+{
+    margin: 12px 0;
+}
+
+
+/* ----
+   LINK
+   ---- */
+.ametys-cms-content a.invisible,
+.ametys-cms-content a.invisible:visited
+{
+/* 	color: #0F1419 AMETYS ("content.text.para.color"); */
+	text-decoration: none;
+}
+
+.ametys-cms-content a.invisible:hover,
+.ametys-cms-content a.invisible:active,
+.ametys-cms-content a.invisible:focus
+{
+  text-decoration: underline;
+/*   color: #AD5FB4 AMETYS ("content.text.link.hovered.color"); */
+}
+
+.ametys-cms-content a.download,
+.ametys-cms-content a.download:hover,
+.ametys-cms-content a.download:link,
+.ametys-cms-content a.download:visited,
+.ametys-cms-content a.download:active
+{
+	padding-left: 15px;
+	background-image: url('images/link/download.gif');
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
+.ametys-cms-content a.pdf-2-flash,
+.ametys-cms-content a.pdf-2-flash:visited,
+.ametys-cms-content a.pdf-2-flash:hover,
+.ametys-cms-content a.pdf-2-flash:link,
+.ametys-cms-content a.pdf-2-flash:active
+{
+	padding-left: 15px;
+	background-image: url('images/link/magnifier.png');
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
+.ametys-cms-content a.know-more,
+.ametys-cms-content a.know-more:visited,
+.ametys-cms-content a.know-more:hover,
+.ametys-cms-content a.know-more:link,
+.ametys-cms-content a.know-more:active
+{
+	padding-bottom: 3px;
+	padding-top: 2px;
+	padding-left: 3px;
+	padding-right: 18px;
+	margin-left: 4px; 
+	margin-right: 4px;
+	background-image: url('images/link/knowmore.png');
+	background-position: right;
+	background-repeat: no-repeat;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #95499C;
+}
+.ametys-cms-content a.know-more:hover,
+.ametys-cms-content a.know-more:active
+{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #AD5FB4;
+}
+
+.ametys-cms-content a.external,
+.ametys-cms-content a.external:visited,
+.ametys-cms-content a.external:hover,
+.ametys-cms-content a.external:link,
+.ametys-cms-content a.external:active,
+.module-box a.external
+{
+	padding-right: 18px;
+	background-image: url('images/external.gif');
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.ametys-cms-content a.mailto,
+.ametys-cms-content a.mailto:visited,
+.ametys-cms-content a.mailto:hover,
+.ametys-cms-content a.mailto:link,
+.ametys-cms-content a.mailto:active,
+.ametys-cms-content a.comment-sendmail,
+.ametys-cms-content a.comment-sendmail:visited,
+.ametys-cms-content a.comment-sendmail:hover,
+.ametys-cms-content a.comment-sendmail:link,
+.ametys-cms-content a.comment-sendmail:active
+{
+	padding-left: 20px;
+	background-image: url('images/link/mailto.png');
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
+.ametys-cms-content a.broken,
+.ametys-cms-content a.broken:hover,
+.ametys-cms-content a.broken:link,
+.ametys-cms-content a.broken:visited,
+.ametys-cms-content a.broken:active {
+	color: #ffffff !important;
+	background-color: #ff0000 !important;
+}
+
+ul
+{
+  list-style-type: none;
+}
+
+ol
+{
+  list-style-position: inside;
+}
+
+html 
+{
+    height:100%;
+}
+
+body
+{
+  padding: 0; 
+  margin:0;
+  height:100%;
+  min-height:100%;
+  min-width: 1000px;
+}
+
+.cleared
+{
+  display:block;
+  clear: both;
+  float: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 0;
+  height:0;
+  overflow:hidden;
+}
+
+.reset-box
+{
+  overflow:hidden;
+  display:table; 
+}
+
+form
+{
+  padding: 0;
+  margin: 0;
+}
+
+table.position
+{
+  position: relative;
+  width: 100%;
+  table-layout: fixed;
+}
+
+/* ----
+   LINK
+   ---- */
+.ametys-cms-content a.download,
+.ametys-cms-content a.download:hover,
+.ametys-cms-content a.download:link,
+.ametys-cms-content a.download:visited,
+.ametys-cms-content a.download:active
+{
+	background-image: url('../img/link/download.gif');
+}
+
+.ametys-cms-content a.pdf-2-flash,
+.ametys-cms-content a.pdf-2-flash:hover,
+.ametys-cms-content a.pdf-2-flash:link,
+.ametys-cms-content a.pdf-2-flash:visited,
+.ametys-cms-content a.pdf-2-flash:active
+{
+	background-image: url('../img/link/magnifier.png');
+}
+
+.ametys-cms-content a.know-more,
+.ametys-cms-content a.know-more:hover,
+.ametys-cms-content a.know-more:link,
+.ametys-cms-content a.know-more:visited,
+.ametys-cms-content a.know-more:active
+{
+	background-image: url('../img/link/knowmore.png');
+}
+
+.ametys-cms-content a.external,
+.ametys-cms-content a.external:hover,
+.ametys-cms-content a.external:link,
+.ametys-cms-content a.external:visited,
+.ametys-cms-content a.external:active,
+.module-box a.external
+{
+	background-image: url('../img/external.gif');
+}
+
+.ametys-cms-content a.mailto,
+.ametys-cms-content a.mailto:hover,
+.ametys-cms-content a.mailto:link,
+.ametys-cms-content a.mailto:visited,
+.ametys-cms-content a.mailto:active,
+.ametys-cms-content a.comment-sendmail,
+.ametys-cms-content a.comment-sendmail:hover,
+.ametys-cms-content a.comment-sendmail:link,
+.ametys-cms-content a.comment-sendmail:visited,
+.ametys-cms-content a.comment-sendmail:active
+{
+	background-image: url('../img/link/mailto.png');
+}
+
+.ametys-cms-content dfn a:link,
+.ametys-cms-content dfn a:visited,
+.ametys-cms-content dfn a:hover,
+.ametys-cms-content dfn a:active,
+.ametys-cms-content dfn a:focus
+{
+	text-decoration: none;
+	border-style: dashed;
+	border-width: 1px;
+	border-color: #0F1419 ; 
+	color: #0F1419  ;
+}
+
+/* -----
+   TABLE
+   ----- */
+.ametys-cms-content table
+{
+  border-collapse: collapse;
+  margin: 1px;
+}
+.ametys-cms-content table caption
+{
+	margin-bottom: 7px;
+}
+.ametys-cms-content table tr td
+{
+  padding: 2px;
+  vertical-align: top;
+  text-align: left;
+}
+.ametys-cms-content table tr th
+{
+  text-align: center;
+  vertical-align: middle;
+  padding: 7px;
+}
+.ametys-cms-content table tr th p,
+.ametys-cms-content table tr td p
+{
+	margin: 0;
+}
+.ametys-cms-content table.floatright 
+{
+	margin-left: 7px;
+}
+.ametys-cms-content table.floatleft 
+{
+	margin-right: 7px;
+}
+/* SIMPLE */
+.ametys-cms-content table.simple,
+.ametys-cms-content table.simple > tbody > tr > th,
+.ametys-cms-content table.simple > tbody > tr > td
+{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #95499C;
+}
+
+.ametys-cms-content table.simple > tbody > tr > th{
+    text-transform:uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    background-color:#947b5e;
+    text-align:left;
+    border:1px solid #e8e6e6;
+}
+
+.ametys-cms-content table.simple > tbody > tr > th p,
+.ametys-cms-content table.simple > tbody > tr > td p{
+	font-size:1.3em;
+}
+
+.ametys-cms-content table.simple > tbody > tr > th p{
+	color:#ffffff;
+}
+
+
+.ametys-cms-content table.simple > tbody > tr > td{
+    color: #242323;
+    border:1px solid #e8e6e6;
+    vertical-align:middle;
+}
+
+.ametys-cms-content table.simple > tbody > tr.even{
+    background-color:#fafafa;
+}
+
+.ametys-cms-content form table tbody tr.even{
+	background-color:transparent;
+}
+
+/* INVISIBLE */
+.ametys-cms-content table.invisible,
+.ametys-cms-content table.invisible > tbody > tr > th,
+.ametys-cms-content table.invisible > tbody > tr > td 
+{
+	border: 0 none transparent;	
+}
+/* DATALIGHT */
+.ametys-cms-content table.datalight {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #95499C;
+}
+.ametys-cms-content table.datalight > tbody > tr > th {
+	font-weight: bold;
+	text-align: center;
+}
+
+/* end Page */
+
+
+/* begin MenuSubItem */
+
+.ui-corner-all { 
+	border-radius: 0; 
+}
+.ui-widget-content {
+	border: 1px solid #FFFFFF;
+	padding: 0;
+}
+.ui-widget-content .ui-menu-item a {
+  	background-repeat: repeat-x;
+  	background-position: 0 0;
+	font-weight: normal;
+    padding: 0 2px;
+    line-height: 32px;
+}
+.ui-widget-content .ui-menu-item a.ui-state-hover
+{
+  	background-position: 0 -32px;
+    color: #FFFFFF;
+    border-style: none;
+    margin: 0;
+}
+
+
+.tagcloud .size0 input,
+.tagcloud .size1 input,
+.tagcloud .size2 input,
+.tagcloud .size3 input,
+.tagcloud .size4 input,
+.tagcloud .size5 input 
+{
+	color: #364759;
+}
+
+/* end Box, BlockContent */
+
+
+a img
+{
+  border: 0;
+}
+
+.ametys-cms-content span.invisible img
+{
+	border-style: none;
+	padding: 0;
+}
+
+.ametys-cms-content span.frame img 
+{
+	background-color: #ffffff ;
+	padding: 3px;
+	border-color: #d4d4d4;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.ametys-cms-content span.largeframe img 
+{
+	background-color: #ffffff ;
+	padding: 8px;	
+	border-color: #d4d4d4;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.ametys-cms-content .floatleft 
+{
+	float: left;
+	margin-left: 0;
+	margin-right:15px;
+}
+
+.ametys-cms-content .floatright 
+{
+	float: right;
+	margin-right: 0;
+	margin-left:15px;
+}
+
+pre
+{
+  overflow: auto;
+  padding: 0.1em;
+}
+
+/* ---------
+   PARAGRAPH 
+   --------- */
+
+.ametys-cms-content p.introduction
+{
+	font-size: 1.3em ; 
+}
+
+.ametys-cms-content p.secondary
+{ 
+	font-style : italic ;
+/* 	font-size : 0.9em ; */
+	padding-left: 3.25em;
+  color: #0F1419 ;
+}
+
+.ametys-cms-content p.sub-title
+{
+/* 	font-size: 1.1em ; */
+	font-weight: bold ;
+	letter-spacing: 0.085em;
+}
+
+.ametys-cms-content p.narrow-spaced
+ 
+{
+	line-height : 110%;
+	margin-top : 0;
+	margin-bottom : 0;
+}
+
+
+span.content-subtitle
+{
+	font-size: 0.7em;
+	font-weight: bold;
+	display: block;
+}
+
+.ametys-cms-content ul.custom li
+{
+  padding: 0 0 0 10px;
+}
+
+.ametys-cms-content ul.custom ol>li
+{
+  background: none;
+  padding-left: 0;
+  /* overrides overflow for "ul li" and sets the default value */
+  overflow: visible;
+}
+
+.ametys-cms-content ul.custom>li
+{
+  background-repeat: no-repeat;
+  padding-left: 10px;
+  /* makes "ul li" not to align behind the image if they are in the same line */
+  overflow-x: visible;
+  overflow-y: hidden;
+  background-image: url('../img/postbullets.png');
+}
+
+.ametys-cms-content ul li
+{
+	padding: 0;
+	background-image: none;
+}
+
+.ametys-cms-content ul.square
+{
+	list-style-type : square;
+	list-style-image : none;	
+}
+
+.ametys-cms-content ol,
+.ametys-cms-content ol.arabic
+{
+	list-style-type: decimal;
+	list-style-image : none;	
+}
+
+.ametys-cms-content ol.lowerroman
+{
+	list-style-type: lower-roman;
+	list-style-image : none;	
+}
+
+.ametys-cms-content ol.upperroman
+{
+	list-style-type: upper-roman;
+	list-style-image : none;	
+}
+
+.ametys-cms-content ol.loweralpha
+{
+	list-style-type: lower-alpha;
+	list-style-image : none;	
+}
+
+.ametys-cms-content ol.upperalpha
+{
+	list-style-type: upper-alpha;
+	list-style-image : none;	
+}
+
+/* end PostBullets */
+
+/* begin PostQuote */
+.ametys-cms-content p.important,
+.ametys-cms-content p.important a,
+.ametys-cms-content p.important a:link,
+.ametys-cms-content p.important a:visited,
+.ametys-cms-content p.important a:hover
+{
+  font-weight: bold;
+  text-align: left;
+}
+
+.ametys-cms-content p.important
+{
+    clear: both;
+    margin: 10px 0;
+    overflow: auto;
+    padding: 12px 20px;
+    border:1px solid #D4D4D4;
+}
+
+div.col-content div.ui-tabs ul.ui-tabs-nav
+{
+	border-bottom: 3px solid solid;
+}
+
+div.col-content div.brief
+{
+    background-color: #F7F7F8;
+    border-radius: 15px 15px 15px 15px;
+}
+
+div.col-content .ui-tabs .ui-tabs-nav li.ui-tabs-selected a
+{
+	background-color: solid;
+    background-image: -moz-linear-gradient(center bottom , solid 0, #F7F7F8 100%);
+    border: 1px solid solid;
+    color: #204256;
+}/* end PostQuote */
+
+
+/* end LayoutCell, content */
+
+.ametys-cms-content.view-abstract .content-date
+{
+	color: #F49F0E;
+	font-size: 1em;
+	float: none;
+	margin: 0;
+}
+
+.ametys-cms-content.view-abstract > .content-title {
+	color: #333;
+	font-size: 1.3em;
+	text-decoration: none;
+	margin: 0;
+	text-transform: none;
+}
+
+.ametys-cms-content.view-abstract .content-title {
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.4em;
+	line-height: 1.3em;
+}
+
+.ametys-cms-content.view-abstract .content-title:hover {
+	text-decoration: underline;
+}
+
+.ametys-cms-content.view-abstract .content-title a {
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.ametys-cms-content.view-abstract .content-title a:hover {
+	text-decoration: underline;
+}
+
+.ametys-cms-content.view-abstract .content-abstract {
+	margin: 0;
+}
+
+.ametys-cms-content.view-abstract.manifestation .content-abstract{
+	margin: 0 0 10px 0;
+	font-size: 0.91em;
+}
+
+.ametys-cms-content.view-main.manifestation div.manifestation-date{
+    font-size: small;
+    font-weight: bold;
+}
+
+.ametys-cms-content.view-main.manifestation div.manifestation-location{
+    margin-bottom: 20px;
+}
+
+.ametys-cms-content.view-link p.content-link {
+	margin: 0;
+}
+
+.content-illustration {
+	margin:0;
+}
+.content-illustration img{
+	float: left;
+	margin: 4px 23px 4px 0px;
+}
+
+.noborder {
+	border: none!important;
+}
+.tools .sharethis-wrapper {
+	display:inline-block;
+}
+
+.tools .print {
+	display: inline-block;
+	margin: 3px;
+}
+
+.tools-odf {
+	margin-top:3px;
+	margin-right: 75px;
+	float:right;
+}
+
+.tools-odf,
+.tools-odf div.sharethis,
+.tools-odf .pdf,
+.tools-odf .print {
+	display:inline-block;
+}
+
+.tools-odf div.sharethis {
+	vertical-align: top;
+}
+
+.tools-odf .pdf,
+.tools-odf .print {
+	margin-right: 3px;
+	margin-left: 3px;
+	z-index: 1;
+}
+
+.program-title h2,
+.program-title .program-logos {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.program-title .program-logos img {
+	max-width: 90px;
+	max-height: 45px;
+	padding-right: 5px;	
+	padding-top: 5px;
+}
+
+.program-title .program-logos img.medecine {
+	max-width: none;
+	max-height: none;
+	padding-right: 5px;
+	width: 150px;	
+}
+
+.program-title .translations {
+	float: right;
+}
+
+.partner-school a img,
+.partner-school a span {
+	vertical-align:middle;
+}
+
+.partner-school a img {
+	padding-right: 5px;
+}

@@ -1,0 +1,278 @@
+%%%%%%%%%%%%%%%%%  Debut du fichier Latex  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,onecolumn]{article}
+%\usepackage[style=numeric,maxnames=1,uniquelist=false]{biblatex}
+%\usepackage[backend=bibtex,style=numeric,minnames=4,maxnames=4,firstinits=true,sorting=none]{biblatex} 
+\usepackage[backend=bibtex,bibstyle=phys,citestyle=authoryear,maxcitenames=1,minbibnames=3,maxbibnames=3,giveninits=true,natbib,doi=false,isbn=false]{biblatex} 
+%\usepackage[authordate,bibencoding=auto,strict,backend=biber,natbib]{biblatex}
+
+ %backend=biber is 'better'  
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+\renewbibmacro{in:}{} % to not have the "In:" to indicate the review
+\AtEveryBibitem{\clearfield{title}} % to remove the titles in the biblio
+% no page info
+\AtEveryBibitem{%
+  \ifentrytype{article}{%
+    \clearfield{pages}%
+  }{%
+  }%
+}
+% no language info
+\AtEveryBibitem{\clearlist{language}}
+% no language no page
+\AtEveryBibitem{%
+  \clearfield{volume}%
+  \clearfield{number}}
+% To avoid parenthesis if no year entry in bib file
+\renewbibmacro*{issue+date}{%
+  \ifboolexpr{not test {\iffieldundef{year}} or not test {\iffieldundef{issue}}}
+    {\printtext[parens]{%
+       \iffieldundef{issue}
+         {\usebibmacro{date}}
+         {\printfield{issue}%
+          \setunit*{\addspace}%
+          \usebibmacro{date}}}}
+    {}%
+  \newunit}
+
+
+\ExecuteBibliographyOptions{isbn=false,url=false,doi=false,eprint=false}
+
+%\bibliography{/Users/Ileyk/Documents/Bibtex/Hubble_fellowship_no_url} 
+\addbibresource{/Users/Ileyk/Documents/Bibtex/CNRS_19_fixed.bib}
+%%% Pour un texte en francais
+
+
+%%\usepackage[applemac]{inputenc}
+%\usepackage[francais]{babel}
+	         % encodage des lettres accentuees
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}          % encodage des lettres accentuees
+%\usepackage{graphicx}
+%%\usepackage{graphicx} \def\BIB{}
+\usepackage[paper=a4paper,left=2.1cm,right=2.1cm,top=3.2cm,bottom=3.2cm]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx,wrapfig,lipsum} 
+%\def\BIB{}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[pdftex]{hyperref}
+%\usepackage{natbib}
+\usepackage{url}
+\usepackage{perpage} %the perpage package
+\MakePerPage{footnote} %the perpage package command
+\hypersetup{
+    colorlinks,%
+    citecolor=blue,%
+    filecolor=blue,%
+    linkcolor=blue,%
+    urlcolor=blue     % can put red here to visualize the links
+}
+
+\usepackage{enumitem}
+\usepackage{amssymb}
+
+%\renewcommand{\refname}{}
+
+\usepackage{floatrow}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Research summary}
+\lhead{El Mellah Ileyk}
+\rfoot{\thepage / \pageref{LastPage}}
+
+\DeclareUnicodeCharacter{00A0}{ }
+
+\usepackage{xspace}
+
+%%% Quelques raccourcis pour la mise en page
+\newcommand{\remarque}[1]{{\small \it #1}}
+\newcommand{\rubrique}{\bigskip \noindent $\bullet$ }
+\newcommand{\sgx}{SgXB\xspace}
+\newcommand{\sgxs}{SgXBs\xspace}
+\newcommand{\ulx}{ULX\xspace}
+\newcommand{\sfxt}{SFXT}
+\newcommand{\sg}{Sg\xspace}
+\newcommand{\co}{CO\xspace}
+\newcommand{\gw}{GW\xspace}
+\newcommand{\gws}{GWs\xspace}
+\newcommand{\grb}{GRB\xspace}
+\newcommand{\grbs}{GRBs\xspace}
+\newcommand{\eos}{EOS\xspace}
+\newcommand{\mhd}{MHD\xspace}
+\newcommand*{\hmxb}{HMXB\@\xspace}
+\newcommand*{\hmxbs}{HMXBs\@\xspace}
+\newcommand*{\lmxb}{LMXB\@\xspace}
+\newcommand*{\rlof}{RLOF\@\xspace}
+\newcommand*{\ns}{NS\@\xspace}
+\newcommand*{\nss}{NSs\@\xspace}
+\newcommand*{\bh}{BH\@\xspace}
+\newcommand*{\bhs}{BHs\@\xspace}
+\newcommand*{\eg}{e.g.\@\xspace}
+\newcommand*{\ie}{i.e.\@\xspace}
+\newcommand*{\aka}{a.k.a. \@\xspace}
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand{\mystar}{{\fontfamily{lmr}\selectfont$\star$}}
+\newcommand*{\msun}{$M_{\odot}$\@\xspace}
+\newcommand*{\mdotstar}{$\dot{M}_{\text{\mystar}}$\@\xspace}
+\newcommand*{\mdotacc}{$\dot{M}_{\text{acc}}$\@\xspace}
+\newcommand*{\ledd}{$L_{\text{Edd}}$\@\xspace}
+
+
+\newcommand{\ignore}[1]{}
+
+%\renewcommand*\rmdefault{iwona}
+
+%\pagenumbering{gobble}
+
+%\bibliographystyle{abbrvnat}
+%\setcitestyle{authoryear,open={((},close={))}}
+
+%\renewcommand{\thefootnote}{\roman{footnote}}
+
+% -------------------------------------------------
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\vspace*{-2.5cm}
+%\normalfont \tiny 
+%%\textsc{Paris Diderot} \\ [25pt] % Your university, school and/or department name(s)
+%\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+%\Large Speeding up the spinning top\\
+%\large How accretion sets the pace in High Mass X-ray Binaries  \\ % The assignment title
+%\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+\author{\tiny} % Your name
+\date{\tiny }%\normalsize\today} % Today's date or a custom date
+% -------------------------------------------------
+
+%\makeatletter
+%\def\@xfootnote[#1]{%
+%  \protected@xdef\@thefnmark{#1}%
+%  \@footnotemark\@footnotetext}
+%\makeatother
+
+%\usepackage[square,numbers,sort]{natbib}
+%\usepackage{har2nat} % "natbib" is loaded automatically
+
+%
+%\let\oldthebibliography\thebibliography
+%\renewcommand{\thebibliography}[1]{%
+%  \oldthebibliography{#1}
+%  \let\oldbibitem\bibitem
+%  \let\oldtextsc\textsc
+%  \def\oldbbland{et}
+%  \newcounter{authorcount}
+%  \def\bibitem[##1]##2{%
+%    \let\textsc\oldtextsc
+%    \let\bbland\oldbbland
+%    \oldbibitem[##1]{##2}%
+%    \let\textsc\mytextsc%
+%    \let\bbland\mybbland
+%    \setcounter{authorcount}{0}
+%  }
+%  \def\mybbland{\setcounter{authorcount}{0}\oldbbland}
+%  \def\dropetal##1.{ \bbletal}
+%  \def\mytextsc##1{%
+%    \oldtextsc{##1}%
+%    \stepcounter{authorcount}%
+%    \ifnum\value{authorcount}=2\relax%
+%      \expandafter\dropetal%
+%    \fi%
+%  }%
+%}
+
+
+\begin{document}
+
+%\bibpunct{[}{]}{;}{n}{,}{,}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%  PREMIERE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DANS CETTE PAGE, ON REMPLACE LES INDICATIONS ENTRE CROCHETS [...]
+%%% PAR LES INFORMATIONS DEMANDEES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\headrulewidth}{1pt}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Enseignement}
+\lhead{El Mellah Ileyk}
+\rfoot{\thepage / \pageref{LastPage}}
+\begin{center}
+\Large \textbf{ENSEIGNEMENT}
+\end{center}
+\normalfont
+\vspace*{-0.6cm}
+
+\section{Résumé des enseignements dispensés}
+
+Après une première expérience d’enseignement volontaire au lycée Gustave Eiffel en 2010 dans le cadre de mes études à l’ENS de Cachan, j’ai passé l’Agrégation de Physique en 2011 où j’ai été reçu deuxième. Durant la première année de mon monitorat de thèse à l’Université Paris 7 Diderot, ma mission d’enseignement s’est déroulée pour moitié en Premère Année Commune aux Etudes de Santé (PACES) sous la direction d’Isabelle Grenier (AIM, Paris 7). J’y étais responsable de deux groupes de travaux dirigés d’environ 40 étudiants chacun. Le programme de Physique de PACES porte sur un vaste panel de sujets physiques à même d’être rencontrés dans l’exercice des métiers de la santé, de la mécanique des fluides aux intéractions rayonnement-matière. J’encadrais par ailleurs les travaux pratiques du cours de M1 “Traitement du signal - signaux déterministes” de Laurent Daudet (Institut Langevin, Paris 7), à hauteur de 32h consacrées à l’analyse de signaux discrets par transformées de Fourier et convolutions, à la mise en place de filtrages et au calcul de spectres de puissance avec Matlab. En deuxième et troisième années de thèse, j’ai rejoint l’équipe de Cécile Roucelle (APC, Paris 7) où j’ai encadré les travaux dirigés de Mécanique du point en L1. Durant les 128h qui m’ont été assignées, j’ai formé des étudiants néophytes aux spécificités du raisonnement physique en mettant l’accent sur la rigueur de l’argumentaire et le déploiement systématique des outils mathématiques fondamentaux (calculs différentiel et vectoriel).
+
+En première année de contrat post-doctoral à l’Université de Leuven, j’ai encadré des projets numériques de Master dans le cours \textit{Computational Methods for Astrophysical Applications} dirigé par Rony Keppens ($\sim$60h TD). En deuxième année, je me suis porté volontaire pour encadrer deux groupes de TD d'étudiants en 1$^{e}$ année de Génie biologique, dans le cadre d'un cours d'Algèbre linéaire. Cette année, je remplace Rony Keppens comme co-responsable du cours de Master \textit{Computational Methods for Astrophysical Applications} à l'occasion de son départ en année sabbatique ($\sim$40h de cours). Le cours porte sur les méthodes numériques de résolution des systèmes d’équations aux dérivées partielles telles que les équations de conservation de la magnéto-hydrodynamique (eg différences et volumes finis, solvers de Riemann approchés et limitateurs de pentes).
+
+Dans la suite de ce projet pédagogique, je développe les axes d’enseignement auxquels je souhaiterais participer si ma candidature était retenue. Je distinguerai mes possibles contributions aux cours de L3/M1 de celles que je pourrais apporter au sein de la préparation à l’Agrégation puis, à plus long terme, au sein du M2 “Modélisation numérique en Physique et Chimie”. La pluralité des domaines et connaissances qui m’ont été enseignées pendant mes études ainsi que mon année de préparation à l’Agrégation me permettra de m’adapter en fonction des enseignements à pourvoir. La liste d’enseignements ci-dessous n’est en rien exhaustive mais constitue plutôt une illustration de la façon dont je pourrais m’inscrire dans l’équipe pédagogique déjà présente à l’ENS de Lyon.\\
+
+\vspace*{0.2cm}
+
+\small
+
+\noindent \makebox[1.5cm][l]{2018-19} \makebox[7cm][l]{Computational methods for Astrophysics} \makebox[2.5cm][l]{40h cours} \makebox[2cm][l]{M2} \makebox[3.5cm][l]{KU Leuven}\\
+\makebox[1.5cm][l]{2017-18} \makebox[7cm][l]{Alg\`{e}bre linéaire} \makebox[2.5cm][l]{30h TD} \makebox[2cm][l]{L1} \makebox[3.5cm][l]{KU Leuven}\\
+\makebox[1.5cm][l]{2016-17} \makebox[7cm][l]{Computational methods for Astrophysics} \makebox[2.5cm][l]{60h TD} \makebox[2cm][l]{M2} \makebox[3.5cm][l]{KU Leuven}\\
+\makebox[1.5cm][l]{2014-16} \makebox[7cm][l]{M\'{e}canique du point} \makebox[2.5cm][l]{128h TD} \makebox[2cm][l]{L1} \makebox[3.5cm][l]{Paris 7}\\ 
+\makebox[1.5cm][l]{2013} \makebox[7cm][l]{Physique pour les PACES} \makebox[2.5cm][l]{32h TD} \makebox[2cm][l]{L1} \makebox[3.5cm][l]{Paris 7}\\ 
+\makebox[1.5cm][l]{2013} \makebox[7cm][l]{Syst\`{e}mes et signaux d\'{e}terministes} \makebox[2.5cm][l]{32h TP} \makebox[2cm][l]{M1} \makebox[3.5cm][l]{Paris 7}\\ 
+%\makebox[1.5cm][l]{2012-13} \makebox[7cm][l]{Private lessons with the company \emph{Cours Thal\`es}}- Paris\\ 
+\makebox[1.5cm][l]{2009-10} \makebox[6.9cm][l]{Cours en Seconde et Terminale} \makebox[2.5cm][l]{16h cours} \makebox[4.5cm][l]{Lyc\'{e}e Gustave Eiffel}\\ 
+
+\normalsize 
+
+\section{Insertion au sein de l’équipe pédagogique}
+
+De par l’adéquation entre mon cursus et les objectifs pédagogiques de la formation Sciences de la Matière de l’ENS de Lyon et de l’Université Claude Bernard, je pense être en mesure de participer à l’organisation et à la dispense des cours du parcours L3/M1 mais aussi à ceux du Master 2. En outre, je souhaite aussi mettre à profit les cours et protocoles expérimentaux que j’ai développés pendant ma préparation à l’Agrégation pour préparer à mon tour les étudiants accueillis à l’ENS de Lyon aux épreuves de l’Agrégation de Sciences physiques.
+
+\subsection{Formation Sciences de la matière}
+
+En premier lieu, j’aimerais pouvoir partager les méthodes numériques que j’utilise et développe au quotidien au travers de l’un des enseignements qui fait la part belle à l’approche computationnelle. En L3, le cours “Outils numériques et programmation” par Christophe Winisdoerffer (CRAL) représente un tournant parfois difficile à négocier pour des étudiants jusque là habitués à mettre l’accent sur une approche analytique classique. Ma maîtrise du langage Python et de l’environnement Linux dans lequel les étudiants sont amenés à travailler me permettra d’écrire des sujets de travaux dirigés numériques qui les inviteront à mettre en scène leurs réponses dans un cadre informatique, via l’utilisation de scripts Python comme \href{https://jupyter.org/}{Jupyter} par exemple ou la mise en place d’applets intéractives (comme celles que j’ai développées pour illustrer le concept de \href{http://demonstrations.wolfram.com/TrajectoryOfATestMassInARochePotential/}{potentiel de Roche} ou la \href{https://media4.obspm.fr/public/M2R/appliquettes/Turing/AutomateTuring_website.html}{morphogénèse de Turing}). 
+Ces compétences fondamentales leur permettront par la suite, lors d’échanges dans un cadre académique, de rapidement étayer leurs propos avec les illustrations adéquates pour convaincre une audience avertie. En M1, Christophe Winisdoerffer propose un cours intitulé “Analyse numérique” dont le sujet me tient particulièrement à c\oe{}ur. Avec cet enseignement, les étudiants découvrent les méthodes issues des Mathématiques Appliquées qui permettent d’implémenter des algorithmes de résolution d’équations différentielles ordinaires ou aux dérivées partielles dont la résolution analytique est généralement hors de portée. Couplée à des cours de Physique non-linéaire tel que Systèmes dynamiques et chaos proposé au premier semestre de M1, cette UE fournit aux étudiants un cadre conceptuel puissant pour déterminer quelle famille d’algorithmes peut fournir des solutions approchées à un système donné d’équations différentielles insoluble analytiquement. Les sujets abordés dans ce cours (la distinction entre systèmes d’équations aux dérivées partielles hyperboliques, elliptiques ou paraboliques par exemple) recouvrent en partie le contenu que j’ai développé pour le cours \textit{Computational Methods for Astrophysical Applications} dont j’étais responsable à l’Université de Leuven cette année. 
+
+C’est tout naturellement que je serais ravi de pouvoir participer au cours “Astrophysique” d’Alexandre Arbey (IPNL) et de Guillaume Laibe (CRAL). L’Astrophysique est un domaine qui regorge d’illustrations spectaculaires de concepts fondamentaux que les étudiants découvrent dès leur première année d’études supérieures et qui a tout à gagner à être enseignée comme une partie intégrante de la Physique. De l’effet tunnel avec le facteur de Gamow à la mécanique hamiltonienne à l’\oe{}uvre dans l’évolution séculaire de systèmes d’étoiles multiples, l’Univers est un immense bac à sable où s’ébaudissent les plus belles lois de la Physique. Si l'Agrégation a été l'occasion de faire l'examen de mes connaissances et de ma capacité à les transmettre à autrui, elle m’a aussi été précieuse pour aborder un domaine aussi généraliste que l’Astrophysique. L’année suivante, les cours de Cosmologie de Robert Simcoe et d’Astrophysique galactique de Joshua Winn que j’ai eu la chance de suivre pendant mon année au MIT m’ont procuré un point de vue complémentaire, plus orienté sur la modélisation des objets physiques et sur l’interprétation qualitative de leurs comportements. J’aimerais profiter de l’enseignement “Astrophysique” de M1 pour tirer le meilleur parti de ces deux approches et offrir aux étudiants un avant-goût des merveilles qu’offre l’Univers à qui sait l’observer au travers du prisme Physique.
+
+Je serais aussi enthousiaste à l’idée de pouvoir participer à l’UE de Physique expérimentale en L3. Parce que la Physique est avant tout une science empirique où les modèles ont vocation à être confrontés aux mesures et observations, je pense qu’il s’agit là d’un élément majeur de la formation des jeunes physiciens. Peu importe l’orientation ultérieure du cursus des étudiants, la méthodologie enseignée en Physique expérimentale structure la pensée des futurs chercheurs. Elle définit le cadre d’une méthode scientifique indispensable pour construire un discours en prise avec le réel et mettre à l’épreuve des théories susceptibles de révéler des perspectives par ailleurs inenvisageables. Que ce soit en Optique géométrique et ondulatoire, en Electronique / Electrocinétique, en Mécanique ou en Electromagnétisme, je souhaiterais intervenir comme encadrant lors du premier semestre (sous l’égide de Jérémy Ferrand) ou pour aider les étudiants à mener à bien l’un des mini-projets introductifs aux problèmes d'acquisition et de traitements des données au second semestre (avec Nicolas Taberlet, Stéphane Roux et Romain Volk). Grâce à la culture expérimentale que j’ai acquise à l’ENS de Cachan, je crois pouvoir m’adapter rapidement au matériel disponible à l’ENS de Lyon et être en mesure d’initier les étudiants à l’élaboration et au suivi de protocoles expérimentaux, à la tenue d’un cahier de manipulation, au travail en équipe et à la restitution, l’analyse statistique et l’interprétation des données. Si le besoin s’en fait sentir, je serais aussi ravi de former les candidats au French Physics Tournament (M1) à la dialectique critique propre au milieu scientifique et que le jury leur demandera de déployer le jour de l’épreuve pour discuter des résultats des autres équipes. 
+
+Par ailleurs, je souhaiterais pouvoir inviter les étudiants de L3 qui manifestent un intérêt pour l’approche numérique à construire un projet numérique au second semestre en rapport avec le projet expérimental qu’ils développeront en M1. Jonction indispensable entre la dérivation analytique de propositions prédictives et la conception d’une manipulation expérimentale, l’outil numérique permet l’identification de cas représentatifs plus réalistes que les rares cas limites solubles analytiquement. Par sa versatilité, il permet une exploration préliminaire de l’espace des paramètres qui aide à identifier les contraintes expérimentales et épargne aux chercheurs des montages incohérents ou redondants, en identifiant des invariances d’échelle ou des symétries par exemple. 
+
+Enfin, j’ai développé des setups numériques adaptés à l’étude d’écoulements classiques rencontrées en Mécanique des fluides (eg les écoulements de Couette). Initialement, leur rôle était principalement de servir de \textit{benchmarks} au code à volumes finis \texttt{MPI-AMRVAC} que j’ai co-développé ces six dernières années mais ils peuvent aussi avoir une valeur pédagogique. Les conditions d’instabilités que les étudiants peuvent être amenés à dériver dans un cours de Mécanique des fluides comme celui de Nicolas Plihon et Laurent Chevillard en M1 pourraient être vérifiées et les propriétés des solutions pourraient être directement visualisées grâce à ces expériences numériques. Si le besoin s’en fait sentir, je pourrais aussi organiser des sessions de prise en main du code \texttt{MPI-AMRVAC} comme je l’ai déjà fait à plusieurs reprises afin de fournir aux étudiants un outil versatile de résolution des équations de l’hydrodynamique.
+
+\subsection{Agrégation}
+
+La présence d’une promotion d’étudiants désireux de préparer l’Agrégation est une chance unique de pouvoir contribuer à la formation culturelle des agrégés de demain. Je souhaite soumettre aux étudiants des devoirs et sujets d’examen originaux pour les placer dans des conditions similaires aux épreuves du concours. Enseigner avec clarté des domaines de la Physique aussi avancés que certains domaines présents à l’Agrégation nécessite de pouvoir s’approprier avec sérénité et ouverture d’esprit des concepts parfois éloignés de sa zone de confort. Saisir les liens et similitudes entre différents formalismes de la Physique mais aussi de la Chimie offre aux candidats une perspective que le jury valorise le jour de l’épreuve. Je souhaite mettre l’accent sur cette forme d’enseignement pour munir les candidats d’une vision globale des Sciences physiques, particulièrement utile lorsqu’il s’agit de présenter des leçons comme “Phénomènes de transport” ou “Phénomènes de résonance”. Pendant ma première année de thèse, j’ai aussi pu enrichir mes réflexions sur la signification des énoncés scientifiques au c\oe{}ur de l’activité d’enseignement grâce aux cours d'épistémologie de Nadine De Courtenay (SPHERE, Paris 7). En dépit de la présence de nouvelles leçons, je pourrais m’appuyer sur mes propres notes que j’ai conservées et mises \href{http://homes.esat.kuleuven.be/~ileyk//resources/LP.pdf}{en ligne} pour orienter et enrichir les leçons des candidats. Je souhaite intervenir dans l’enseignement de la Physique au sein de la préparation à l’Agrégation option Physique (Romain Volk, ENS Lyon) mais aussi option Chimie (Christophe Winisdoerffer).
+
+Mon expérience d’enseignement pendant ma première année de thèse témoigne de ma capacité à organiser les travaux pratiques. Plus généralement, l’organisation logistique de travaux pratiques ou de cours faisant un usage intensif d’outils informatiques, en mettant en place un réseau de machines virtuelles accessibles aux étudiants par exemple, ne m'est pas étrangère puisqu'elle a représenté une composante importante de l'enseignement \textit{Computational Methods for Astrophysical Applications} auquel j'ai participé en tant qu'assistant en 2016 puis en tant que responsable en 2018. Les logiciels d’acquisition et d’analyse des données comme Igor et LabVIEW me sont familiers, et j’utilise quotidiennement des outils de visualisation (Paraview, VisIt, Gnuplot) et des packages d’analyse de données en Python.
+
+Si le département de Physique de l’ENS de Lyon souhaite former aussi des candidats au concours spécial docteurs présent depuis 2017, je peux apprendre aux candidats à valoriser leur expérience de recherche et expliquer en quoi elle constitue un atout indéniable pour celles et ceux qui aspirent à enseigner la Physique.
+
+\subsection{Master AtoSIM}
+
+Enfin, à plus long terme, je souhaiterais pouvoir intervenir au niveau M2, en particulier dans le parcours “Modélisation numérique en physique et chimie” et dans le Master AtoSIM qui lui est associé. La micro-Physique est une composante essentielle des simulations contemporaines comme en témoignent les méthodes Monte Carlo ou de diffusion à flux limité pour résoudre l’équation de transport radiatif ou des neutrinos dans les kilonovae (voir \textit{Research proposal}), ou les méthodes dites \textit{Particles-In-Cells} (ou \textit{PIC}) pour résoudre l’équation de Vlasov (introduite par Thomas Buchert dans son cours \textit{Cosmology and gravitational systems}). Je pourrais enseigner aux étudiants comment se servir des codes disponibles au sein de la communauté pour calculer l’évolution non-linéaire d’instabilités magnéto-hydrodynamiques ou d’instabilités gravitationnelles par exemple. Ces dernières seraient particulièrement importantes pour former de futurs doctorants qui souhaiteraient rejoindre l’équipe GALPAC et le projet SPHINX pour y étudier la formation des grandes structures en Cosmologie avec Joakim Rosdahl, Jérémy Blaizot et leurs collaborateurs. Ma maîtrise de l'anglais, grâce notamment à un séjour d'un an à Boston puis de plusieurs années à Leuven, sera un atout pour participer aux enseignements du Master Erasmus Mundus AtoSIM.
+
+\section{Réflexion sur les méthodes pédagogiques}
+
+Au-delà des enseignements que j'ai dispensés depuis 2010, j'ai manifesté un intérêt certain envers les questions relatives aux méthodes pédagogiques et en particulier à l'enseignement de la Physique. Fasciné par l'enseignement immersif de Jean-Michel Courty (LKB, Sorbonne Université), je me suis porté volontaire dès 2009 pour participer à une expérience de didactique organisée par Cécile De Hosson (LDAR, Paris 7) et ses collaborateurs. Grâce à l'ANR EVEILS qui leur avait été allouée, ils avaient pu développer un module de réalité virtuelle pour illustrer in situ des effets de cinématique relativiste, un billard relativiste où la vitesse de la lumière avait été ramenée à une valeur de l'ordre du mètre par seconde. L'enjeu était de vérifier l'assimilation profonde des notions de Relativité restreinte qui avaient été enseignées (composition des vitesses, aberration, effet Doppler, etc) en plaçant les sujets en situation.
+
+Plus généralement, je crois que les nouvelles technologies d'immersion nous apportent une occasion inédite de déployer une forme d'enseignement inductive en complément de l'approche déductive qui est employée à présent. De la force de Coriolis à la polarisation d'une onde, nombreux sont les concepts qui gagneraient à être compris non seulement dans un cadre théorique mais aussi au travers de mises en contexte. Nous pouvons désormais procurer aux étudiants une intuition physique étendue à des idées largement étrangères à l'expérience quotidienne. Leur regard critique sur leurs propres résultats s'en trouvera grandi, ainsi que leur capacité à se représenter le comportement des modèles qu'ils seront amenés à développer par la suite.
+
+\section{Conclusion}
+
+L’accréditation actuelle octroyée par l’Hcéres à l’ENS de Lyon assure la dispense pérenne des enseignements exposés dans ce projet pédagogique, au moins jusqu’en 2021. Au fur et à mesure que les technologies relatives au calcul hautes performances et aux systèmes intelligents se développeront, l'outil numérique se fera de plus en plus présent dans les formations scientifiques. Il nous appartient d’aider dès maintenant les étudiants à construire un parcours d’étude où la programmation occupe une place conforme aux réalités, apte à leur offrir les moyens de contribuer de façon significative au progrès scientifique. C’est pourquoi je souhaite participer à l’évolution progressive de la maquette à l’avenir afin d’offrir des cours où l’accent sera mis sur le calcul à hautes performances et l’utilisation de super calculateurs pour apporter des éléments de réponse à des problèmes physiques jusque là hors de portée. Qu’il s’agisse de les produire dans des simulations à haute résolution ou de les analyser a posteriori, les volumes de données en jeu sont tels qu’ils nécessitent des méthodes qualitativement différentes de celles déployées pour des calculs numériques de moindre ampleur : langages de bas niveau (C et Fortran), parallélisation et multithreading, visualisation, outils de profiling et d’optimisation de codes modulaires, calcul GPU, machine learning, etc. De par mon profil et ma méthode de recherche, je pense pouvoir contribuer à l’essor d’une nouvelle génération de physicien{\tiny \textbullet}nes - numéricien{\tiny \textbullet}nes qui apporteront une contribution décisive au développement scientifique en France. 
+
+Compte tenu de mon parcours et de mon expérience d'enseignement ininterrompue depuis 2012, je pense avoir les compétences requises pour répondre aux objectifs d'enseignement du département de Physique de l’ENS de Lyon. Tant par mon volontariat que par ma formation personnelle à l'enseignement, j'ai témoigné de mon souhait de rejoindre le milieu universitaire pour y transmettre les savoirs qui m'avaient été dispensés. J'espère avoir l'occasion de mener à bien cette aspiration au sein de l’ENS de Lyon.
+
+\end{document}
+%%%%%%%%%%%%%%%%%  Fin du fichier Latex  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

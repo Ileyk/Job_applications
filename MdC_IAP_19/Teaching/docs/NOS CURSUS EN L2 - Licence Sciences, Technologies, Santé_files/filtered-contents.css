@@ -1,0 +1,253 @@
+/*
+ *  Copyright 2012 Anyware Services
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+
+/*
+CSS FOR FILTERED-CONTENTS
+*/
+
+.filtered-contents > ul, 
+.filtered-contents > ul > li > ul
+{
+	margin: 0;
+	padding: 0;
+}
+.filtered-contents.filtered-contents-link.rub-actu {
+	padding: 0 1em 0 1.6em;
+}
+
+.filtered-contents > ul > li, 
+.filtered-contents > ul > li > ul > li 
+{
+	display: block;
+	list-style-type: none;
+	list-style-image: none;
+	background-image: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+.filtered-contents.filtered-contents-abstract.rub-actu > ul > li > ul > li {
+	margin-right: 20px;
+	background-color: transparent;
+	padding-top: 1.4em;
+}
+
+.filtered-contents.filtered-contents-abstract > ul > li > ul > li {
+	border-top: 1px solid #fcdfb3;
+}
+
+.filtered-contents.filtered-contents-abstract.complete-list > ul > li > ul > li{
+	border-color:#d4d4d4;
+}
+
+.filtered-contents.filtered-contents-link > ul > li > ul > li {
+/* 	border-bottom: 1px solid #fcdfb3; */
+	background: url("../../img/page-fl-jaune.gif") no-repeat 0px 2px;
+/* 	padding-left: 19px !important; */
+}
+.filtered-contents.filtered-contents-link > ul > li > ul > li a {
+	border-bottom: 1px solid #FDDAA9;
+	display: block;
+	font-size: 1.0em;
+	color: #333;
+	padding: 0 0 6px 0;
+	width: 80%;
+	margin-left: 18px;
+	text-decoration: none;
+}
+
+.filtered-contents.filtered-contents-link > ul > li > ul > li a:hover {
+	font-weight: bold;
+}
+
+.filtered-contents.filtered-contents-abstract > ul > li > ul > li.first {
+	border: none;
+}
+
+.content-left .filtered-contents.rub-actu div.rss
+{
+	float: left;
+	margin: 25px 10px 12px 0;
+}
+
+.content-left .filtered-contents.rub-actu.complete-list div.rss{
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+
+.content-left .filtered-contents.filtered-contents-link.rub-actu div.rss
+{
+	float: left;
+	margin: -1px 6px 0 0;
+}
+
+
+
+.filtered-contents .content-list-item h2 span.content-title,
+.filtered-contents .content-list-item h2 span.content-subtitle
+{
+	margin-left: 5px;
+	display: block;
+}
+
+.filtered-contents.filtered-contents-abstract.rub-actu,
+.filtered-contents.filtered-contents-link.rub-actu {
+	margin-top: 20px;
+	padding: 0 0 20px 20px;
+	border-top: 1px solid #F49F0E;
+	border-bottom: 1px solid #F49F0E;
+}
+
+.filtered-contents.filtered-contents-abstract.rub-actu.complete-list,
+.filtered-contents.filtered-contents-link.rub-actu.complete-list{
+	border-width:0;
+}
+
+.content-focus .filtered-contents.rub-actu {
+/* 	margin-right: 4px; */
+	padding: 0 1em 0 1.6em;
+}
+
+.content-focus .filtered-contents-focus.rub-actu,
+.content-focus .filtered-contents.filtered-contents-contact.rub-actu,
+.content-focus .filtered-contents.filtered-contents-ads.rub-actu,
+.content-focus .filtered-contents.filtered-contents-must-seen.rub-actu,
+.content-focus .filtered-contents-numbers.rub-actu {
+	padding: 0;
+}
+
+/* .content-focus .filtered-contents.filtered-contents-link.rub-actu { */
+/* 	margin-right:4px; */
+/* } */
+
+.content-focus .filtered-contents.filtered-contents-link.rub-actu div.rss{
+	float:right;
+}
+
+.content-focus .filtered-contents.rub-actu {
+	margin-top: 0;
+	margin-right: 0;
+}
+.content-left .filtered-contents.filtered-contents-link.rub-actu > ul > li > ul > li {
+	background: none;
+}
+
+.content-left .filtered-contents.filtered-contents-link.rub-actu > ul > li > ul > li a {
+	background: #fff;
+}
+
+.content-left .filtered-contents.filtered-contents-link.rub-actu > ul > li > ul > li.even a {
+	background: #fffaf4;
+}
+
+.content-left .filtered-contents.filtered-contents-link.rub-actu > ul > li > ul > li a {
+/* 	border: none; */
+	line-height: 21px;
+	font-size: 0.9em;
+	width:100%;
+	padding: 1px 0 0 0;
+}
+
+.content-left .filtered-contents.filtered-contents-link.rub-actu > .link a {
+	border: 1px solid #fde6c9
+}
+
+.content-left .filtered-contents.filtered-contents-link.rub-actu > .link a:hover {
+	border: 1px solid #F59E0A;
+}
+
+.content-left .filtered-contents.filtered-contents-link > ul > li > ul > li a:hover {
+	color: #F59F0A;
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+
+.content-focus .filtered-contents.filtered-contents-link.rub-actu > .link a {
+    color: #f49f0e;
+    display: block;
+    font-size: 1.2em;
+    padding: 6px 0;
+    text-decoration: none;
+    width: 80%;
+}
+
+.content-left .filtered-contents.filtered-contents-link.rub-actu > ul > li > ul > li {
+	background: none;
+	background: url("../../img/page-fl-jaune.gif") no-repeat 0px 2px;
+}
+
+.content-left .filtered-contents.filtered-contents-link.rub-actu {
+	background: none;
+	border: none;
+}
+
+.filtered-contents.filtered-contents-abstract.rub-actu {
+	background: #fff6eb url(../../img/content-focus-appendix.png) no-repeat right 70px;
+}
+
+.filtered-contents.filtered-contents-link.rub-actu {
+	background: #fff6eb url(../../img/content-focus-appendix.png) no-repeat right 20px;
+}
+
+.filtered-contents.filtered-contents-abstract.rub-actu.complete-list{
+	background-image:none;
+	background-color: transparent;
+}
+
+.content-left .filtered-contents.rub-actu > .link {
+	float: right;
+	margin-top: 8px;
+}
+
+.content-left .filtered-contents.rub-actu > .link a {
+	display: block;
+	border: 1px solid #fff6eb;
+	width: 110px;
+	margin: 0 2em 0 auto;
+	color: #F59E0A;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1em;
+	padding-top: 2px;
+}
+.content-left .filtered-contents.rub-actu.complete-list > .link a{
+	border-width:0;
+	width:auto;
+}
+
+.content-left .filtered-contents.rub-actu > .link a:hover {
+	border: 1px solid #fcdfb3;
+}
+
+.filtered-contents.filtered-contents-abstract.rub-actu > ul {
+	border-top: 1px solid #fcdfb3;
+	padding: 20px 0 0 0;
+}
+
+.filtered-contents.filtered-contents-abstract.rub-actu.complete-list > ul{
+	border-color:#d4d4d4;
+	padding-top:0;
+}
+
+.content-left .filtered-contents.rub-actu .content-illustration > img {
+	float: left;
+	border: 1px solid #999;
+	margin: 4px 23px 4px 0;
+}

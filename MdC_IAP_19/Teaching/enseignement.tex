@@ -1,0 +1,273 @@
+%%%%%%%%%%%%%%%%%  Debut du fichier Latex  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt,onecolumn]{article}
+%\usepackage[style=numeric,maxnames=1,uniquelist=false]{biblatex}
+%\usepackage[backend=bibtex,style=numeric,minnames=4,maxnames=4,firstinits=true,sorting=none]{biblatex} 
+\usepackage[backend=bibtex,bibstyle=phys,citestyle=authoryear,maxcitenames=1,minbibnames=3,maxbibnames=3,giveninits=true,natbib,doi=false,isbn=false]{biblatex} 
+%\usepackage[authordate,bibencoding=auto,strict,backend=biber,natbib]{biblatex}
+
+ %backend=biber is 'better'  
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+\renewbibmacro{in:}{} % to not have the "In:" to indicate the review
+\AtEveryBibitem{\clearfield{title}} % to remove the titles in the biblio
+% no page info
+\AtEveryBibitem{%
+  \ifentrytype{article}{%
+    \clearfield{pages}%
+  }{%
+  }%
+}
+% no language info
+\AtEveryBibitem{\clearlist{language}}
+% no language no page
+\AtEveryBibitem{%
+  \clearfield{volume}%
+  \clearfield{number}}
+% To avoid parenthesis if no year entry in bib file
+\renewbibmacro*{issue+date}{%
+  \ifboolexpr{not test {\iffieldundef{year}} or not test {\iffieldundef{issue}}}
+    {\printtext[parens]{%
+       \iffieldundef{issue}
+         {\usebibmacro{date}}
+         {\printfield{issue}%
+          \setunit*{\addspace}%
+          \usebibmacro{date}}}}
+    {}%
+  \newunit}
+
+
+\ExecuteBibliographyOptions{isbn=false,url=false,doi=false,eprint=false}
+
+%\bibliography{/Users/Ileyk/Documents/Bibtex/Hubble_fellowship_no_url} 
+\addbibresource{/Users/Ileyk/Documents/Bibtex/CNRS_19_fixed.bib}
+%%% Pour un texte en francais
+
+
+%%\usepackage[applemac]{inputenc}
+%\usepackage[francais]{babel}
+	         % encodage des lettres accentuees
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}          % encodage des lettres accentuees
+%\usepackage{graphicx}
+%%\usepackage{graphicx} \def\BIB{}
+\usepackage[paper=a4paper,left=2.1cm,right=2.1cm,top=3.2cm,bottom=3.2cm]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx,wrapfig,lipsum} 
+%\def\BIB{}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[pdftex]{hyperref}
+%\usepackage{natbib}
+\usepackage{url}
+\usepackage{perpage} %the perpage package
+\MakePerPage{footnote} %the perpage package command
+\hypersetup{
+    colorlinks,%
+    citecolor=blue,%
+    filecolor=blue,%
+    linkcolor=blue,%
+    urlcolor=blue     % can put red here to visualize the links
+}
+
+\usepackage{enumitem}
+\usepackage{amssymb}
+
+%\renewcommand{\refname}{}
+
+\usepackage{floatrow}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Research summary}
+\lhead{El Mellah Ileyk}
+\rfoot{\thepage / \pageref{LastPage}}
+
+\DeclareUnicodeCharacter{00A0}{ }
+
+\usepackage{xspace}
+
+%%% Quelques raccourcis pour la mise en page
+\newcommand{\remarque}[1]{{\small \it #1}}
+\newcommand{\rubrique}{\bigskip \noindent $\bullet$ }
+\newcommand{\sgx}{SgXB\xspace}
+\newcommand{\sgxs}{SgXBs\xspace}
+\newcommand{\ulx}{ULX\xspace}
+\newcommand{\sfxt}{SFXT}
+\newcommand{\sg}{Sg\xspace}
+\newcommand{\co}{CO\xspace}
+\newcommand{\gw}{GW\xspace}
+\newcommand{\gws}{GWs\xspace}
+\newcommand{\grb}{GRB\xspace}
+\newcommand{\grbs}{GRBs\xspace}
+\newcommand{\eos}{EOS\xspace}
+\newcommand{\mhd}{MHD\xspace}
+\newcommand*{\hmxb}{HMXB\@\xspace}
+\newcommand*{\hmxbs}{HMXBs\@\xspace}
+\newcommand*{\lmxb}{LMXB\@\xspace}
+\newcommand*{\rlof}{RLOF\@\xspace}
+\newcommand*{\ns}{NS\@\xspace}
+\newcommand*{\nss}{NSs\@\xspace}
+\newcommand*{\bh}{BH\@\xspace}
+\newcommand*{\bhs}{BHs\@\xspace}
+\newcommand*{\eg}{e.g.\@\xspace}
+\newcommand*{\ie}{i.e.\@\xspace}
+\newcommand*{\aka}{a.k.a. \@\xspace}
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand{\mystar}{{\fontfamily{lmr}\selectfont$\star$}}
+\newcommand*{\msun}{$M_{\odot}$\@\xspace}
+\newcommand*{\mdotstar}{$\dot{M}_{\text{\mystar}}$\@\xspace}
+\newcommand*{\mdotacc}{$\dot{M}_{\text{acc}}$\@\xspace}
+\newcommand*{\ledd}{$L_{\text{Edd}}$\@\xspace}
+
+
+\newcommand{\ignore}[1]{}
+
+%\renewcommand*\rmdefault{iwona}
+
+%\pagenumbering{gobble}
+
+%\bibliographystyle{abbrvnat}
+%\setcitestyle{authoryear,open={((},close={))}}
+
+%\renewcommand{\thefootnote}{\roman{footnote}}
+
+% -------------------------------------------------
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\vspace*{-2.5cm}
+%\normalfont \tiny 
+%%\textsc{Paris Diderot} \\ [25pt] % Your university, school and/or department name(s)
+%\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+%\Large Speeding up the spinning top\\
+%\large How accretion sets the pace in High Mass X-ray Binaries  \\ % The assignment title
+%\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+\author{\tiny} % Your name
+\date{\tiny }%\normalsize\today} % Today's date or a custom date
+% -------------------------------------------------
+
+%\makeatletter
+%\def\@xfootnote[#1]{%
+%  \protected@xdef\@thefnmark{#1}%
+%  \@footnotemark\@footnotetext}
+%\makeatother
+
+%\usepackage[square,numbers,sort]{natbib}
+%\usepackage{har2nat} % "natbib" is loaded automatically
+
+%
+%\let\oldthebibliography\thebibliography
+%\renewcommand{\thebibliography}[1]{%
+%  \oldthebibliography{#1}
+%  \let\oldbibitem\bibitem
+%  \let\oldtextsc\textsc
+%  \def\oldbbland{et}
+%  \newcounter{authorcount}
+%  \def\bibitem[##1]##2{%
+%    \let\textsc\oldtextsc
+%    \let\bbland\oldbbland
+%    \oldbibitem[##1]{##2}%
+%    \let\textsc\mytextsc%
+%    \let\bbland\mybbland
+%    \setcounter{authorcount}{0}
+%  }
+%  \def\mybbland{\setcounter{authorcount}{0}\oldbbland}
+%  \def\dropetal##1.{ \bbletal}
+%  \def\mytextsc##1{%
+%    \oldtextsc{##1}%
+%    \stepcounter{authorcount}%
+%    \ifnum\value{authorcount}=2\relax%
+%      \expandafter\dropetal%
+%    \fi%
+%  }%
+%}
+
+
+\begin{document}
+
+%\bibpunct{[}{]}{;}{n}{,}{,}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%  PREMIERE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DANS CETTE PAGE, ON REMPLACE LES INDICATIONS ENTRE CROCHETS [...]
+%%% PAR LES INFORMATIONS DEMANDEES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\headrulewidth}{1pt}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Enseignement}
+\lhead{El Mellah Ileyk}
+\rfoot{\thepage / \pageref{LastPage}}
+\begin{center}
+\Large \textbf{ENSEIGNEMENT}
+\end{center}
+\normalfont
+\vspace*{-0.4cm}
+
+\section*{Résumé des enseignements dispensés}
+
+\indent \indent Apr\`es une premi\`ere exp\'erience d'enseignement au lycée Gustave Eiffel en 2010 dans le cadre de mes \'etudes \`a l'ENS de Cachan, j'ai été reçu second au concours de l'Agr\'egation de Physique en 2011. Durant la 1$^{e}$ ann\'ee de mon monitorat de th\`ese, ma mission d'enseignement s'est d\'eroul\'ee pour moiti\'e en Premi\`ere Ann\'ee Commune aux Etudes de Sant\'e (PACES) sous la direction d'Isabelle Grenier (AIM, Paris 7). J'y \'etais responsable de deux groupes de TD d'environ 40 \'etudiants chacun. Le programme de Physique de PACES porte sur un vaste panel de probl\`emes, de la m\'ecanique des fluides aux int\'eractions rayonnement-mati\`ere. J'encadrais ensuite les travaux pratiques du cours de M1 "Traitement du signal - Signaux d\'eterministes" de Laurent Daudet (Institut Langevin, Paris 7), \`a hauteur de 32h TD (signaux discrets, analyse de Fourier, convolutions, spectre de puissance, filtrage, etc). En 2$^{e}$ et 3$^{e}$ année de thèse, j'ai rejoint l'\'equipe de C\'ecile Roucelle (APC, Paris 7) o\`u j'ai encadr\'e les TDs de M\'ecanique du point en L1. Durant les 128h qui m'ont \'et\'e assign\'ees, j'ai form\'{e} et évalué des \'etudiants n\'eophytes aux sp\'ecificit\'es du raisonnement physique.\\
+
+\indent En 1$^{e}$ année de contrat postdoctoral à l'Université de Leuven, j'ai encadr\'e des projets scientifiques de Master dans l'unit\'e d'enseignement \textit{Computational Methods for Astrophysical Applications} dirig\'ee par Rony Keppens ($\sim$60h TD). En 2$^{e}$ année, je me suis porté volontaire pour encadrer deux groupes de TD d'étudiants en 1$^{e}$ année de Génie biologique, dans le cadre d'un cours d'Algèbre linéaire. Cette année, je remplace Rony Keppens comme co-responsable du cours de Master \textit{Computational Methods for Astrophysical Applications} à l'occasion de son départ en année sabbatique ($\sim$40h de cours).\\
+
+\vspace*{0.2cm}
+
+\small
+
+\noindent \makebox[1.5cm][l]{2018-19} \makebox[7cm][l]{Computational methods for Astrophysics} \makebox[2.5cm][l]{40h cours} \makebox[2cm][l]{M2} \makebox[3.5cm][l]{KU Leuven}\\
+\makebox[1.5cm][l]{2017-18} \makebox[7cm][l]{Alg\`{e}bre linéaire} \makebox[2.5cm][l]{30h TD} \makebox[2cm][l]{L1} \makebox[3.5cm][l]{KU Leuven}\\
+\makebox[1.5cm][l]{2016-17} \makebox[7cm][l]{Computational methods for Astrophysics} \makebox[2.5cm][l]{60h TD} \makebox[2cm][l]{M2} \makebox[3.5cm][l]{KU Leuven}\\
+\makebox[1.5cm][l]{2014-16} \makebox[7cm][l]{M\'{e}canique du point} \makebox[2.5cm][l]{128h TD} \makebox[2cm][l]{L1} \makebox[3.5cm][l]{Paris 7}\\ 
+\makebox[1.5cm][l]{2013} \makebox[7cm][l]{Physique pour les PACES} \makebox[2.5cm][l]{32h TD} \makebox[2cm][l]{L1} \makebox[3.5cm][l]{Paris 7}\\ 
+\makebox[1.5cm][l]{2013} \makebox[7cm][l]{Syst\`{e}mes et signaux d\'{e}terministes} \makebox[2.5cm][l]{32h TP} \makebox[2cm][l]{M1} \makebox[3.5cm][l]{Paris 7}\\ 
+%\makebox[1.5cm][l]{2012-13} \makebox[7cm][l]{Private lessons with the company \emph{Cours Thal\`es}}- Paris\\ 
+\makebox[1.5cm][l]{2009-10} \makebox[6.9cm][l]{Cours en Seconde et Terminale} \makebox[2.5cm][l]{16h cours} \makebox[4.5cm][l]{Lyc\'{e}e Gustave Eiffel}\\ 
+
+\normalsize 
+
+\section*{Insertion dans l'UFR de Physique de Sorbonne Université}
+
+\indent  \indent Le remaniement des maquettes de Licence et de Master amènera l'UFR de Physique de Sorbonne Université à contribuer aux portails d'enseignement pluridisciplinaires MIPI (Mathématiques Informatique Physique Ingénierie) et PCGI (Physique Chimie Géosciences Ingénierie). A travers un système de majeur/mineur, les étudiants s'investiront dans le développement d'un profil personnel où un cursus majeur en Physique à partir de la deuxième année peut être associé à une mineure dans un autre domaine. Grâce à l'UE OIP (Orientation et Insertion Professionnelle), les étudiants pourront construire un projet de formation cohérent tout en explorant de nouvelles pistes. La diversification des profils exigera du corps enseignant une capacité accrue à adapter le cours à une audience aux connaissances variées. Grâce à la pluralité des cursus dans lesquels j'ai été amené à enseigner (études de santé, physique, mathématiques, biophysique, ingénierie), je pense pouvoir ancrer mon enseignement dès le L1 dans un socle commun où tout un chacun pourra se retrouver. En particulier, ma participation à l'équipe pédagogique pourra prendre les formes évoquées dans la suite de cette section.\\
+
+Parce que la Physique est avant tout une science basée sur les observations et l'expérience, l'Agrégation fait la part belle à l'expérience avec l'épreuve du montage de Physique. Le vaste panel d'expériences illustratives que j'ai été amené à déployer à cette occasion, \href{http://homes.esat.kuleuven.be/~ileyk/teaching.html}{en partie disponible en ligne}, témoigne de ma capacité à organiser les travaux pratiques en Licence et Master mais aussi au centre de préparation à l'Agrégation de Physique de Montrouge dirigé par Agnès Maître (INSP, Sorbonne Université) et dans lequel Sorbonne Université sera bientôt amenée à intensifier son activité. Sorbonne Université propose aussi un Master des métiers de l'enseignement, de l'education et de la formation où les séances en laboratoire sont nombreuses et préparent certains candidats au CAPES. Je pourrai également prendre une part active dans les enseignements de ce Master.\\
+
+Si l'Agrégation a été l'occasion de faire l'examen de mes connaissances et de ma capacité à les transmettre à autrui, j'ai pu enrichir mes réflexions sur la méthode scientifique en elle-même grâce aux cours d'épistémologie de Nadine De Courtenay (SPHERE, Paris 7) durant ma première année de thèse. Pour initier à mon tour les étudiants de Licence à la méthode scientifique, je mettrai à profit cet enseignement en participant à l'organisation des ateliers de recherche encadrée ou bien d'autres séances d'apprentissage par projet comme celle de "boîte noire" déjà mise en \oe uvre par Stéphanie Bonneau (laboratoire Jean Perrin, Sorbonne Université).\\
+
+Les cursus intégralement en anglais dans lesquels est impliquée l'UFR de Physique de Sorbonne Université se multiplient : le parcours international du Master en Physique des systèmes complexes (i-PCS, \href{https://physics-complex-systems.fr/en/}{https://physics-complex-systems.fr/en/}) et le Master de l'International Centre for Fundamental Physics en partenariat avec l'ENS PSL par exemple. Au sein du Master i-PCS, j'ai les compétences requises pour dispenser le cours de Physique non-linéaire et celui de simulations numériques qui se déroulent tout deux au premier semestre de M2, à Paris. Ma maîtrise de l'anglais, grâce notamment à un séjour d'un an au MIT et à mon activité de recherche depuis, sera un atout pour participer à ces enseignements.\\
+
+L'expertise numérique que j'ai acquise dans mon activité de recherche ces six dernières années me permettra de contribuer aux cours de Physique numérique, que ce soit pour l'introduction aux langages de bas niveau (Méthodes numériques et informatiques par Jacques Lefrère du LATMOS, Sorbonne Université) ou bien des enseignements plus avancés comme la résolution numérique de systèmes d'équations aux dérivées partielles. L'organisation logistique de l'enseignement, en mettant en place un r\'eseau de machines virtuelles accessibles aux \'etudiants par exemple, ne m'est pas étrangère puisqu'elle a représenté une composante importante de l'enseignement \textit{Computational Methods for Astrophysical Applications} auquel j'ai participé en tant qu'assistant en 2016 puis en tant qu'enseignant en 2018. \\
+
+Au fur et à mesure que les technologies relatives au calcul hautes performances et aux systèmes intelligents se développeront (big data, machine learning, deep learning, etc), l'outil numérique dans les formations scientifiques prendra une place croissante. C'est pourquoi je souhaite aussi soumettre aux \'etudiants d\`{e}s la Licence une base de donn\'ee de sujets num\'eriques d'exercices pour encourager le d\'eploiement de comp\'etences telles que la mise en ligne d'expos\'es int\'eractifs de leurs r\'eponses via la programmation d'applets.
+
+%L'outil num\'erique offre de nouvelles opportunit\'es pour l'activit\'e scientifique, \`a condition de s'assurer que les \'etudiants qui seront amen\'es \`a la porter dans les ann\'ees \`a venir aient pleinement conscience de sa centralit\'e. Il s'agit de rendre l'Informatique famili\`ere aux \'etudiants d\`es leur premi\`ere ann\'ee afin qu'elle nourrisse leur r\'eflexion scientifique au lieu d'appara\^itre comme une contrainte \`a laquelle ils seraient oblig\'es de se soumettre. Au quotidien, la recherche en Physique ne peut pas plus se passer de comp\'etences avanc\'ees en Informatique qu'en Math\'ematiques. C'est pourquoi je souhaite soumettre aux \'etudiants d\`{e}s la Licence une base de donn\'ee de sujets num\'eriques d'exercices. Ils seraient \'ecrits de fa\c con \`a encourager le d\'eploiement de comp\'etences telle que la mise en ligne d'expos\'es int\'eractifs de leurs r\'eponses via la programmation d'applets.\\
+
+\section*{Réflexions sur les méthodes pédagogiques}
+
+\indent \indent Au-delà des enseignements que j'ai dispensés depuis 2010, j'ai manifesté un intérêt certain envers les questions relatives aux méthodes pédagogiques et en particulier à l'enseignement de la Physique. Fasciné par l'enseignement immersif de Jean-Michel Courty (LKB, Sorbonne Université), je me suis porté volontaire dès 2009 pour participer à une expérience de didactique organisée par Cécile De Hosson (LDAR, Paris 7) et ses collaborateurs. Grâce à l'ANR EVEILS qui leur avait été allouée, ils avaient pu développer un module de réalité virtuelle pour illustrer in situ des effets de cinématique relativiste, un billard relativiste où la vitesse de la lumière avait été ramenée à une valeur de l'ordre du mètre par seconde. L'enjeu était de vérifier l'assimilation profonde des notions de Relativité restreinte qui avaient été enseignées (composition des vitesses, aberration, effet Doppler, etc) en plaçant les sujets en situation.\\
+
+Plus généralement, je crois que les nouvelles technologies d'immersion nous apportent une occasion inédite de déployer une forme d'enseignement inductive en complément de l'approche déductive qui est employée à présent. De la force de Coriolis à la polarisation d'une onde, nombreux sont les concepts qui gagneraient à être compris non seulement dans un cadre théorique mais aussi au travers de mises en contexte. Nous pouvons désormais procurer aux étudiants une intuition physique étendue à des idées largement étrangères à l'expérience quotidienne. Leur regard critique sur leurs propres résultats s'en trouvera grandi, ainsi que leur capacité à se représenter le comportement des modèles qu'ils seront amenés à développer par la suite.\\
+
+Maintenir un niveau élevé d'attention tout au long d'un cours peut relever d'une gageure dès lors que les outils déployés semblent anachroniques au public visé. Mieux intéragir avec les étudiants nécessite de s'adapter aux formes de communication qui leur sont familières, sans pour autant dénaturer le contenu de l'enseignement dispensé. A cette fin, la vérification en temps réel de la bonne acquisition des connaissances avec des mini-quiz auxquels les étudiants répondent via des boîtiers interactifs me semble être une piste envisageable.
+
+%leur apprendre à s'autonomiser sur un projet simple.
+%
+%L'outil num\'erique offre de nouvelles opportunit\'es pour l'activit\'e scientifique, \`a condition de s'assurer que les \'etudiants qui seront amen\'es \`a la porter dans les ann\'ees \`a venir aient pleinement conscience de sa centralit\'e. Il s'agit de rendre l'Informatique famili\`ere aux \'etudiants d\`es leur premi\`ere ann\'ee afin qu'elle nourrisse leur r\'eflexion scientifique au lieu d'appara\^itre comme une contrainte \`a laquelle ils seraient oblig\'es de se soumettre. Au quotidien, la recherche en Physique ne peut pas plus se passer de comp\'etences avanc\'ees en Informatique qu'en Math\'ematiques. C'est pourquoi je souhaite soumettre aux \'etudiants d\`{e}s la Licence une base de donn\'ee de sujets num\'eriques d'exercices. Ils seraient \'ecrits de fa\c con \`a encourager le d\'eploiement de comp\'etences telle que la mise en ligne d'expos\'es int\'eractifs de leurs r\'eponses via la programmation d'applets.\\
+
+\section*{Conclusion}
+
+\indent \indent Compte tenu de mon parcours et de mon expérience d'enseignement ininterrompue depuis 2012, je pense avoir les comp\'{e}tences adéquates pour répondre aux objectifs d'enseignement de Sorbonne Université. Tant par mon volontariat que par ma formation personnelle à l'enseignement, j'ai témoigné de mon souhait de rejoindre le milieu universitaire pour y transmettre les savoirs qui m'avaient été dispensés. J'espère avoir l'occasion de mener à bien cette aspiration au sein de l'UFR de Physique de Sorbonne Université.
+
+
+
+%Initiation à la démarche d’investigation
+%Développer un rapport universitaire au savoir
+
+
+\end{document}
+%%%%%%%%%%%%%%%%%  Fin du fichier Latex  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

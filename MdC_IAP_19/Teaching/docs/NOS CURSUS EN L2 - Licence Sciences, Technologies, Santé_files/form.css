@@ -1,0 +1,187 @@
+/*
+ *  Copyright 2012 Anyware Services
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+
+/*
+ * CSS FOR FORMS
+ */
+ 
+.button 
+{
+	margin-top: 10px;
+	text-align: right;
+	margin-bottom: 13px;
+}
+
+.button input 
+{
+	display: inline-block;
+}
+
+.button-wrapper .button{
+	background: url("../img/background-whoareyou.gif") repeat-x scroll 0 0 transparent;
+    color: #9A7B63;
+    display: block;
+    height: 28px;
+    border-width:0;
+    padding:0 20px;
+    text-transform:uppercase;
+    cursor: pointer;
+    margin-left:5px;
+}
+
+.field-end 
+{
+	clear: both;	
+}
+
+.mandatory-marker 
+{
+	color: red;
+	margin-left: 3px;
+}
+
+fieldset 
+{
+	padding: 3px;
+	margin-bottom: 12px;
+}
+
+.ametys-cms-content textarea, 
+.ametys-cms-content input[type=text], 
+.ametys-cms-content input[type=password], 
+.ametys-cms-content select,
+.ametys-cms-service.survey textarea, 
+.ametys-cms-service.survey input[type=text], 
+.ametys-cms-service.survey input[type=password], 
+.ametys-cms-service.survey select{
+	padding:3px 5px;
+}
+
+.ametys-cms-service.survey textarea, 
+.ametys-cms-service.survey input[type=text], 
+.ametys-cms-service.survey input[type=password], 
+.ametys-cms-service.survey select{
+	min-width:300px;
+}
+
+.field .invalid
+{
+    border: 1px solid #FF0000;
+    border-radius: 4px;
+    display:inline-block;
+}
+
+div.survey .question > fieldset.invalid legend
+{
+	color: #ff0000;
+}
+.ametys-cms-content form .invalid
+{
+    border: 1px solid #FF0000;
+    border-radius: 4px;
+}
+
+
+/* INFOS */
+form .info
+{
+	font-style: italic;
+ 	font-size: 0.9em;
+ 	clear: both;
+}
+
+form .info p
+{
+	margin: 0 !important;
+}
+
+.error
+{
+	color: #FF0000;
+}
+
+.error ul
+{
+	padding: 0;
+	margin: 0;
+}
+
+.error ul li
+{
+    color: #FF0000;
+    background: #FFFBDE;
+    border: 1px solid #FF0000;
+    list-style-type: none;
+    line-height: 18px;
+    margin: 5px 0;
+    padding: 8px !important;
+}
+
+.error p
+{
+	margin: 0;
+}
+
+/** @Captcha */
+
+div.captcha
+{
+	clear: left;
+	padding-top: 5px;
+}
+
+img.captcha-image 
+{
+    margin: 0  !important;
+    border: 1px solid #222;
+    background-color: #fff;
+    float: left;
+}
+
+button.captcha-refresh-btn {
+	background: transparent url('../img/form/refresh_24.png') no-repeat left top;
+	height: 26px;
+	width: 26px;
+	border: 0 none;
+	margin-left: 5px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+button.captcha-refresh-btn span {
+	visibility: hidden;
+	position: absolute !important;
+	top: -10000px;
+	left: -10000px;
+}
+
+.captcha .image-captcha-help {
+	font-style:italic;
+	clear: both;
+	font-size: 0.9em;
+}
+
+.captcha-end
+{
+	clear: both;
+}
+
+/** @end captcha */
+
+.forgot-password 
+{
+	text-align: right;
+}

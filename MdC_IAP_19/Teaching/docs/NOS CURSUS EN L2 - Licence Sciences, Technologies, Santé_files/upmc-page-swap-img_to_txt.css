@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Gestion textHtml ou images de certains Items */
+
+/* @group Actualité (AccRubriques) */
+
+div.content-left .rub-actu  .news .allnews a{
+	background :none;
+	color:#F59E0A ;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	width:11em;
+	height:2.2em;
+}
+	
+div.content-left .rub-actu  .news .allnews a:hover{
+	border:1px solid #F59E0A;
+}
+
+div.content-left .rub-actu  .news .allnews span{
+	display: block;
+	padding: 2px 8px;
+}
+
+

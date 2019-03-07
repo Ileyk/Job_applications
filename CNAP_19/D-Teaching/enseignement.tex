@@ -1,0 +1,224 @@
+%%%%%%%%%%%%%%%%%  Debut du fichier Latex  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,onecolumn]{article}
+%\usepackage[style=numeric,maxnames=1,uniquelist=false]{biblatex}
+%\usepackage[backend=bibtex,style=numeric,minnames=4,maxnames=4,firstinits=true,sorting=none]{biblatex} 
+\usepackage[backend=bibtex,bibstyle=phys,citestyle=authoryear,maxcitenames=1,minbibnames=3,maxbibnames=3,giveninits=true,natbib,doi=false,isbn=false]{biblatex} 
+%\usepackage[authordate,bibencoding=auto,strict,backend=biber,natbib]{biblatex}
+
+ %backend=biber is 'better'  
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+\renewbibmacro{in:}{} % to not have the "In:" to indicate the review
+\AtEveryBibitem{\clearfield{title}} % to remove the titles in the biblio
+% no page info
+\AtEveryBibitem{%
+  \ifentrytype{article}{%
+    \clearfield{pages}%
+  }{%
+  }%
+}
+% no language info
+\AtEveryBibitem{\clearlist{language}}
+% no language no page
+\AtEveryBibitem{%
+  \clearfield{volume}%
+  \clearfield{number}}
+% To avoid parenthesis if no year entry in bib file
+\renewbibmacro*{issue+date}{%
+  \ifboolexpr{not test {\iffieldundef{year}} or not test {\iffieldundef{issue}}}
+    {\printtext[parens]{%
+       \iffieldundef{issue}
+         {\usebibmacro{date}}
+         {\printfield{issue}%
+          \setunit*{\addspace}%
+          \usebibmacro{date}}}}
+    {}%
+  \newunit}
+
+
+\ExecuteBibliographyOptions{isbn=false,url=false,doi=false,eprint=false}
+
+%\bibliography{/Users/Ileyk/Documents/Bibtex/Hubble_fellowship_no_url} 
+\addbibresource{/Users/Ileyk/Documents/Bibtex/CNRS_19_fixed.bib}
+%%% Pour un texte en francais
+
+
+%%\usepackage[applemac]{inputenc}
+%\usepackage[francais]{babel}
+	         % encodage des lettres accentuees
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}          % encodage des lettres accentuees
+%\usepackage{graphicx}
+%%\usepackage{graphicx} \def\BIB{}
+\usepackage[paper=a4paper,left=2.1cm,right=2.1cm,top=3.2cm,bottom=3.2cm]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx,wrapfig,lipsum} 
+%\def\BIB{}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[pdftex]{hyperref}
+%\usepackage{natbib}
+\usepackage{url}
+\usepackage{perpage} %the perpage package
+\MakePerPage{footnote} %the perpage package command
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=blue     % can put red here to visualize the links
+}
+
+\usepackage{enumitem}
+\usepackage{amssymb}
+
+%\renewcommand{\refname}{}
+
+\usepackage{floatrow}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Research summary}
+\lhead{El Mellah Ileyk}
+\rfoot{\thepage / \pageref{LastPage}}
+
+\DeclareUnicodeCharacter{00A0}{ }
+
+\usepackage{xspace}
+
+%%% Quelques raccourcis pour la mise en page
+\newcommand{\remarque}[1]{{\small \it #1}}
+\newcommand{\rubrique}{\bigskip \noindent $\bullet$ }
+\newcommand{\sgx}{SgXB\xspace}
+\newcommand{\sgxs}{SgXBs\xspace}
+\newcommand{\ulx}{ULX\xspace}
+\newcommand{\sfxt}{SFXT}
+\newcommand{\sg}{Sg\xspace}
+\newcommand{\co}{CO\xspace}
+\newcommand{\gw}{GW\xspace}
+\newcommand{\gws}{GWs\xspace}
+\newcommand{\grb}{GRB\xspace}
+\newcommand{\grbs}{GRBs\xspace}
+\newcommand{\eos}{EOS\xspace}
+\newcommand{\mhd}{MHD\xspace}
+\newcommand*{\hmxb}{HMXB\@\xspace}
+\newcommand*{\hmxbs}{HMXBs\@\xspace}
+\newcommand*{\lmxb}{LMXB\@\xspace}
+\newcommand*{\rlof}{RLOF\@\xspace}
+\newcommand*{\ns}{NS\@\xspace}
+\newcommand*{\nss}{NSs\@\xspace}
+\newcommand*{\bh}{BH\@\xspace}
+\newcommand*{\bhs}{BHs\@\xspace}
+\newcommand*{\eg}{e.g.\@\xspace}
+\newcommand*{\ie}{i.e.\@\xspace}
+\newcommand*{\aka}{a.k.a. \@\xspace}
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand{\mystar}{{\fontfamily{lmr}\selectfont$\star$}}
+\newcommand*{\msun}{$M_{\odot}$\@\xspace}
+\newcommand*{\mdotstar}{$\dot{M}_{\text{\mystar}}$\@\xspace}
+\newcommand*{\mdotacc}{$\dot{M}_{\text{acc}}$\@\xspace}
+\newcommand*{\ledd}{$L_{\text{Edd}}$\@\xspace}
+
+
+\newcommand{\ignore}[1]{}
+
+%\renewcommand*\rmdefault{iwona}
+
+%\pagenumbering{gobble}
+
+%\bibliographystyle{abbrvnat}
+%\setcitestyle{authoryear,open={((},close={))}}
+
+%\renewcommand{\thefootnote}{\roman{footnote}}
+
+% -------------------------------------------------
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\vspace*{-2.5cm}
+%\normalfont \tiny 
+%%\textsc{Paris Diderot} \\ [25pt] % Your university, school and/or department name(s)
+%\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+%\Large Speeding up the spinning top\\
+%\large How accretion sets the pace in High Mass X-ray Binaries  \\ % The assignment title
+%\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+\author{\tiny} % Your name
+\date{\tiny }%\normalsize\today} % Today's date or a custom date
+% -------------------------------------------------
+
+%\makeatletter
+%\def\@xfootnote[#1]{%
+%  \protected@xdef\@thefnmark{#1}%
+%  \@footnotemark\@footnotetext}
+%\makeatother
+
+%\usepackage[square,numbers,sort]{natbib}
+%\usepackage{har2nat} % "natbib" is loaded automatically
+
+%
+%\let\oldthebibliography\thebibliography
+%\renewcommand{\thebibliography}[1]{%
+%  \oldthebibliography{#1}
+%  \let\oldbibitem\bibitem
+%  \let\oldtextsc\textsc
+%  \def\oldbbland{et}
+%  \newcounter{authorcount}
+%  \def\bibitem[##1]##2{%
+%    \let\textsc\oldtextsc
+%    \let\bbland\oldbbland
+%    \oldbibitem[##1]{##2}%
+%    \let\textsc\mytextsc%
+%    \let\bbland\mybbland
+%    \setcounter{authorcount}{0}
+%  }
+%  \def\mybbland{\setcounter{authorcount}{0}\oldbbland}
+%  \def\dropetal##1.{ \bbletal}
+%  \def\mytextsc##1{%
+%    \oldtextsc{##1}%
+%    \stepcounter{authorcount}%
+%    \ifnum\value{authorcount}=2\relax%
+%      \expandafter\dropetal%
+%    \fi%
+%  }%
+%}
+
+
+\begin{document}
+
+%\bibpunct{[}{]}{;}{n}{,}{,}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%  PREMIERE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DANS CETTE PAGE, ON REMPLACE LES INDICATIONS ENTRE CROCHETS [...]
+%%% PAR LES INFORMATIONS DEMANDEES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\headrulewidth}{1pt}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{}
+\lhead{El Mellah Ileyk}
+\rfoot{\thepage / \pageref{LastPage}}
+\begin{center}
+\Large \textbf{ENSEIGNEMENT}
+\end{center}
+\normalfont
+\vspace*{-0.2cm}
+\indent \indent Apr\`es une premi\`ere exp\'erience d'enseignement dans le cadre de mes \'etudes \`a l'ENS de Cachan, j'ai pass\'e l'Agr\'egation de Physique en 2011 o\`u j'ai \'et\'e class\'e second. La diversit\'e des sujets abord\'es pendant cette ann\'ee, ainsi que la n\'ecessit\'e de se les r\'eapproprier pour pouvoir les restituer en un cours construit, ont consid\'erablement renforc\'e ma culture en Physique g\'en\'erale et mon souhait de participer aux activit\'es d'enseignement sup\'erieur.\\
+\indent \underline{Durant la 1$^{e}$ ann\'ee de mon monitorat de th\`ese}, ma mission d'enseignement s'est d\'eroul\'ee pour moiti\'e (32h TD) en Premi\`ere Ann\'ee Commune aux Etudes de Sant\'e (PACES) sous la direction d'Isabelle Grenier (AIM, Paris 7). J'y \'etais responsable de 2 groupes de TD d'environ 40 \'etudiants chacun. Le programme de Physique de PACES porte sur un vaste panel de probl\`emes, de la m\'ecanique des fluides aux int\'eractions rayonnement-mati\`ere. J'encadrais ensuite les travaux pratiques du cours de M1 "Traitement du signal - Signaux d\'eterministes" de Laurent Daudet (Institut Langevin, PSL), \`a hauteur de 32h TD (signaux discrets, analyse de Fourier, convolutions, spectre de puissance, filtrage, etc).\\
+\indent \underline{En 2$^{e}$ et 3$^{e}$ année de thèse}, j'ai rejoint l'\'equipe de C\'ecile Roucelle (APC, Paris 7) o\`u j'ai encadr\'e les TDs de M\'ecanique du point au niveau L1. Durant les 128h qui m'ont \'et\'e assign\'ees, j'ai particip\'{e} \`a la r\'edaction des sujets d'exercice et form\'{e} des \'etudiants n\'eophytes aux sp\'ecificit\'es du raisonnement physique. A mon sens, la 1$^{e}$ ann\'ee d'\'etudes sup\'erieures repr\'esente un moment charni\`ere dans le cursus des \'etudiants et requiert donc un encadrement \'etroit et exigeant pour \'eviter que les \'etudiants ne perdent un temps pr\'ecieux.\\
+\indent \underline{En 1$^{e}$ année de contrat postdoctoral} à Leuven, j'ai encadr\'e des projets scientifiques de Master dans l'unit\'e d'enseignement \textit{Computational Methods for Astrophysical Applications} dirig\'ee par Rony Keppens ($\sim$60h TD au cours de ma premi\`ere ann\'ee de postdoctorat). \underline{En 2$^{e}$ année}, je me suis porté volontaire pour encadrer deux groupes de TD d'étudiants en 1$^{e}$ année de Génie biologique, dans le cadre d'un cours d'Algèbre linéaire. \underline{Cette année}, je remplace Rony Keppens comme co-responsable du cours de Master \textit{Computational Methods for Astrophysical Applications} à l'occasion de son départ en année sabatique. La préparation du cours ($\sim$40h) m'a demandé de formaliser des connaissances en Astrophysique numérique que j'avais acquises de fa\c con empirique depuis le début de ma thèse et de replacer les outils que j'utilise au quotidien dans une perspective plus didactique. L'organisation logistique de l'enseignement, en mettant en place un r\'eseau de machines virtuelles accessibles aux \'etudiants, a aussi \'et\'e une composante importante, \`a garder \`a l'esprit lorsque l'on souhaite int\'egrer la dimension num\'erique \`a l'enseignement.\\
+\indent L'outil num\'erique offre de nouvelles opportunit\'es pour l'activit\'e scientifique, \`a condition de s'assurer que les \'etudiants qui seront amen\'es \`a la porter dans les ann\'ees \`a venir aient pleinement conscience de sa centralit\'e. Il s'agit de rendre l'Informatique famili\`ere aux \'etudiants d\`es leur premi\`ere ann\'ee afin qu'elle nourrisse leur r\'eflexion scientifique au lieu d'appara\^itre comme une contrainte \`a laquelle ils seraient oblig\'es de se soumettre. Au quotidien, la recherche en Physique ne peut pas plus se passer de comp\'etences avanc\'ees en Informatique qu'en Math\'ematiques. C'est pourquoi je souhaite soumettre aux \'etudiants d\`{e}s la Licence une base de donn\'ee de sujets num\'eriques d'exercices. Ils seraient \'ecrits de fa\c con \`a encourager le d\'eploiement de comp\'etences telle que la mise en ligne d'expos\'es int\'eractifs de leurs r\'eponses via la programmation d'applets.\\
+\indent Compte tenu de mon parcours, j'ai donc toutes les comp\'{e}tences pour enseigner à l'Universit\'{e} Toulouse III Paul Sabatier o\`{u} je souhaiterais intervenir en Licence de Physique fondamentale (TD, TP et CM) ainsi qu'en M1 Science de l'Univers et Technologies Spatiale (SUTS, encadr\'{e} par Gabriel Fruit) et en M2 SUTS parcours Astrophysique, Science de l'Espace et Plan\'{e}tologie (ASEP, encadr\'{e} par Natalie Webb). En particulier en M2, je souhaiterais initier les \'etudiants aux techniques modernes de calcul intensif (parall\'elisation, optimisation, visualisation et stockage des donn\'ees, etc), indispensables tant pour l'analyse de donn\'ees que pour la r\'esolution num\'erique de probl\`emes physiques. 
+
+%Au sein du Master "Astrophysique, Sciences de l'espace et Planétologie" dont Natalie Webb est responsable en 2$^{e}$ année, je souhaiterais aussi initier les \'etudiants aux techniques modernes de calcul intensif (parall\'elisation, optimisation, visualisation et stockage des donn\'ees, etc), indispensables tant pour l'analyse de donn\'ees que pour la r\'esolution num\'erique de probl\`emes physiques. 
+%
+%Physique Fondamentale (TP, TD, CM) ainsi qu'en M1 Science de l'Univers et Technologies Spatiale (SUTS, resp. Gabriel Fruit) et M2 SUTS parcours Astrophysique, Science de l'Espace et Planétologie (ASEP, resp. Natalie Webb).
+
+\end{document}
+%%%%%%%%%%%%%%%%%  Fin du fichier Latex  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

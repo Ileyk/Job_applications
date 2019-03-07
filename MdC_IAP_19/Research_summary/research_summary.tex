@@ -1,0 +1,367 @@
+%%%%%%%%%%%%%%%%%  Debut du fichier Latex  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,onecolumn]{article}
+%\usepackage[style=numeric,maxnames=1,uniquelist=false]{biblatex}
+%\usepackage[backend=bibtex,style=numeric,minnames=4,maxnames=4,firstinits=true,sorting=none]{biblatex} 
+\usepackage[backend=bibtex,bibstyle=phys,citestyle=authoryear,maxcitenames=1,minbibnames=3,maxbibnames=3,giveninits=true,natbib,doi=false,isbn=false]{biblatex} 
+%\usepackage[authordate,bibencoding=auto,strict,backend=biber,natbib]{biblatex}
+
+ %backend=biber is 'better'  
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+\renewbibmacro{in:}{} % to not have the "In:" to indicate the review
+\AtEveryBibitem{\clearfield{title}} % to remove the titles in the biblio
+% no page info
+\AtEveryBibitem{%
+  \ifentrytype{article}{%
+    \clearfield{pages}%
+  }{%
+  }%
+}
+% no language info
+\AtEveryBibitem{\clearlist{language}}
+% no language no page
+\AtEveryBibitem{%
+  \clearfield{volume}%
+  \clearfield{number}}
+% To avoid parenthesis if no year entry in bib file
+%\renewbibmacro*{issue+date}{%
+%  \ifboolexpr{not test {\iffieldundef{year}} or not test {\iffieldundef{issue}}}
+%    {\printtext[parens]{%
+%       \iffieldundef{issue}
+%         {\usebibmacro{date}}
+%         {\printfield{issue}%
+%          \setunit*{\addspace}%
+%          \usebibmacro{date}}}}
+%    {}%
+%  \newunit}
+
+
+\ExecuteBibliographyOptions{isbn=false,url=false,doi=false,eprint=false}
+
+%\bibliography{/Users/Ileyk/Documents/Bibtex/Hubble_fellowship_no_url} 
+\addbibresource{/Users/Ileyk/Work/Job_applications/CNAP_19/CNRS_19_fixed.bib}
+%%% Pour un texte en francais
+
+
+%%\usepackage[applemac]{inputenc}
+%\usepackage[francais]{babel}
+	         % encodage des lettres accentuees
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}          % encodage des lettres accentuees
+%\usepackage{graphicx}
+%%\usepackage{graphicx} \def\BIB{}
+\usepackage[paper=a4paper,left=2.2cm,right=2.2cm,top=3.5cm,bottom=3.5cm]{geometry}
+\usepackage{multicol}
+\usepackage{graphicx,wrapfig,lipsum} 
+%\def\BIB{}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[pdftex]{hyperref}
+%\usepackage{natbib}
+\usepackage{url}
+\usepackage{perpage} %the perpage package
+\MakePerPage{footnote} %the perpage package command
+\hypersetup{
+    colorlinks,%
+    citecolor=blue,%
+    filecolor=blue,%
+    linkcolor=blue,%
+    urlcolor=blue     % can put red here to visualize the links
+}
+
+\usepackage{enumitem}
+\usepackage{amssymb}
+
+%\renewcommand{\refname}{}
+
+\usepackage{floatrow}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\usepackage{changepage}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Research summary}
+\lhead{El Mellah Ileyk}
+\rfoot{\thepage / \pageref{LastPage}}
+
+\DeclareUnicodeCharacter{00A0}{ }
+
+\usepackage{xspace}
+
+%%% Quelques raccourcis pour la mise en page
+\newcommand{\remarque}[1]{{\small \it #1}}
+\newcommand{\rubrique}{\bigskip \noindent $\bullet$ }
+\newcommand{\sgx}{SgXB\xspace}
+\newcommand{\sgxs}{SgXBs\xspace}
+\newcommand{\ulx}{ULX\xspace}
+\newcommand{\ulxs}{ULXs\xspace}
+\newcommand{\sfxt}{SFXT}
+\newcommand{\sg}{Sg\xspace}
+\newcommand{\co}{CO\xspace}
+\newcommand{\gw}{GW\xspace}
+\newcommand{\gws}{GWs\xspace}
+\newcommand{\grb}{GRB\xspace}
+\newcommand{\grbs}{GRBs\xspace}
+\newcommand{\eos}{EOS\xspace}
+\newcommand{\mhd}{MHD\xspace}
+\newcommand*{\hmxb}{HMXB\@\xspace}
+\newcommand*{\hmxbs}{HMXBs\@\xspace}
+\newcommand*{\lmxb}{LMXB\@\xspace}
+\newcommand*{\rlof}{RLOF\@\xspace}
+\newcommand*{\ns}{NS\@\xspace}
+\newcommand*{\nss}{NSs\@\xspace}
+\newcommand*{\bh}{BH\@\xspace}
+\newcommand*{\bhs}{BHs\@\xspace}
+\newcommand*{\eg}{e.g.\@\xspace}
+\newcommand*{\ie}{i.e.\@\xspace}
+\newcommand*{\aka}{a.k.a. \@\xspace}
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand{\mystar}{{\fontfamily{lmr}\selectfont$\star$}}
+\newcommand*{\msun}{$M_{\odot}$\@\xspace}
+\newcommand*{\mdotstar}{$\dot{M}_{\text{\mystar}}$\@\xspace}
+\newcommand*{\mdotacc}{$\dot{M}_{\text{acc}}$\@\xspace}
+\newcommand*{\ledd}{$L_{\text{Edd}}$\@\xspace}
+
+
+\newcommand{\ignore}[1]{}
+
+%\renewcommand*\rmdefault{iwona}
+
+%\pagenumbering{gobble}
+
+%\bibliographystyle{abbrvnat}
+%\setcitestyle{authoryear,open={((},close={))}}
+
+%\renewcommand{\thefootnote}{\roman{footnote}}
+
+% -------------------------------------------------
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\vspace*{-2.5cm}
+%\normalfont \tiny 
+%%\textsc{Paris Diderot} \\ [25pt] % Your university, school and/or department name(s)
+%\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+%\Large Speeding up the spinning top\\
+%\large How accretion sets the pace in High Mass X-ray Binaries  \\ % The assignment title
+%\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+\author{\tiny} % Your name
+\date{\tiny }%\normalsize\today} % Today's date or a custom date
+% -------------------------------------------------
+
+%\makeatletter
+%\def\@xfootnote[#1]{%
+%  \protected@xdef\@thefnmark{#1}%
+%  \@footnotemark\@footnotetext}
+%\makeatother
+
+%\usepackage[square,numbers,sort]{natbib}
+%\usepackage{har2nat} % "natbib" is loaded automatically
+
+%
+%\let\oldthebibliography\thebibliography
+%\renewcommand{\thebibliography}[1]{%
+%  \oldthebibliography{#1}
+%  \let\oldbibitem\bibitem
+%  \let\oldtextsc\textsc
+%  \def\oldbbland{et}
+%  \newcounter{authorcount}
+%  \def\bibitem[##1]##2{%
+%    \let\textsc\oldtextsc
+%    \let\bbland\oldbbland
+%    \oldbibitem[##1]{##2}%
+%    \let\textsc\mytextsc%
+%    \let\bbland\mybbland
+%    \setcounter{authorcount}{0}
+%  }
+%  \def\mybbland{\setcounter{authorcount}{0}\oldbbland}
+%  \def\dropetal##1.{ \bbletal}
+%  \def\mytextsc##1{%
+%    \oldtextsc{##1}%
+%    \stepcounter{authorcount}%
+%    \ifnum\value{authorcount}=2\relax%
+%      \expandafter\dropetal%
+%    \fi%
+%  }%
+%}
+
+
+\begin{document}
+
+%\bibpunct{[}{]}{;}{n}{,}{,}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%  PREMIERE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DANS CETTE PAGE, ON REMPLACE LES INDICATIONS ENTRE CROCHETS [...]
+%%% PAR LES INFORMATIONS DEMANDEES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\headrulewidth}{1pt}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Research summary}
+\lhead{El Mellah Ileyk}
+\rfoot{\thepage / \pageref{LastPage}}
+
+
+\vspace*{-1.2cm}
+\begin{center}
+\Large \textbf{RESEARCH SUMMARY}\\
+\end{center}
+\normalfont
+
+In Supergiant X-ray binaries (\sgxs), a sub-family of high mass X-ray binaries, a neutron star (\ns) or a black hole orbits a supergiant O/B star and captures part of its stellar wind. \sgxs are thought to be the progenitors of the double compact object binaries whose final merger produces flares of gravitational waves similar to the ones first observed by the LIGO/Virgo collaboration in 2015. So as to make the most of the data from these merging compact objects, we need to study their evolution and understand how binarity has affected their properties. In simulations of secular long-term evolution \citep{Tauris2003a}, proxies are used to deduce a mass and angular momentum transfer rate from elementary parameters such as the mass ratio, but the efficiency of accretion onto the compact companion and of the associated spin-up from mass transfer is still highly uncertain. This flaw hampers our capacity to interpret the gravitational wave observations and to predict accurate merging rates. On the other hand, the observing X-ray facilities in orbit tell us about the short term variability of \sgxs, within the reach of a mission lifetime \citep{Furst2018}. Numerical models of the accretion flow provide the missing link between the two and have brought unprecedented insights on the geometry of these unresolved objects \citep{Blondin1991}.
+
+In this context, I have used and developed state-of-the-art magneto-hydrodynamics codes in an attempt to follow the flow from the Dantean stellar surface down to the magnetic vicinity of the \ns or the relativistic surroundings of the black hole. I have laid the foundations of a \textbf{consistent representation of the accretion process in \sgxs} by isolating the appropriate physics at stake at each scale, accounting for the complexity of the flow geometry (accretion tail in the wake of the compact object, photoionized and shocked regions, etc) and neatly linking the scales together. My work has helped to interpret observations of the \textbf{time variability we observed in Vela X-1} with the Chandra X-ray observatory (see section\,\ref{sec:time_var}). It brought new insights on the accretion process and the mass and angular momentum transfer mechanism which shapes the secular evolution of massive binaries and determines their final fate. \textbf{In agreement with observations of Cygnus X-1 and the \ulx M101 ULX-1}, I have shown that \textbf{wind-captured discs could form around a wind-fed accretor}, without Roche lobe overflow of the donor star (see section\,\ref{sec:enhanced}). For accreting \nss, where the applied torques on the magnetosphere depend strongly on the geometry of the accreting flow, \textbf{the implications for the spinning up/down of the \ns might be substantial}. Finally, the versatility of the numerical setups I have designed enabled me to look at a totally different type of binaries. Around two asymptotic giant branch stars, I contributed to the \textbf{discovery of the imprints left in the stellar wind by the presence of a previously unseen orbiting companion}, with dramatic consequences on the maximum mass loss rate of this type of stars.
+
+%I have been project leader for 4 successful computing time proposals on supercomputers. I am co-PI of 2 XMM-Newton proposals to observe a classic and an obscured Supergiant X-ray binary (\sgx) in an attempt to study respectively the accretion tail in the wake of the accretor and the intrinsic absorption due to the stellar wind. 
+
+\section{Time variability in Supergiant X-ray binaries}
+\label{sec:time_var}
+
+\footnotesize
+\textbf{[1] \textit{Axisymmetric hydrodynamical Bondi-Hoyle accretion onto a compact object}}\\
+\hspace*{16pt}\textbf{El Mellah \& Casse, MNRAS 2015}\\
+\textbf{[2] \textit{Accretion from a clumpy massive-star wind in Supergiant X-ray binaries}}\\
+\hspace*{16pt}\textbf{El Mellah, Sundqvist \& Keppens, MNRAS 2018}\\
+\textbf{[3] \textit{The clumpy absorber in the high mass X-ray binary Vela X-1}}\\
+\hspace*{16pt}\textbf{Grinberg, Hell, El Mellah et al., A\&A 2017}\\
+
+\normalsize
+
+%Continuous monitoring of \sgx have revealed a broad range of spectral and photometric behaviors with a special emphasis on their incredible time variability (off-states, flares, quiescence, etc) on a broad range of time scales, from hundreds of seconds to years. In the 2000's, a new class of \hmxb characterized by an enhanced variability was unearthed, Supergiant Fast X-ray transients. Their connections to the classic \sgx are still a matter of debate.\\
+%Probe the clumpiness of the wind, using the orbiting X-ray source as a probe => connection to massive stars community. Clumpiness important since alters mass loss rates observed and mass loss rates important since (i) significantly alter stellar evolution and the mass of the stellar remnant left in the end and (ii) to know angular momentum evolution (spins and shrinking of the orbit). 
+
+Continuous monitoring of \sgxs has revealed an incredible time variability (\eg off-states and flares) which could shed light on the micro-structure of the stellar wind. Using the orbiting X-ray source as a backlight, we could evaluate the degree of inhomogeneity or "clumpiness" of the wind. Since clumpiness systematically alters the values of the mass loss rates we derive from observations, improved constraints on the wind clumpiness would be of tremendous importance to predict the properties of the compact remnants massive stars eventually collapse into, for instance their mass distribution.
+
+During my PhD, I developed a hydrodynamical representation of the ideal wind accretion configuration, where a compact object captures material from a planar homogeneous supersonic wind (upper right insert in the left panel in Figure\,\ref{fig:config_SgXB_and_mesh}). I implemented semi-analytic boundary conditions to avoid spurious reflections of acoustic waves at the inner boundary and enable the computation to numerically relax. Since the scale at which the flow is significantly perturbed by the presence of the accretor is orders of magnitude larger than the compact object for realistic wind speeds, we designed, with my PhD advisor Fabien Casse (APC) a stretched self-similar spherical grid centered on the accretor. We then characterized the structure of the bow shock and the accretion tail which form as the flow is beamed towards the compact accretor, but also the actual mass accretion rate onto the compact object and the dependence on the Mach number of the incoming flow [1]. 
+
+\begin{figure}[!h]
+  \hspace*{-2.2cm}
+\begin{subfigure}{0.45\columnwidth}
+%  \centering
+%  \hspace*{-1cm}
+  \includegraphics[height=7.2cm]{Figures/config_SgXB_clumps.png}	
+\end{subfigure}%
+\begin{subfigure}{0.45\columnwidth}
+%  \centering
+  \hspace*{0.7cm}
+  \includegraphics[height=7.2cm]{Figures/mesh.jpeg}	
+\end{subfigure}
+\caption{(\textit{left}) Simulations where the multi-dimensional micro-structure of the wind of the hot donor star is for the first time resolved and followed as it is accreted by the compact object (CO). (\textit{right}) The clumps enter the simulation, perturb the shock and form transient disc-like structures around the accretor in the bottom right corner (see Figure\,\ref{fig:disc}). The 3D mesh illustrates how the coupling between a radially stretched grid and the adaptive mesh refinement algorithm enables us to monitor all the flow at once up to five orders of magnitude.}
+\label{fig:config_SgXB_and_mesh}
+\end{figure}
+
+During my first postdoctoral year, this setup served as a reference to study the effect of the clumps formed by internal shocks in the line-driven winds of hot stars. For long, it was proposed that the observed flares in a \sgx like Vela X-1 could be provoked by the serendipitous capture of a clump. However, with Rony Keppens and Jon Sundqvist (KU Leuven), we showed in [2] that realistic clumps computed from radiative-HD simulations do not undergo direct accretion (Figure\,\,\ref{fig:config_SgXB_and_mesh}). For the first time, we characterized how the material redistributes after the clumps impact the shock. The induced flares do not directly relate to individual clumps but are rather triggered by instantaneous angular momentum cancellation within the shocked region. Our results drove the community into exploring additional instabilities at the outer rim of the \ns magnetosphere to reproduce the observed variability in \sgxs \citep{Bozzo2008}.
+
+In [3], we reported coherent absorption events in Vela X-1. I was responsible for the interpretation and showed that these events could only be due to unaccreted clumps passing by the line-of-sight, provided the clumps were larger and the wind slower than expected. This result inspired the second part of my work on enhanced wind accretion.
+
+%. The latter result led me to evaluate how a slower wind would alter the geometry of the accretion flow and significantly enhance the mass transfer rate.
+
+%scenario brought up the possibility of a significant beaming of the stellar wind towards the compact object, an enhanced mass transfer rate and the formation of wind-captured discs.
+
+
+%\renewcommand{\headrulewidth}{1pt}
+%\pagestyle{fancy}
+%\fancyhf{}
+%\rhead{Research summary}
+%\lhead{El Mellah Ileyk}
+%\rfoot{\thepage / \pageref{LastPage}}
+
+\section{Enhanced accretion, wind-captured discs and orbital compression}
+\label{sec:enhanced}
+
+\footnotesize
+\textbf{[4] \textit{A numerical investigation of wind accretion in persistent Supergiant X-ray binaries}}\\
+\hspace*{16pt}\textbf{El Mellah \& Casse, MNRAS 2017}\\
+\textbf{[5] \textit{Formation of wind-captured discs in SgXBs: consequences for Vela X-1 \& Cygnus X-1}}\\
+\hspace*{16pt}\textbf{El Mellah, Sanders, Sundqvist \& Keppens, A\&A 2019}\\
+\textbf{[6] \textit{Wind Roche lobe overflow in HMXBs: a mass transfer mechanism for ULXs}}\\
+\hspace*{16pt}\textbf{El Mellah, Sundqvist \& Keppens, A\&A 2019}\\
+\textbf{[7] \textit{Reduced maximum mass loss rates of OH/IR stars due to unnoticed binary interaction}}\\
+\hspace*{16pt}\textbf{Decin et al., Nature Astronomy 2019}\\
+
+\normalsize
+
+%A better understanding of transfer of angular momentum in \hmxb is essential to predict the spins of the compact remnants and the number of compact binaries with periods short enough to merge within a Hubble time and emit a burst of gravitational waves that the current and upcoming instruments could detect.
+
+In my last year of PhD, I designed a model to study how the coupling between stellar, wind, orbital and accretion parameters in \sgxs could provide reliable estimates of the amount of angular momentum captured by the compact object [4]. I identified the configurations suitable to accrete enough angular momentum to form disc-like structures within the Roche lobe of the accretor. It seemed to require stringent conditions on the speed of the wind, which had to be very low compared to what was considered at that time in the literature. However, refined observations and stellar atmosphere computations later on suggested that line-driven acceleration might be more progressive than initially thought, leading to low speeds at the orbital separation. It drove me into performing full 3D hydrodynamics simulations with the appropriate sets of parameters I had found in [4]. In [5], I showed that, below a certain ratio of wind speed by the orbital speed and provided radiative cooling was accounted for, a centrifugally-maintained structure could form between the shock and the \ns magnetosphere below which the disc is truncated \citep[see Figure\,\ref{fig:disc},][]{Ghosh1979}. 
+
+%\begin{wrapfigure}{o}{0.4\textwidth}
+%  \centering
+%  \includegraphics[width=3in]{Figures/disc.png}
+%  \caption{3D contours of the mass density, where the arrows stand for the velocity field in the orbital plane. The central white sphere is the inner boundary of the simulation space which represents approximately the outer edge of the \ns magnetosphere, a few 100 times smaller than the outer boundary of the simulation space.}
+%%  \vspace{-10pt}
+%\label{fig:disc}
+%\end{wrapfigure}
+
+%\begin{wrapfigure}{o}{0.4\textwidth}
+%  \centering
+%  \includegraphics[width=3in]{Figures/disc.png}
+%  \caption{3D contours of the mass density, where the arrows stand for the velocity field in the orbital plane. The central white sphere is the inner boundary of the simulation space which represents approximately the outer edge of the \ns magnetosphere, a few 100 times smaller than the outer boundary of the simulation space.}
+%%  \vspace{-10pt}
+%\label{fig:disc}
+%\end{wrapfigure}
+
+%\newpage
+
+\vspace*{-0.3cm}
+\begin{figure}[!h]
+\floatbox[{\capbeside\thisfloatsetup{capbesideposition={right,center},capbesidewidth=9cm}}]{figure}[\FBwidth]
+{\caption{In simulations of wind accretion in \sgxs, I discovered a wind-captured geometrically thick disc around the central \ns, while this type of flow was previously thought to be spherical. It was made possible by the five orders of magnitude spanned by these simulations, from the orbital scale down to the magnetosphere.}\label{fig:disc}}
+{\includegraphics[width=6cm]{Figures/disc.png}}
+\vspace*{-0.4cm}
+\end{figure}
+
+With these simulations, I noticed that this regime known as wind - Roche lobe overflow \citep{Mohamed2011} was also associated to a surge of the rate at which mass is transferred due to the compression of the wind into the orbital plane. Therefore, I proposed a new mechanism for mass transfer in Ultra-luminous X-ray sources which, because it does not require Roche lobe overflow, explains how a small donor star like in M101 ULX-1 can feed a compact object accreting at a super-Eddington rate [6]. 
+
+In [7], we invoked binarity to solve the controversy on the existence of a superwind phase which was claimed to end the life of cool giant stars such as AGB stars : the orbital density enhancement of the wind induced by the presence of a previously unseen companion is large and leads to significant overestimates of the mass loss rate when the wind is wrongly assumed to be isotropic. In ALMA observations of molecular lines around two OH/IR stars, a subclass of asymptotic giant branch stars, we detected spiral structures identifying them as wide binary systems. In the corresponding paper, I adapted the codes I had developed for \sgxs to show that for realistic parameters, the wind of the OH/IR stars was strongly compressed into the orbital plane due to the presence of this previously undetected binary companion. It showed that the reported OH/IR star mass loss rates assuming an isolated star had been overestimated by a factor of a few to a few 10, depending on the binary orbit parameters, which has important consequences for the secular evolution of these objects.
+
+\section{Code development \& Kepler data analysis}
+\label{sec:code}
+
+\footnotesize
+\textbf{[8] \textit{MPI-AMRVAC 2.0 for Solar and Astrophysical Applications}}\\
+\hspace*{16pt}\textbf{Xia, Teunissen, El Mellah et al., ApJS 2018}\\
+\textbf{[9] \textit{A study of the shortest-period planets found with Kepler}, Sanchis-Ojeda et al., ApJ 2014}\\
+\textbf{[10] \textit{Triple-star candidates among the Kepler binaries}, Rappaport et al., ApJ 2013}\\
+\textbf{[11] \textit{Possible disintegrating short-period super-Mercury orbiting KIC 12557548}}\\
+\hspace*{21pt}\textbf{Rappaport, Levine, Chiang, El Mellah et al., ApJ 2012}\\
+
+\normalsize
+
+For the last years, I have extensively developed the magneto-hydrodynamics finite volume code \texttt{MPI-AMRVAC}. I implemented an angular momentum preserving scheme to guarantee the conservation of angular momentum to machine precision. This step was decisive to insure the robustness of the disc properties I reported on in [5]. I designed a radially stretched spherical grid and coupled it to an adaptive mesh refinement algorithm to monitor the accretion flow over several orders of magnitude at an affordable computational cost (see Figure\,\ref{fig:config_SgXB_and_mesh}, right panel). I made this new functionality public, documented its usage and validated it on the classic 1D Bondi spherical accretion in a paper describing new numerical techniques we developed for \texttt{MPI-AMRVAC 2.0} [8]. I also wrote a conservative scheme to handle viscosity as a flux term and apply the slope-limiting methods which enable us to combine high-order accuracy and stability in the solvers we use. On my own, I coded a ballistic integrator adapted to explore the effects of binarity on different types of winds (\eg from O/B supergiant stars or asymptotic giant branch stars) that I used in [5], [6] and [7].
+%Earlier on this year, I co-authored [7]. It describes the new numerical techniques we developed for \texttt{MPI-AMRVAC}, a magneto-HD finite volume code I have been using and developing extensively over the last years. In this paper, I focused on one of the 3 main features presented, the radially stretched spherical grid I used to monitor the accretion flow over several orders of magnitude at an affordable computational cost (see Figure\,\ref{fig:config_SgXB_and_mesh}, right panel). I validated the numerical implementation on the classic 1D Bondi spherical accretion.
+%Viscosity
+%Angular momentum
+
+
+Finally, I volunteered to join the Kavli Institute for Astrophysics and Space Research (MIT) from September 2011 to July 2012 and took an active part in the Kepler satellite data analysis effort under the supervision of Saul Rappaport. I used a prospective method to measure masses of very low mass stars in orbit around an F/G companion by using the Doppler boosting of light to get a photometric access to the radial velocity. Using the PyKE data reduction pipeline, I filtered thousands of Kepler light curves before Fourier transform to highlight potential short orbital period signatures. I would then fold and bin the data at the identified period, and that is how I ran into the peculiar transits of Kepler-1520b, the first disintegrating and super-Mercury exoplanet that we characterized in [11]. I also developed a pipeline to systematically look for eclipse timing variations, typical of the presence of a perturbing third body. It contributed to the identification of 30 new hierarchical triple star systems which could not have been detected with the transit method [10] and to a detailed analysis of the shortest-period exoplanets [9]. This seminal experience in Research laid the foundations of my scientific program : a better understanding of stellar bodies and remnants in interaction with their environment.\\
+
+
+%\newpage
+
+
+%\phantom{\cite{ElMellah2016a,ElMellah2018a,Xia2017,Rappaport:2012wi,Rappaport2013,SanchisOjeda:2014ww}}
+%%\subsubsection*{References}
+%\vspace*{-0.1cm}
+\setlength\bibitemsep{0pt}
+%%\scriptsize
+%\bibliographystyle{ieeetr}
+%\bibliography{/Users/Ileyk/Documents/Bibtex/Hubble_fellowship_no_url}
+
+%\settoggle{bbx:url}{false}
+%\settoggle{bbx:doi}{false}
+%\settoggle{bbx:eprint}{false}
+%\bibliographystyle{ieeetr}
+%\nocite{MEMSnet,wilde,markey}
+\printbibliography[heading=none,title={},omitnumbers=true]
+
+
+\end{document}
+%%%%%%%%%%%%%%%%%  Fin du fichier Latex  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

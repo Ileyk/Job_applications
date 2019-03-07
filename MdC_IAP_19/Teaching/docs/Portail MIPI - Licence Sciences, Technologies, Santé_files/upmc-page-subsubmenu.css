@@ -1,0 +1,107 @@
+/* Page de contenu "Formation" avec liste dynamique */
+/* Surcharge les CSS globales common.css et form.css */
+
+/* ================== */
+/* Contenu */
+/* ================== */
+/* Listes dynamiques sans le javascript */
+
+.dynamic_list, .dynamic_list ul {
+list-style-type: disc;
+font-size: 1em;
+}
+.dynamic_list li {
+margin: 0 0 5px 0;
+font-weight: bold;
+text-transform: uppercase;
+font-size: 1em;
+list-style-image : none;
+}
+.dynamic_list li img {
+	vertical-align:middle;
+}
+.dynamic_list li li {
+	font-weight: normal;
+	margin: 4px 10px;
+	padding:0;
+	border-bottom: none;
+}
+.dynamic_list li li li {
+text-transform: none;
+}
+/* styles pour le javascript */
+.dynamic_list, .dynamic_list ul {
+list-style-type: none;
+}
+.dynamic_list ul.closed {
+display: none;
+}
+.dynamic_list a.icon {
+margin: 0 10px  0 0;
+padding:0;
+}
+.dynamic_list .all_closed,  .dynamic_list .all_opened {
+	display: block;
+	text-align: right;
+}
+
+/* @group sub-sub-menu */
+/* .dynamic_list > remplace > div.content-left .sub-sub-menu */
+.dynamic_list{
+	margin: 2px 0;
+	border-top: 1px solid #9b7e56;
+}
+
+.content-left > div > div.first .dynamic_list{
+	margin: 2px 0;
+	border-top: none;
+}
+.dynamic_list ul{
+	padding: 0;margin: 0;
+	list-style-type: disc;
+	
+}
+.dynamic_list li{
+	text-indent: 6px;
+	background: none;
+	padding: 0 0 0.6em 0;
+	margin: 0.4em 0;
+	border-bottom: 1px solid #e4dbca;
+}
+.dynamic_list li a{
+	color:#333 ;
+	text-decoration: none;
+}
+.dynamic_list li a:hover{
+	font-weight: bold;
+}
+
+
+.dynamic_list li li{
+	padding:0 0 0 18px;
+	border-bottom: none;
+}
+
+.dynamic_list .plus, .dynamic_list .minus, .dynamic_list .page{
+	display: block;
+	height: 17px;
+	width: 13px;
+	float: left;
+}
+
+.dynamic_list .plus{
+	background: url(../img/page-content-subsubmenu-plus.gif) no-repeat 0 50%;
+}
+.dynamic_list .minus{
+	background: url(../img/page-content-subsubmenu-minus.gif) no-repeat 0 50%;
+}
+.dynamic_list .page{
+	background: url(../img/picto-page.gif) no-repeat 0 50%;
+	margin:2px 10px;
+}
+
+
+
+
+
+/* @end */

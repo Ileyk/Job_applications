@@ -1,0 +1,2613 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{nty/global/}
+  \entry{Baiotti2017}{article}{}
+    \name{author}{2}{}{%
+      {{hash=BL}{%
+         family={Baiotti},
+         family_i={B\bibinitperiod},
+         given={Luca},
+         given_i={L\bibinitperiod},
+      }}%
+      {{hash=RL}{%
+         family={Rezzolla},
+         family_i={R\bibinitperiod},
+         given={Luciano},
+         given_i={L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IOP Publishing}%
+    }
+    \keyw{black holes (astrophysics),equations of state,gravitational-wave
+  generation and sources,neutron stars,numerical relativity,relativity and
+  gravitation}
+    \strng{namehash}{BL+1}
+    \strng{fullhash}{BLRL1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2017}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    The merger of binary neutron-stars systems combines in a single process:
+  extreme gravity, copious emission of gravitational waves, complex
+  microphysics, and electromagnetic processes that can lead to astrophysical
+  signatures observable at the largest redshifts. We review here the recent
+  progress in understanding what could be considered Einstein's richest
+  laboratory, highlighting in particular the numerous significant advances of
+  the last decade. Although special attention is paid to the status of models,
+  techniques, and results for fully general-relativistic dynamical simulations,
+  a review is also offered on initial data and advanced simulations with
+  approximate treatments of gravity. Finally, we review the considerable amount
+  of work carried out on the post-merger phase, including: black-hole
+  formation, torus accretion onto the merged compact object, connection with
+  gamma-ray burst engines, ejected material, and its nucleosynthesis.%
+    }
+    \field{isbn}{9724829529}
+    \field{issn}{00344885}
+    \field{number}{9}
+    \field{pages}{096901}
+    \verb{url}
+    \verb http://stacks.iop.org/0034-4885/80/i=9/a=096901?key=crossref.ce3ee924
+    \verb db68d1e07f2926aad4885463
+    \endverb
+    \field{volume}{80}
+    \verb{file}
+    \verb :Users/Ileyk/Library/Application Support/Mendeley Desktop/Downloaded/
+    \verb Baiotti, Rezzolla - 2017 - Binary neutron star mergers a review of Ei
+    \verb nstein's richest laboratory.pdf:pdf;:Users/Ileyk/Articles/Baiotti{\_}
+    \verb 2017{\_}Rep.{\_}Prog.{\_}Phys.{\_}80{\_}096901.pdf:pdf
+    \endverb
+    \field{journaltitle}{Reports Prog. Phys.}
+    \field{eprinttype}{arXiv}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Berger2014}{article}{}
+    \name{author}{1}{}{%
+      {{hash=BE}{%
+         family={Berger},
+         family_i={B\bibinitperiod},
+         given={Edo},
+         given_i={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Annual Reviews}%
+    }
+    \keyw{gamma rays: observations,gamma rays: theory,gravitational
+  waves,radiation mechanisms: nonthermal,relativistic processes,stars: neutron}
+    \strng{namehash}{BE1}
+    \strng{fullhash}{BE1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2014}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    Gamma-ray bursts (GRBs) display a bimodal duration distribution with a
+  separation between the short- and long-duration bursts at about 2 s. The
+  progenitors of long GRBs have been identified as massive stars based on their
+  association with Type Ic core-collapse supernovae (SNe), their exclusive
+  location in star-forming galaxies, and their strong correlation with bright
+  UV regions within their host galaxies. Short GRBs have long been suspected on
+  theoretical grounds to arise from compact object binary mergers (neutron
+  star‚Äìneutron star or neutron star‚Äìblack hole). The discovery of short GRB
+  afterglows in 2005 provided the first insight into their energy scale and
+  environments, as well as established a cosmological origin, a mix of
+  host-galaxy types, and an absence of associated SNe. In this review, I
+  summarize nearly a decade of short GRB afterglow and host-galaxy observations
+  and use this information to shed light on the nature and properties of their
+  progenitors, the energy scale and collimation of the re...%
+    }
+    \field{issn}{0066-4146}
+    \field{number}{1}
+    \field{pages}{43\bibrangedash 105}
+    \verb{url}
+    \verb http://www.annualreviews.org/doi/10.1146/annurev-astro-081913-035926
+    \endverb
+    \field{volume}{52}
+    \verb{file}
+    \verb :Users/Ileyk/Articles/annurev-astro-081913-035926.pdf:pdf
+    \endverb
+    \field{journaltitle}{Annu. Rev. Astron. Astrophys.}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Bozzo2008}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BE}{%
+         family={Bozzo},
+         family_i={B\bibinitperiod},
+         given={E.},
+         given_i={E\bibinitperiod},
+      }}%
+      {{hash=FM}{%
+         family={Falanga},
+         family_i={F\bibinitperiod},
+         given={M.},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Stella},
+         family_i={S\bibinitperiod},
+         given={L.},
+         given_i={L\bibinitperiod},
+      }}%
+    }
+    \list{language}{1}{%
+      {en}%
+    }
+    \list{publisher}{1}{%
+      {IOP Publishing}%
+    }
+    \strng{namehash}{BE+1}
+    \strng{fullhash}{BEFMSL1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2008}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{issn}{0004-637X}
+    \field{number}{2}
+    \field{pages}{1031\bibrangedash 1044}
+    \verb{url}
+    \verb http://iopscience.iop.org/article/10.1086/589990
+    \endverb
+    \field{volume}{683}
+    \verb{file}
+    \verb :Users/Ileyk/Library/Application Support/Mendeley Desktop/Downloaded/
+    \verb Bozzo, Falanga, Stella - 2008 - Are There Magnetars in High‚ÄêMass X‚
+    \verb ÄêRay Binaries The Case of Supergiant Fast X‚ÄêRay Transients.pdf:pdf
+    \endverb
+    \field{journaltitle}{Astrophys. J.}
+    \field{year}{2008}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Castor1975}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CJI}{%
+         family={Castor},
+         family_i={C\bibinitperiod},
+         given={J.\bibnamedelima I.},
+         given_i={J\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=ADC}{%
+         family={Abbott},
+         family_i={A\bibinitperiod},
+         given={D.\bibnamedelima C.},
+         given_i={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=KRI}{%
+         family={Klein},
+         family_i={K\bibinitperiod},
+         given={R.\bibnamedelima I.},
+         given_i={R\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \keyw{Astronomical Models,Emission Spectra,Line Spectra,Main Sequence
+  Stars,Molecular Oscillators,O Stars,Optical Thickness,Radiation
+  Pressure,Stellar Atmospheres,Stellar Evolution,Stellar Mass Ejection,Stellar
+  Spectra,Stellar Winds}
+    \strng{namehash}{CJI+1}
+    \strng{fullhash}{CJIADCKRI1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{1975}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    The large number of subordinate lines of a representative ion are found to
+  have a dominant effect on the force of radiation on material in O star
+  atmospheres. The force is increased over that due to resonance lines alone so
+  that rates of mass loss are obtained which are 100 times greater than
+  previously thought possible. The force is related to the solution of the
+  line-transfer problem, and it becomes a function of the local velocity
+  gradient. A new stellar wind theory, with a different interpretation of the
+  singular point, is developed to treat this situation. The rate of mass loss,
+  and other properties of the model, are uniquely specified by the luminosity,
+  mass, and radius of the star. Alternative static models do not exist.
+  Numerical results give a rate of mass loss equal to .000006 solar mass per
+  year for an O5 star, with a terminal velocity of 1500 km/sec. The rate of
+  mass loss is sensitive to stellar parameters, while the terminal velocity is
+  not.%
+    }
+    \field{issn}{0004-637X}
+    \field{pages}{157}
+    \verb{url}
+    \verb http://adsabs.harvard.edu/abs/1975ApJ...195..157C
+    \endverb
+    \field{volume}{195}
+    \verb{file}
+    \verb :Users/Ileyk/Library/Application Support/Mendeley Desktop/Downloaded/
+    \verb Castor, Abbott, Klein - 1975 - Radiation-driven winds in Of stars.pdf
+    \verb :pdf
+    \endverb
+    \field{journaltitle}{Astrophys. J.}
+    \field{year}{1975}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Crinquand2018}{article}{}
+    \name{author}{3}{}{%
+      {{hash=CB}{%
+         family={Crinquand},
+         family_i={C\bibinitperiod},
+         given={Benjamin},
+         given_i={B\bibinitperiod},
+      }}%
+      {{hash=CB}{%
+         family={Cerutti},
+         family_i={C\bibinitperiod},
+         given={Beno{\^{i}}t},
+         given_i={B\bibinitperiod},
+      }}%
+      {{hash=DG}{%
+         family={Dubus},
+         family_i={D\bibinitperiod},
+         given={Guillaume},
+         given_i={G\bibinitperiod},
+      }}%
+    }
+    \keyw{Astrophysics,High Energy Astrophysical Phenomena}
+    \strng{namehash}{CB+1}
+    \strng{fullhash}{CBCBDG1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2018}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{abstract}{%
+    The recent detection of gravitational waves associated with a binary
+  neutron star merger revives interest in interacting pulsar magnetospheres.
+  Current models predict that a significant amount of magnetic energy should be
+  released prior to the merger, leading to electromagnetic precursor emission.
+  In this paper, we revisit this problem in the light of the recent progress in
+  kinetic modeling of pulsar magnetospheres. We limit our work to the case of
+  aligned magnetic moments and rotation axes, and thus neglect the orbital
+  motion. We perform global two-dimensional axisymmetric particle-in-cell
+  simulations of two pulsar magnetospheres merging at a rate consistent with
+  the emission of gravitational waves. Both symmetric and asymmetric systems
+  are investigated. Simulations show a significant enhancement of magnetic
+  dissipation within the magnetospheres as both stars get closer. Even though
+  the magnetospheric configuration depends on the relative orientations of the
+  pulsar spins and magnetic axes, all configurations present nearly the same
+  radiative signature, indicating that a common dissipation mechanism is at
+  work. The relative motion of both pulsars drives magnetic reconnection at the
+  boundary between the two magnetospheres, leading to efficient particle
+  acceleration and high-energy synchrotron emission. Polar-cap discharge is
+  also strongly enhanced in asymmetric configurations, resulting in vigorous
+  pair production and potentially additional high-energy radiation. We observe
+  an increase in the pulsar radiative efficiency by two orders of magnitude
+  over the last orbit before the merger exceeding the spindown power of an
+  isolated pulsar. The expected signal is too weak to be detected at high
+  energies even in the nearby universe. However, if a small fraction of this
+  energy is channeled into radio waves, it could be observed as a non-repeating
+  fast radio burst.%
+    }
+    \verb{url}
+    \verb http://arxiv.org/abs/1812.05898
+    \endverb
+    \field{journaltitle}{eprint arXiv:1812.05898}
+    \field{eprinttype}{arXiv}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Eichler1989}{article}{}
+    \name{author}{4}{}{%
+      {{hash=ED}{%
+         family={Eichler},
+         family_i={E\bibinitperiod},
+         given={David},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Livio},
+         family_i={L\bibinitperiod},
+         given={Mario},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=PT}{%
+         family={Piran},
+         family_i={P\bibinitperiod},
+         given={Tsvi},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=SDN}{%
+         family={Schramm},
+         family_i={S\bibinitperiod},
+         given={David\bibnamedelima N.},
+         given_i={D\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \keyw{Binary Stars,Gamma Ray Bursts,Gravitational Effects,Gravity
+  Waves,Hubble Constant,Neutrinos,Neutron Stars,Nuclear Fusion,Pulsars}
+    \strng{namehash}{ED+1}
+    \strng{fullhash}{EDLMPTSDN1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{1989}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{abstract}{%
+    Janeway. an explanation for the protective effect of the mHC class II I-E
+  molecule in murine diabetes.%
+    }
+    \field{issn}{00280836}
+    \field{number}{6229}
+    \field{pages}{126\bibrangedash 128}
+    \verb{url}
+    \verb http://www.nature.com/articles/340126a0
+    \endverb
+    \field{volume}{340}
+    \field{journaltitle}{Nature}
+    \field{year}{1989}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{ElMellah2015}{article}{}
+    \name{author}{2}{}{%
+      {{hash=EI}{%
+         family={{El Mellah}},
+         family_i={E\bibinitperiod},
+         given={I.},
+         given_i={I\bibinitperiod},
+      }}%
+      {{hash=CF}{%
+         family={{Casse}},
+         family_i={C\bibinitperiod},
+         given={F.},
+         given_i={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EI+1}
+    \strng{fullhash}{EICF1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2015}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \verb{url}
+    \verb http://adsabs.harvard.edu/abs/2015MNRAS.454.2657E
+    \endverb
+    \field{journaltitle}{Mon. Not. R. Astron. Soc.}
+    \field{year}{2015}
+  \endentry
+
+  \entry{ElMellah2019}{article}{}
+    \name{author}{4}{}{%
+      {{hash=EI}{%
+         family={{El Mellah}},
+         family_i={E\bibinitperiod},
+         given={I.},
+         given_i={I\bibinitperiod},
+      }}%
+      {{hash=SAAC}{%
+         family={{Sander}},
+         family_i={S\bibinitperiod},
+         given={A.\bibnamedelima A.\bibnamedelima C.},
+         given_i={A\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  C\bibinitperiod},
+      }}%
+      {{hash=SJO}{%
+         family={{Sundqvist}},
+         family_i={S\bibinitperiod},
+         given={J.\bibnamedelima O.},
+         given_i={J\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={{Keppens}},
+         family_i={K\bibinitperiod},
+         given={R.},
+         given_i={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EI+1}
+    \strng{fullhash}{EISAACSJOKR1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2018}
+    \field{extrayear}{1}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \verb{url}
+    \verb http://adsabs.harvard.edu/abs/2018arXiv181012933E
+    \endverb
+    \field{journaltitle}{Astron. Astrophys.}
+    \field{year}{2018}
+  \endentry
+
+  \entry{ElMellah2018}{article}{}
+    \name{author}{3}{}{%
+      {{hash=EI}{%
+         family={{El Mellah}},
+         family_i={E\bibinitperiod},
+         given={I.},
+         given_i={I\bibinitperiod},
+      }}%
+      {{hash=SJO}{%
+         family={{Sundqvist}},
+         family_i={S\bibinitperiod},
+         given={J.\bibnamedelima O.},
+         given_i={J\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=KR}{%
+         family={{Keppens}},
+         family_i={K\bibinitperiod},
+         given={R.},
+         given_i={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EI+1}
+    \strng{fullhash}{EISJOKR1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2018}
+    \field{extrayear}{2}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \verb{url}
+    \verb http://adsabs.harvard.edu/abs/2018MNRAS.475.3240E
+    \endverb
+    \field{journaltitle}{Mon. Not. R. Astron. Soc.}
+    \field{year}{2018}
+  \endentry
+
+  \entry{Foglizzo1997}{article}{}
+    \name{author}{2}{}{%
+      {{hash=FT}{%
+         family={{Foglizzo}},
+         family_i={F\bibinitperiod},
+         given={T.},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=RM}{%
+         family={{Ruffert}},
+         family_i={R\bibinitperiod},
+         given={M.},
+         given_i={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FT+1}
+    \strng{fullhash}{FTRM1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{1997}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{journaltitle}{Astron. Astrophys.}
+    \field{year}{1997}
+  \endentry
+
+  \entry{Foucart2012}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FF}{%
+         family={Foucart},
+         family_i={F\bibinitperiod},
+         given={F.},
+         given_i={F\bibinitperiod},
+      }}%
+    }
+    \keyw{Numerical studies of black holes and black-hole bi,Relativistic
+  stars: structure stability and oscill,gamma-ray bursts,gamma-ray sources}
+    \strng{namehash}{FF1}
+    \strng{fullhash}{FF1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2012}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{abstract}{%
+    Determining the final result of black hole-neutron star mergers, and in
+  particular the amount of matter remaining outside the black hole at late
+  times and its properties, has been one of the main motivations behind the
+  numerical simulation of these systems. Black hole-neutron star binaries are
+  amongst the most likely progenitors of short gamma-ray bursts --- as long as
+  massive (probably a few percents of a solar mass), hot accretion disks are
+  formed around the black hole. Whether this actually happens strongly depends
+  on the physical characteristics of the system, and in particular on the mass
+  ratio, the spin of the black hole, and the radius of the neutron star. We
+  present here a simple two-parameter model, fitted to existing numerical
+  results, for the determination of the mass remaining outside the black hole a
+  few milliseconds after a black hole-neutron star merger (i.e. the combined
+  mass of the accretion disk, the tidal tail, and the potential ejecta). This
+  model predicts the remnant mass within a few percents of the mass of the
+  neutron star, at least for remnant masses up to 20{\%} of the neutron star
+  mass. Results across the range of parameters deemed to be the most likely
+  astrophysically are presented here. We find that, for 10 solar mass black
+  holes, massive disks are only possible for large neutron stars
+  (R{\textgreater}12km), or quasi-extremal black hole spins
+  (a/M{\textgreater}0.9). We also use our model to discuss how the equation of
+  state of the neutron star affects the final remnant, and the strong influence
+  that this can have on the rate of short gamma-ray bursts produced by black
+  hole-neutron star mergers.%
+    }
+    \field{issn}{1550-7998}
+    \field{number}{12}
+    \verb{url}
+    \verb http://arxiv.org/abs/1207.6304 http://dx.doi.org/10.1103/PhysRevD.86.
+    \verb 124007
+    \endverb
+    \field{volume}{86}
+    \field{journaltitle}{Phys. Rev. D}
+    \field{eprinttype}{arXiv}
+    \field{year}{2012}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Gehrels2005}{article}{}
+    \name{author}{77}{}{%
+      {{hash=GN}{%
+         family={Gehrels},
+         family_i={G\bibinitperiod},
+         given={N.},
+         given_i={N\bibinitperiod},
+      }}%
+      {{hash=SCL}{%
+         family={Sarazin},
+         family_i={S\bibinitperiod},
+         given={C.\bibnamedelima L.},
+         given_i={C\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=OPT}{%
+         family={O'Brien},
+         family_i={O\bibinitperiod},
+         given={P.\bibnamedelima T.},
+         given_i={P\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=ZB}{%
+         family={Zhang},
+         family_i={Z\bibinitperiod},
+         given={B.},
+         given_i={B\bibinitperiod},
+      }}%
+      {{hash=BL}{%
+         family={Barbier},
+         family_i={B\bibinitperiod},
+         given={L.},
+         given_i={L\bibinitperiod},
+      }}%
+      {{hash=BSD}{%
+         family={Barthelmy},
+         family_i={B\bibinitperiod},
+         given={S.\bibnamedelima D.},
+         given_i={S\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Blustin},
+         family_i={B\bibinitperiod},
+         given={A.},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=BDN}{%
+         family={Burrows},
+         family_i={B\bibinitperiod},
+         given={D.\bibnamedelima N.},
+         given_i={D\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=CJ}{%
+         family={Cannizzo},
+         family_i={C\bibinitperiod},
+         given={J.},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=CJR}{%
+         family={Cummings},
+         family_i={C\bibinitperiod},
+         given={J.\bibnamedelima R.},
+         given_i={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=GM}{%
+         family={Goad},
+         family_i={G\bibinitperiod},
+         given={M.},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=HST}{%
+         family={Holland},
+         family_i={H\bibinitperiod},
+         given={S.\bibnamedelima T.},
+         given_i={S\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=HCP}{%
+         family={Hurkett},
+         family_i={H\bibinitperiod},
+         given={C.\bibnamedelima P.},
+         given_i={C\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=KJA}{%
+         family={Kennea},
+         family_i={K\bibinitperiod},
+         given={J.\bibnamedelima A.},
+         given_i={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Levan},
+         family_i={L\bibinitperiod},
+         given={A.},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=MCB}{%
+         family={Markwardt},
+         family_i={M\bibinitperiod},
+         given={C.\bibnamedelima B.},
+         given_i={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=MKO}{%
+         family={Mason},
+         family_i={M\bibinitperiod},
+         given={K.\bibnamedelima O.},
+         given_i={K\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Meszaros},
+         family_i={M\bibinitperiod},
+         given={P.},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Page},
+         family_i={P\bibinitperiod},
+         given={M.},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=PDM}{%
+         family={Palmer},
+         family_i={P\bibinitperiod},
+         given={D.\bibnamedelima M.},
+         given_i={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=RE}{%
+         family={Rol},
+         family_i={R\bibinitperiod},
+         given={E.},
+         given_i={E\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Sakamoto},
+         family_i={S\bibinitperiod},
+         given={T.},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=WR}{%
+         family={Willingale},
+         family_i={W\bibinitperiod},
+         given={R.},
+         given_i={R\bibinitperiod},
+      }}%
+      {{hash=AL}{%
+         family={Angelini},
+         family_i={A\bibinitperiod},
+         given={L.},
+         given_i={L\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Beardmore},
+         family_i={B\bibinitperiod},
+         given={A.},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=BPT}{%
+         family={Boyd},
+         family_i={B\bibinitperiod},
+         given={P.\bibnamedelima T.},
+         given_i={P\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={Breeveld},
+         family_i={B\bibinitperiod},
+         given={A.},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=CS}{%
+         family={Campana},
+         family_i={C\bibinitperiod},
+         given={S.},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=CMM}{%
+         family={Chester},
+         family_i={C\bibinitperiod},
+         given={M.\bibnamedelima M.},
+         given_i={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Chincarini},
+         family_i={C\bibinitperiod},
+         given={G.},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=CLR}{%
+         family={Cominsky},
+         family_i={C\bibinitperiod},
+         given={L.\bibnamedelima R.},
+         given_i={L\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=CG}{%
+         family={Cusumano},
+         family_i={C\bibinitperiod},
+         given={G.},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={{De Pasquale}},
+         family_i={D\bibinitperiod},
+         given={M.},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=FEE}{%
+         family={Fenimore},
+         family_i={F\bibinitperiod},
+         given={E.\bibnamedelima E.},
+         given_i={E\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=GP}{%
+         family={Giommi},
+         family_i={G\bibinitperiod},
+         given={P.},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=GC}{%
+         family={Gronwall},
+         family_i={G\bibinitperiod},
+         given={C.},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={Grupe},
+         family_i={G\bibinitperiod},
+         given={D.},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=HJE}{%
+         family={Hill},
+         family_i={H\bibinitperiod},
+         given={J.\bibnamedelima E.},
+         given_i={J\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Hinshaw},
+         family_i={H\bibinitperiod},
+         given={D.},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Hjorth},
+         family_i={H\bibinitperiod},
+         given={J.},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=HD}{%
+         family={Hullinger},
+         family_i={H\bibinitperiod},
+         given={D.},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=HKC}{%
+         family={Hurley},
+         family_i={H\bibinitperiod},
+         given={K.\bibnamedelima C.},
+         given_i={K\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Klose},
+         family_i={K\bibinitperiod},
+         given={S.},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kobayashi},
+         family_i={K\bibinitperiod},
+         given={S.},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=KC}{%
+         family={Kouveliotou},
+         family_i={K\bibinitperiod},
+         given={C.},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=KHA}{%
+         family={Krimm},
+         family_i={K\bibinitperiod},
+         given={H.\bibnamedelima A.},
+         given_i={H\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MV}{%
+         family={Mangano},
+         family_i={M\bibinitperiod},
+         given={V.},
+         given_i={V\bibinitperiod},
+      }}%
+      {{hash=MFE}{%
+         family={Marshall},
+         family_i={M\bibinitperiod},
+         given={F.\bibnamedelima E.},
+         given_i={F\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={McGowan},
+         family_i={M\bibinitperiod},
+         given={K.},
+         given_i={K\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Moretti},
+         family_i={M\bibinitperiod},
+         given={A.},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=MRF}{%
+         family={Mushotzky},
+         family_i={M\bibinitperiod},
+         given={R.\bibnamedelima F.},
+         given_i={R\bibinitperiod\bibinitdelim F\bibinitperiod},
+      }}%
+      {{hash=NK}{%
+         family={Nakazawa},
+         family_i={N\bibinitperiod},
+         given={K.},
+         given_i={K\bibinitperiod},
+      }}%
+      {{hash=NJP}{%
+         family={Norris},
+         family_i={N\bibinitperiod},
+         given={J.\bibnamedelima P.},
+         given_i={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=NJA}{%
+         family={Nousek},
+         family_i={N\bibinitperiod},
+         given={J.\bibnamedelima A.},
+         given_i={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=OJP}{%
+         family={Osborne},
+         family_i={O\bibinitperiod},
+         given={J.\bibnamedelima P.},
+         given_i={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=PK}{%
+         family={Page},
+         family_i={P\bibinitperiod},
+         given={K.},
+         given_i={K\bibinitperiod},
+      }}%
+      {{hash=PAM}{%
+         family={Parsons},
+         family_i={P\bibinitperiod},
+         given={A.\bibnamedelima M.},
+         given_i={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=PS}{%
+         family={Patel},
+         family_i={P\bibinitperiod},
+         given={S.},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=PM}{%
+         family={Perri},
+         family_i={P\bibinitperiod},
+         given={M.},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=PT}{%
+         family={Poole},
+         family_i={P\bibinitperiod},
+         given={T.},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=RP}{%
+         family={Romano},
+         family_i={R\bibinitperiod},
+         given={P.},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=RPW}{%
+         family={Roming},
+         family_i={R\bibinitperiod},
+         given={P.\bibnamedelima W.A.},
+         given_i={P\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Rosen},
+         family_i={R\bibinitperiod},
+         given={S.},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=SG}{%
+         family={Sato},
+         family_i={S\bibinitperiod},
+         given={G.},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=SP}{%
+         family={Schady},
+         family_i={S\bibinitperiod},
+         given={P.},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=SAP}{%
+         family={Smale},
+         family_i={S\bibinitperiod},
+         given={A.\bibnamedelima P.},
+         given_i={A\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Sollerman},
+         family_i={S\bibinitperiod},
+         given={J.},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=SR}{%
+         family={Starling},
+         family_i={S\bibinitperiod},
+         given={R.},
+         given_i={R\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Still},
+         family_i={S\bibinitperiod},
+         given={M.},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={Suzuki},
+         family_i={S\bibinitperiod},
+         given={M.},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=TG}{%
+         family={Tagliaferri},
+         family_i={T\bibinitperiod},
+         given={G.},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Takahashi},
+         family_i={T\bibinitperiod},
+         given={T.},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=TM}{%
+         family={Tashiro},
+         family_i={T\bibinitperiod},
+         given={M.},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={Tueller},
+         family_i={T\bibinitperiod},
+         given={J.},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=WAA}{%
+         family={Wells},
+         family_i={W\bibinitperiod},
+         given={A.\bibnamedelima A.},
+         given_i={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=WNE}{%
+         family={White},
+         family_i={W\bibinitperiod},
+         given={N.\bibnamedelima E.},
+         given_i={N\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=WRA}{%
+         family={Wijers},
+         family_i={W\bibinitperiod},
+         given={R.\bibnamedelima A.M.J.},
+         given_i={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GN+1}
+  \strng{fullhash}{GNSCLOPTZBBLBSDBABDNCJCJRGMHSTHCPKJALAMCBMKOMPPMPDMRESTWRALBABPTBACSCMMCGCLRCGDMFEEGPGCGDHJEHDHJHDHKCKSKSKCKHAMVMFEMKMAMRFNKNJPNJAOJPPKPAMPSPMPTRPRPWRSSGSPSAPSJSRSMSMTGTTTMTJWAAWNEWRA1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2005}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Gamma Ray Bursts (GRBs) are bright, brief flashes of high energy photons
+  that have fascinated scientists for 30 years. They come in two classes: long
+  ({\textgreater}2 s), softspectrum bursts and short, hard events. The major
+  progress to date on understanding GRBs has been for long bursts which are
+  typically at high redshift (z {\~{}} 1) and are in sub-luminous star-forming
+  host galaxies. They are likely produced in core-collapse explosions of
+  massive stars. Until the present observation, no short GRB had been
+  accurately ({\textless}10") and rapidly (minutes) located. Here we report the
+  detection of X-ray afterglow from and the localization of short burst
+  GRB050509b. Its position on the sky is near a luminous, non-starforming
+  elliptical galaxy at a redshift of 0.225, exactly the type of location one
+  would expect if the origin of this GRB is the long-proposed fiery merger of
+  neutron star (NS) or black hole (BH) binaries. The X-ray afterglow is found
+  to be weak and fading below detection within a few hours and no optical
+  afterglow is detected to stringent limits, explaining the past difficulty in
+  localizing short GRBs.%
+    }
+    \field{isbn}{1476-4687 (Electronic)$\backslash$r0028-0836 (Linking)}
+    \field{issn}{14764687}
+    \field{number}{7060}
+    \field{pages}{851\bibrangedash 854}
+    \verb{url}
+    \verb http://arxiv.org/abs/astro-ph/0505630 http://dx.doi.org/10.1038/natur
+    \verb e04142
+    \endverb
+    \field{volume}{437}
+    \field{journaltitle}{Nature}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{astro-ph}
+    \field{year}{2005}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Gill2018}{article}{}
+    \name{author}{2}{}{%
+      {{hash=GR}{%
+         family={Gill},
+         family_i={G\bibinitperiod},
+         given={Ramandeep},
+         given_i={R\bibinitperiod},
+      }}%
+      {{hash=GJ}{%
+         family={Granot},
+         family_i={G\bibinitperiod},
+         given={Jonathan},
+         given_i={J\bibinitperiod},
+      }}%
+    }
+    \keyw{gamma-ray burst: general,gravitational
+  waves,polarization,relativistic processes,stars: jets}
+    \strng{namehash}{GR+1}
+    \strng{fullhash}{GRGJ1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2018}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    The X-ray to radio afterglow emission of GRB 170817A/GW 170817 so far
+  scales as
+  {\$}F{\_}\backslashnu\backslashpropto\backslashnu{\^{}}{\{}-0.6{\}}t{\^{}}{\{}0.8{\}}{\$}
+  with observed frequency and time, consistent with a single power-law segment
+  of the synchrotron spectrum from the external shock going into the ambient
+  medium. This requires the effective isotropic equivalent afterglow shock
+  energy in the visible region to increase as {\$}\backslashsim
+  t{\^{}}{\{}1.7{\}}{\$}. The two main channels for such an energy increase are
+  (i) $\backslash$emph{\{}radial{\}}: more energy carried by slower material
+  (in the visible region) gradually catches up with the afterglow shock and
+  energizes it, and (ii) $\backslash$emph{\{}angular{\}}: more energy in
+  relativistic outflow moving at different angles to our line of sight, whose
+  radiation is initially beamed away from us but its beaming cone gradually
+  reaches our line of sight as it decelerates. One cannot distinguish between
+  these explanations (or combinations of them) using only the X-ray to radio
+  {\$}F{\_}\backslashnu(t){\$}. Here we demonstrate that the most promising way
+  to break this degeneracy is through afterglow imaging and polarization, by
+  calculating the predicted evolution of the afterglow image (its size, shape
+  and flux centroid) and linear polarization {\$}\backslashPi(t){\$} for
+  different angular and/or radial outflow structures that fit
+  {\$}F{\_}\backslashnu(t){\$}. We consider two angular profiles -- a Gaussian
+  and a narrow core with power-law wings in energy per solid angle, as well as
+  a (cocoon motivated) (quasi-) spherical flow with radial velocity profile.
+  For a jet viewed off-axis (and a magnetic field produced in the afterglow
+  shock) {\$}\backslashPi(t){\$} peaks when the jet's core becomes visible, at
+  {\$}\backslashapprox2t{\_}p{\$} where the lightcurve peaks at {\$}t{\_}p{\$},
+  and the image can be elongated with aspect
+  ratios{\$}\backslash;\backslashgtrsim2{\$}. A quasi-spherical flow has an
+  almost circular image and a much lower {\$}\backslashPi(t){\$} (peaking at
+  {\$}\backslashapprox t{\_}p{\$}) and flux centroid displacement.%
+    }
+    \field{issn}{0035-8711}
+    \field{pages}{4128\bibrangedash 4141}
+    \verb{url}
+    \verb http://arxiv.org/abs/1803.05892 http://dx.doi.org/10.1093/mnras/sty12
+    \verb 14 http://arxiv.org/abs/1803.05892{\%}0Ahttp://dx.doi.org/10.1093/mnr
+    \verb as/sty1214
+    \endverb
+    \field{volume}{478}
+    \field{journaltitle}{Mon. Not. R. Astron. Soc.}
+    \field{eprinttype}{arXiv}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Grinberg2017}{article}{}
+    \name{author}{16}{}{%
+      {{hash=GV}{%
+         family={{Grinberg}},
+         family_i={G\bibinitperiod},
+         given={V.},
+         given_i={V\bibinitperiod},
+      }}%
+      {{hash=HN}{%
+         family={{Hell}},
+         family_i={H\bibinitperiod},
+         given={N.},
+         given_i={N\bibinitperiod},
+      }}%
+      {{hash=EI}{%
+         family={{El Mellah}},
+         family_i={E\bibinitperiod},
+         given={I.},
+         given_i={I\bibinitperiod},
+      }}%
+      {{hash=NJ}{%
+         family={{Neilsen}},
+         family_i={N\bibinitperiod},
+         given={J.},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=SAAC}{%
+         family={{Sander}},
+         family_i={S\bibinitperiod},
+         given={A.\bibnamedelima A.\bibnamedelima C.},
+         given_i={A\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  C\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={{Leutenegger}},
+         family_i={L\bibinitperiod},
+         given={M.},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=FF}{%
+         family={{F{\"u}rst}},
+         family_i={F\bibinitperiod},
+         given={F.},
+         given_i={F\bibinitperiod},
+      }}%
+      {{hash=HDP}{%
+         family={{Huenemoerder}},
+         family_i={H\bibinitperiod},
+         given={D.\bibnamedelima P.},
+         given_i={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=KP}{%
+         family={{Kretschmar}},
+         family_i={K\bibinitperiod},
+         given={P.},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=KM}{%
+         family={{K{\"u}hnel}},
+         family_i={K\bibinitperiod},
+         given={M.},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={{Mart{\'{\i}}nez-N{\'u}{\~n}ez}},
+         family_i={M\bibinitperiod},
+         given={S.},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=NS}{%
+         family={{Niu}},
+         family_i={N\bibinitperiod},
+         given={S.},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=PK}{%
+         family={{Pottschmidt}},
+         family_i={P\bibinitperiod},
+         given={K.},
+         given_i={K\bibinitperiod},
+      }}%
+      {{hash=SNS}{%
+         family={{Schulz}},
+         family_i={S\bibinitperiod},
+         given={N.\bibnamedelima S.},
+         given_i={N\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={{Wilms}},
+         family_i={W\bibinitperiod},
+         given={J.},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=NMA}{%
+         family={{Nowak}},
+         family_i={N\bibinitperiod},
+         given={M.\bibnamedelima A.},
+         given_i={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GV+1}
+    \strng{fullhash}{GVHNEINJSAACLMFFHDPKPKMMSNSPKSNSWJNMA1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2017}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{url}
+    \verb http://adsabs.harvard.edu/abs/2017A%26A...608A.143G
+    \endverb
+    \field{journaltitle}{Astron. Astrophys.}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Hulse1974}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HRA}{%
+         family={Hulse},
+         family_i={H\bibinitperiod},
+         given={R.\bibnamedelima A.},
+         given_i={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=TJH}{%
+         family={Taylor},
+         family_i={T\bibinitperiod},
+         given={J.\bibnamedelima H.},
+         given_i={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \keyw{Binary Stars,Black Holes (Astronomy),Companion Stars,Eccentric
+  Orbits,Mass Ratios,Neutron Stars,Orbital Elements,Pulsars,Radial
+  Velocity,Relativistic Effects,Subject headings,Velocity Distribution}
+    \strng{namehash}{HRA+1}
+    \strng{fullhash}{HRATJH1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{1974}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    We have detected a pulsar with a pulsation period that varies
+  systematically between 0 S 058967 and 0 S 059045 over a cycle of 0 d 3230.
+  Approximately 200 independent observations over 5-minute intervals have
+  yielded a well-sampled velocity curve which implies a binary orbit with
+  projected semimajor axis U] sin i = 1.0 Rq, eccentricity e = 0.615, and mass
+  function/(w) = 0.13 M 0 . No eclipses are observed. We infer that the unseen
+  companion is a compact object with mass comparable to that of the pulsar. In
+  addition to the obvious potential for determining the masses of the pulsar
+  and its companion, this discovery makes feasible a number of studies
+  involving the physics of compact objects, the astro-physics of close binary
+  systems, and special-and general-relativistic effects.%
+    }
+    \field{issn}{0004-637X}
+    \field{pages}{L51\bibrangedash L53}
+    \verb{url}
+    \verb http://adsbit.harvard.edu/cgi-bin/nph-iarticle{\_}query?1975ApJ...195
+    \verb L..51H{\&}defaultprint=YES{\&}page{\_}ind=0{\&}filetype=.pdf{\%}0Ahtt
+    \verb p://articles.adsabs.harvard.edu/cgi-bin/nph-iarticle{\_}query?1975ApJ
+    \verb ...195L..51H{\&}data{\_}type=PDF{\_}HIGH{\&}whole{\_}paper=YES{\&}typ
+    \verb e=PRIN
+    \endverb
+    \field{volume}{195}
+    \verb{file}
+    \verb :Users/Ileyk/Articles/1975ApJ{\_}{\_}{\_}195L{\_}{\_}51H.pdf:pdf
+    \endverb
+    \field{journaltitle}{Astrophys. J.}
+    \field{year}{1974}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Kathirgamaraju2019}{article}{}
+    \name{author}{4}{}{%
+      {{hash=KA}{%
+         family={{Kathirgamaraju}},
+         family_i={K\bibinitperiod},
+         given={A.},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=TA}{%
+         family={{Tchekhovskoy}},
+         family_i={T\bibinitperiod},
+         given={A.},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=GD}{%
+         family={{Giannios}},
+         family_i={G\bibinitperiod},
+         given={D.},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=BR}{%
+         family={{Barniol Duran}},
+         family_i={B\bibinitperiod},
+         given={R.},
+         given_i={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KA+1}
+    \strng{fullhash}{KATAGDBR1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2019}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{journaltitle}{Mon. Not. R. Astron. Soc.}
+    \field{year}{2019}
+  \endentry
+
+  \entry{Kim2015}{article}{}
+    \name{author}{3}{}{%
+      {{hash=KC}{%
+         family={{Kim}},
+         family_i={K\bibinitperiod},
+         given={C.},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=PBBP}{%
+         family={{Perera}},
+         family_i={P\bibinitperiod},
+         given={B.\bibnamedelima B.\bibnamedelima P.},
+         given_i={B\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim
+  P\bibinitperiod},
+      }}%
+      {{hash=MMA}{%
+         family={{McLaughlin}},
+         family_i={M\bibinitperiod},
+         given={M.\bibnamedelima A.},
+         given_i={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KC+1}
+    \strng{fullhash}{KCPBBPMMA1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2015}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{journaltitle}{Mon. Not. R. Astron. Soc.}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Kumar2015}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KP}{%
+         family={Kumar},
+         family_i={K\bibinitperiod},
+         given={Pawan},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=ZB}{%
+         family={Zhang},
+         family_i={Z\bibinitperiod},
+         given={Bing},
+         given_i={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KP+1}
+    \strng{fullhash}{KPZB1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2015}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{abstract}{%
+    We provide a comprehensive review of major developments in our
+  understanding of gamma-ray bursts, with particular focus on the discoveries
+  made within the last fifteen years when their true nature was uncovered. We
+  describe the observational properties of photons from the radio to 100s GeV
+  bands, both in the prompt emission and the afterglow phases. Mechanisms for
+  the generation of these photons in GRBs are discussed and confronted with
+  observations to shed light on the physical properties of these explosions,
+  their progenitor stars and the surrounding medium. After presenting
+  observational evidence that a powerful, collimated, jet moving at close to
+  the speed of light is produced in these explosions, we describe our current
+  understanding regarding the generation, acceleration, and dissipation of the
+  jet. We discuss mounting observational evidence that long duration GRBs are
+  produced when massive stars die, and that at least some short duration bursts
+  are associated with old, roughly solar mass, compact stars. The question of
+  whether a black-hole or a strongly magnetized, rapidly rotating neutron star
+  is produced in these explosions is also discussed. We provide a brief summary
+  of what we have learned about relativistic collisionless shocks and particle
+  acceleration from GRB afterglow studies, and discuss the current
+  understanding of radiation mechanism during the prompt emission phase. We
+  discuss theoretical predictions of possible high-energy neutrino emission
+  from GRBs and the current observational constraints. Finally, we discuss how
+  these explosions may be used to study cosmology, e.g. star formation, metal
+  enrichment, reionization history, as well as the formation of first stars and
+  galaxies in the universe.%
+    }
+    \field{issn}{03701573}
+    \field{pages}{1\bibrangedash 109}
+    \verb{url}
+    \verb http://adsabs.harvard.edu/abs/2015PhR...561....1K
+    \endverb
+    \field{volume}{561}
+    \verb{file}
+    \verb :Users/Ileyk/Articles/kumar2015.pdf:pdf
+    \endverb
+    \field{journaltitle}{Phys. Rep.}
+    \field{eprinttype}{arXiv}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Lattimer1974}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LJM}{%
+         family={Lattimer},
+         family_i={L\bibinitperiod},
+         given={J.\bibnamedelima M.},
+         given_i={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=SDN}{%
+         family={Schramm},
+         family_i={S\bibinitperiod},
+         given={D.\bibnamedelima N.},
+         given_i={D\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+    }
+    \keyw{Astronomical Models,Black Holes (Astronomy),Collision
+  Parameters,Gravitational Effects,Interstellar Matter,Neutron Stars,Roche
+  Limit,Stellar Mass Ejection,Tides}
+    \strng{namehash}{LJM+1}
+    \strng{fullhash}{LJMSDN1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{1974}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{abstract}{%
+    The tidal breakup of a neutron star near a black hole is examined. A simple
+  model for the interaction is calculated, and the results show that the amount
+  of neutron-star material ejected into the interstellar medium may be
+  significant. Using reasonable stellar statistics, the estimated quantity of
+  ejected material is found to be roughly comparable to abundance of r-process
+  material.%
+    }
+    \field{isbn}{9780470400531}
+    \field{issn}{15206904}
+    \field{pages}{L145}
+    \verb{url}
+    \verb http://adsabs.harvard.edu/doi/10.1086/181612
+    \endverb
+    \field{volume}{192}
+    \field{journaltitle}{Astrophys. J.}
+    \field{year}{1974}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Li1998}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LLX}{%
+         family={Li},
+         family_i={L\bibinitperiod},
+         given={Li-Xin},
+         given_i={L\bibinitperiod-X\bibinitperiod},
+      }}%
+      {{hash=PB}{%
+         family={Paczy{\'{n}}ski},
+         family_i={P\bibinitperiod},
+         given={Bohdan},
+         given_i={B\bibinitperiod},
+      }}%
+    }
+    \keyw{GAMMA RAYS: BURSTS,Gamma Rays: Bursts,STARS: BINARIES: CLOSE,STARS:
+  NEUTRON,STARS: SUPERNOVAE: GENERAL,Stars: Binaries: Close,Stars:
+  Neutron,Stars: Supernovae: General}
+    \strng{namehash}{LLX+1}
+    \strng{fullhash}{LLXPB1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{1998}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{issn}{0004637X}
+    \field{number}{2}
+    \field{pages}{3\bibrangedash 6}
+    \verb{url}
+    \verb http://adsabs.harvard.edu/abs/1998ApJ...507L..59L
+    \endverb
+    \field{volume}{507}
+    \verb{file}
+    \verb :Users/Ileyk/Articles/Li{\_}1998{\_}ApJ{\_}507{\_}L59.pdf:pdf
+    \endverb
+    \field{journaltitle}{Astrophys. J.}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{astro-ph}
+    \field{year}{1998}
+  \endentry
+
+  \entry{MacFadyen1999}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MAI}{%
+         family={MacFadyen},
+         family_i={M\bibinitperiod},
+         given={A.\bibnamedelima I.},
+         given_i={A\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+      {{hash=WSE}{%
+         family={Woosley},
+         family_i={W\bibinitperiod},
+         given={S.\bibnamedelima E.},
+         given_i={S\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \keyw{ACCRETION,ACCRETION DISKS,Accretion,Accretion Disks,BLACK HOLE
+  PHYSICS,Black Hole Physics,GAMMA RAYS: BURSTS,Gamma Rays: Bursts,STARS:
+  SUPERNOVAE: GENERAL,Stars: Supernovae: General}
+    \strng{namehash}{MAI+1}
+    \strng{fullhash}{MAIWSE1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{1999}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{issn}{0004-637X}
+    \field{pages}{262\bibrangedash 289}
+    \verb{url}
+    \verb http://adsabs.harvard.edu/abs/1999ApJ...524..262M
+    \endverb
+    \field{volume}{524}
+    \field{journaltitle}{Astrophys. J.}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{astro-ph}
+    \field{year}{1999}
+  \endentry
+
+  \entry{Metzger2010}{article}{}
+    \name{author}{10}{}{%
+      {{hash=MBD}{%
+         family={Metzger},
+         family_i={M\bibinitperiod},
+         given={B.\bibnamedelima D.},
+         given_i={B\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=MPG}{%
+         family={Mart{\'{i}}nez-Pinedo},
+         family_i={M\bibinitperiod-P\bibinitperiod},
+         given={G.},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=DS}{%
+         family={Darbha},
+         family_i={D\bibinitperiod},
+         given={S.},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=QE}{%
+         family={Quataert},
+         family_i={Q\bibinitperiod},
+         given={E.},
+         given_i={E\bibinitperiod},
+      }}%
+      {{hash=AA}{%
+         family={Arcones},
+         family_i={A\bibinitperiod},
+         given={A.},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Kasen},
+         family_i={K\bibinitperiod},
+         given={D.},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=TR}{%
+         family={Thomas},
+         family_i={T\bibinitperiod},
+         given={R.},
+         given_i={R\bibinitperiod},
+      }}%
+      {{hash=NP}{%
+         family={Nugent},
+         family_i={N\bibinitperiod},
+         given={P.},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=PIV}{%
+         family={Panov},
+         family_i={P\bibinitperiod},
+         given={I.\bibnamedelima V.},
+         given_i={I\bibinitperiod\bibinitdelim V\bibinitperiod},
+      }}%
+      {{hash=ZNT}{%
+         family={Zinner},
+         family_i={Z\bibinitperiod},
+         given={N.\bibnamedelima T.},
+         given_i={N\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+    }
+    \keyw{Binaries: close,Gamma-ray burst: general,Gravitation,Nuclear
+  reactions,Stars: neutron,Supernovae: general,abundances,binaries:
+  close,gamma-ray burst: general,gravitation,nuclear
+  reactions,nucleosynthesis,stars: neutron,supernovae: general}
+    \strng{namehash}{MBD+1}
+    \strng{fullhash}{MBDMPGDSQEAAKDTRNPPIVZNT1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2010}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    The most promising astrophysical sources of kHz gravitational waves (GWs)
+  are the inspiral and merger of binary neutron star(NS)/black hole systems.
+  Maximizing the scientific return of a GW detection will require identifying a
+  coincident electro-magnetic (EM) counterpart. One of the most likely sources
+  of isotropic EM emission from compact object mergers is a supernova-like
+  transient powered by the radioactive decay of heavy elements synthesized in
+  ejecta from the merger. We present the first calculations of the optical
+  transients from compact object mergers that self-consistently determine the
+  radioactive heating by means of a nuclear reaction network; using this
+  heating rate, we model the light curve with a one dimensional Monte Carlo
+  radiation transfer calculation. For an ejecta mass {\~{}}1e-2 M{\_}sun[1e-3
+  M{\_}sun] the resulting light curve peaks on a timescale {\~{}} 1 day at a
+  V-band luminosity nu L{\_}nu {\~{}} 3e41[1e41] ergs/s (M{\_}V = -15[-14]);
+  this corresponds to an effective "f" parameter {\~{}}3e-6 in the Li-Paczynski
+  toy model. We argue that these results are relatively insensitive to
+  uncertainties in the relevant nuclear physics and to the precise early-time
+  dynamics and ejecta composition. Due to the rapid evolution and low
+  luminosity of NS merger transients, EM counterpart searches triggered by GW
+  detections will require close collaboration between the GW and astronomical
+  communities. NS merger transients may also be detectable following a
+  short-duration Gamma-Ray Burst or "blindly" with present or upcoming optical
+  transient surveys. Because the emission produced by NS merger ejecta is
+  powered by the formation of rare r-process elements, current optical
+  transient surveys can directly constrain the unknown origin of the heaviest
+  elements in the Universe.%
+    }
+    \field{issn}{00358711}
+    \field{number}{4}
+    \field{pages}{2650\bibrangedash 2662}
+    \verb{url}
+    \verb http://adsabs.harvard.edu/abs/2010MNRAS.406.2650M
+    \endverb
+    \field{volume}{406}
+    \verb{file}
+    \verb :Users/Ileyk/Articles/mnras0406-2650.pdf:pdf
+    \endverb
+    \field{journaltitle}{Mon. Not. R. Astron. Soc.}
+    \field{eprinttype}{arXiv}
+    \field{year}{2010}
+  \endentry
+
+  \entry{Metzger2017}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MBD}{%
+         family={Metzger},
+         family_i={M\bibinitperiod},
+         given={Brian\bibnamedelima D.},
+         given_i={B\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer International Publishing}%
+    }
+    \keyw{Black holes,Gravitational waves,Neutron
+  stars,Nucleosynthesis,Radiative transfer}
+    \strng{namehash}{MBD1}
+    \strng{fullhash}{MBD1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2017}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    The mergers of double neutron star (NS-NS) and black hole (BH)-NS binaries
+  are promising gravitational wave (GW) sources for Advanced LIGO and future GW
+  detectors. The neutron-rich ejecta from such merger events undergoes rapid
+  neutron capture (r-process) nucleosynthesis, enriching our Galaxy with rare
+  heavy elements like gold and platinum. The radioactive decay of these
+  unstable nuclei also powers a rapidly evolving, supernova-like transient
+  known as a "kilonova". Kilonovae provide an approximately isotropic
+  electromagnetic counterpart to the GW signal, which also provides a unique
+  and direct probe of an important, if not dominant, r-process site. This
+  handbook reviews the history and physics of kilonovae, leading to the current
+  paradigm of week-long emission with a spectral peak at near-infrared
+  wavelengths. Using a simple light curve model to illustrate the basic
+  physics, I introduce potentially important variations on this canonical
+  picture, including: {\~{}}day-long optical ("blue") emission from
+  lanthanide-free components of the ejecta; {\~{}}hours-long precursor UV/blue
+  emission, powered by the decay of free neutrons in the outermost ejecta
+  layers; and enhanced emission due to energy input from a long-lived central
+  engine, such as an accreting BH or millisecond magnetar. I assess the
+  prospects of detecting kilonovae following future GW detections of
+  NS-NS/BH-NS mergers in light of the recent follow-up campaign of the LIGO
+  binary BH-BH mergers.%
+    }
+    \field{issn}{14338351}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 59}
+    \verb{url}
+    \verb http://link.springer.com/10.1007/s41114-017-0006-z
+    \endverb
+    \field{volume}{20}
+    \verb{file}
+    \verb :Users/Ileyk/Library/Application Support/Mendeley Desktop/Downloaded/
+    \verb Metzger - 2017 - Kilonovae.pdf:pdf
+    \endverb
+    \field{journaltitle}{Living Rev. Relativ.}
+    \field{eprinttype}{arXiv}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Metzger2015}{article}{}
+    \name{author}{4}{}{%
+      {{hash=MBD}{%
+         family={Metzger},
+         family_i={M\bibinitperiod},
+         given={Brian\bibnamedelima D.},
+         given_i={B\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=MB}{%
+         family={Margalit},
+         family_i={M\bibinitperiod},
+         given={Ben},
+         given_i={B\bibinitperiod},
+      }}%
+      {{hash=KD}{%
+         family={Kasen},
+         family_i={K\bibinitperiod},
+         given={Daniel},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=QE}{%
+         family={Quataert},
+         family_i={Q\bibinitperiod},
+         given={Eliot},
+         given_i={E\bibinitperiod},
+      }}%
+    }
+    \keyw{Gamma-ray burst: general,Pulsars: general,Stars:
+  magnetars,Supernovae: general,gamma-ray burst: general,pulsars:
+  general,stars: magnetars,supernovae: general}
+    \strng{namehash}{MBD+1}
+    \strng{fullhash}{MBDMBKDQE1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2015}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    Strongly-magnetized, rapidly-rotating neutron stars are contenders for the
+  central engines of both long-duration gamma-ray bursts (LGRBs) and
+  hydrogen-poor super-luminous supernovae (SLSNe-I). Models for typical
+  ({\~{}}minute long) LGRBs invoke magnetars with high dipole magnetic fields
+  (Bd {\textgreater} 1e15 G) and short spin-down times, while models for
+  SLSNe-I invoke neutron stars with weaker fields and longer spin-down times of
+  weeks. Here we identify a transition region in the space of Bd and birth
+  period for which a magnetar can power both a long GRB and a luminous SN. In
+  particular, we show that a 2 ms period magnetar with a spin-down time of
+  {\~{}}1e4 s can explain the observations of both the ultra-long GRB 111209
+  and its associated luminous SN2011kl. For magnetars with longer spin down
+  times, we predict even longer duration ({\~{}}1e6 s) GRBs and brighter
+  supernovae, a correlation that extends to Swift J2058+05 (commonly
+  interpreted as a tidal disruption event). We further show that previous
+  estimates of the maximum rotational energy of a proto-magnetar were too
+  conservative and energies up to Emax {\~{}}1-2e53 erg are possible. The
+  magnetar model can therefore comfortably accommodate the extreme energy
+  requirements recently posed by the most luminous supernova ASASSN-15lh. The
+  high ionization flux from a pulsar wind nebula powering ASASSN-15lh may lead
+  to an "ionization break-out" X-ray burst over the coming months, which would
+  be accompanied by an abrupt change in the optical spectrum. We conclude by
+  briefly contrasting millisecond magnetar and black hole models for SLSNe and
+  ultra-long GRBs.%
+    }
+    \field{issn}{13652966}
+    \field{number}{3}
+    \field{pages}{3311\bibrangedash 3316}
+    \verb{url}
+    \verb http://arxiv.org/abs/1508.02712 http://dx.doi.org/10.1093/mnras/stv22
+    \verb 24
+    \endverb
+    \field{volume}{454}
+    \verb{file}
+    \verb :Users/Ileyk/Articles/metzger2015.pdf:pdf
+    \endverb
+    \field{journaltitle}{Mon. Not. R. Astron. Soc.}
+    \field{eprinttype}{arXiv}
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Murguia-Berthier2017a}{article}{}
+    \name{author}{9}{}{%
+      {{hash=MBA}{%
+         family={Murguia-Berthier},
+         family_i={M\bibinitperiod-B\bibinitperiod},
+         given={Ariadna},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=RRE}{%
+         family={Ramirez-Ruiz},
+         family_i={R\bibinitperiod-R\bibinitperiod},
+         given={Enrico},
+         given_i={E\bibinitperiod},
+      }}%
+      {{hash=MG}{%
+         family={Montes},
+         family_i={M\bibinitperiod},
+         given={Gabriela},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=DF}{%
+         family={{De Colle}},
+         family_i={D\bibinitperiod},
+         given={Fabio},
+         given_i={F\bibinitperiod},
+      }}%
+      {{hash=RL}{%
+         family={Rezzolla},
+         family_i={R\bibinitperiod},
+         given={Luciano},
+         given_i={L\bibinitperiod},
+      }}%
+      {{hash=RS}{%
+         family={Rosswog},
+         family_i={R\bibinitperiod},
+         given={Stephan},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=TK}{%
+         family={Takami},
+         family_i={T\bibinitperiod},
+         given={Kentaro},
+         given_i={K\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={Perego},
+         family_i={P\bibinitperiod},
+         given={Albino},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=LWH}{%
+         family={Lee},
+         family_i={L\bibinitperiod},
+         given={William\bibnamedelima H.},
+         given_i={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {IOP Publishing}%
+    }
+    \keyw{gamma-ray burst,gamma-ray burst:
+  general,general,hydrodynamics,neutron,outflows,relativistic
+  processes,stars,stars: neutron,stars: winds,winds}
+    \strng{namehash}{MBA+1}
+    \strng{fullhash}{MBARREMGDFRLRSTKPALWH1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2017}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    The most popular model for short gamma-ray bursts (sGRBs) involves the
+  coalescence of binary neutron stars. Because the progenitor is actually
+  hidden from view, we must consider under which circumstances such merging
+  systems are capable of producing a successful sGRB. Soon after coalescence,
+  winds are launched from the merger remnant. In this paper, we use realistic
+  wind profiles derived from global merger simulations in order to investigate
+  the interaction of sGRB jets with these winds using numerical simulations. We
+  analyze the conditions for which these axisymmetric winds permit relativistic
+  jets to breakout and produce a sGRB. We find that jets with luminosities
+  comparable to those observed in sGRBs are only successful when their
+  half-opening angles are below {\~{}}20{\{}$\backslash$deg{\}}. This jet
+  collimation mechanism leads to a simple physical interpretation of the
+  luminosities and opening angles inferred for sGRBs. If wide, low luminosity
+  jets are observed, they might be indicative of a different progenitor avenue
+  such as the merger of a neutron star with a black hole. We also use the
+  observed durations of sGRB to place constraints on the lifetime of the wind
+  phase, which is determined by the time it takes the jet to breakout. In all
+  cases we find that the derived limits argue against completely stable
+  remnants for binary neutron star mergers that produce sGRBs.%
+    }
+    \field{issn}{2041-8213}
+    \field{number}{2}
+    \field{pages}{L34}
+    \verb{url}
+    \verb http://stacks.iop.org/2041-8205/835/i=2/a=L34?key=crossref.c0051a7cec
+    \verb f66f7fd409ff6729730dae http://arxiv.org/abs/1609.04828 http://dx.doi.
+    \verb org/10.3847/2041-8213/aa5b9e
+    \endverb
+    \field{volume}{835}
+    \verb{file}
+    \verb :Users/Ileyk/Articles/Murguia-Berthier{\_}2017{\_}ApJL{\_}835{\_}L34.
+    \verb pdf:pdf
+    \endverb
+    \field{journaltitle}{Astrophys. J.}
+    \field{eprinttype}{arXiv}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Pelletier2017}{article}{}
+    \name{author}{4}{}{%
+      {{hash=PG}{%
+         family={{Pelletier}},
+         family_i={P\bibinitperiod},
+         given={G.},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=BA}{%
+         family={{Bykov}},
+         family_i={B\bibinitperiod},
+         given={A.},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=ED}{%
+         family={{Ellison}},
+         family_i={E\bibinitperiod},
+         given={D.},
+         given_i={D\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={{Lemoine}},
+         family_i={L\bibinitperiod},
+         given={M.},
+         given_i={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PG+1}
+    \strng{fullhash}{PGBAEDLM1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2017}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{journaltitle}{Space Science Reviews}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Peres2011}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PB}{%
+         family={Peres},
+         family_i={P\bibinitperiod},
+         given={B.},
+         given_i={B\bibinitperiod},
+      }}%
+      {{hash=NJ}{%
+         family={Novak},
+         family_i={N\bibinitperiod},
+         given={J.},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=OM}{%
+         family={Oertel},
+         family_i={O\bibinitperiod},
+         given={M.},
+         given_i={M\bibinitperiod},
+      }}%
+    }
+    \keyw{neutrino,numerical methods,supernova}
+    \strng{namehash}{PB+1}
+    \strng{fullhash}{PBNJOM1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2011}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{pages}{601\bibrangedash 604}
+    \verb{url}
+    \verb http://adsabs.harvard.edu/abs/2011sf2a.conf..601P
+    \endverb
+    \field{journaltitle}{SF2A Proc.}
+    \field{year}{2011}
+  \endentry
+
+  \entry{Peres2013}{article}{}
+    \name{author}{4}{}{%
+      {{hash=PB}{%
+         family={Peres},
+         family_i={P\bibinitperiod},
+         given={Bruno},
+         given_i={B\bibinitperiod},
+      }}%
+      {{hash=PAJ}{%
+         family={Penner},
+         family_i={P\bibinitperiod},
+         given={Andrew\bibnamedelima Jason},
+         given_i={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=NJ}{%
+         family={Novak},
+         family_i={N\bibinitperiod},
+         given={Jerome},
+         given_i={J\bibinitperiod},
+      }}%
+      {{hash=BS}{%
+         family={Bonazzola},
+         family_i={B\bibinitperiod},
+         given={Silvano},
+         given_i={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{PB+2}
+    \strng{fullhash}{PBPAJNJBS1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2014}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    We present a new code, Lorene's Ghost (for Lorene's gravitational handling
+  of spectral transport) developed to treat the problem of neutrino transport
+  in supernovae with the use of spectral methods. First, we derive the
+  expression for the nonrelativistic Liouville operator in doubly spherical
+  coordinates (r, theta, phi, epsilon, Theta, Phi){\$}, and further its general
+  relativistic counterpart. We use the 3 + 1 formalism with the conformally
+  flat approximation for the spatial metric, to express the Liouville operator
+  in the Eulerian frame. Our formulation does not use any approximations when
+  dealing with the angular arguments (theta, phi, Theta, Phi), and is fully
+  energy-dependent. This approach is implemented in a spherical shell, using
+  either Chebyshev polynomials or Fourier series as decomposition bases. It is
+  here restricted to simplified collision terms (isoenergetic scattering) and
+  to the case of a static fluid. We finish this paper by presenting test
+  results using basic configurations, including general relativistic ones in
+  the Schwarzschild metric, in order to demonstrate the convergence properties,
+  the conservation of particle number and correct treatment of some
+  general-relativistic effects of our code. The use of spectral methods enables
+  to run our test cases in a six-dimensional setting on a single processor.%
+    }
+    \field{issn}{0264-9381}
+    \field{number}{4}
+    \verb{url}
+    \verb http://arxiv.org/abs/1307.1666 http://dx.doi.org/10.1088/0264-9381/31
+    \verb /4/045012
+    \endverb
+    \field{volume}{31}
+    \field{journaltitle}{Class. Quantum Gravity}
+    \field{eprinttype}{arXiv}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Philippov2014}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PAA}{%
+         family={Philippov},
+         family_i={P\bibinitperiod},
+         given={Alexander\bibnamedelima A.},
+         given_i={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SA}{%
+         family={Spitkovsky},
+         family_i={S\bibinitperiod},
+         given={Anatoly},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=CB}{%
+         family={Cerutti},
+         family_i={C\bibinitperiod},
+         given={Benoit},
+         given_i={B\bibinitperiod},
+      }}%
+    }
+    \keyw{acceleration of particles,magnetic fields,plasmas,pulsars:
+  general,stars: rotation}
+    \strng{namehash}{PAA+1}
+    \strng{fullhash}{PAASACB1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2015}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{abstract}{%
+    We present first-principles relativistic particle-in-cell simulations of
+  the oblique pulsar magnetosphere with pair formation. The magnetosphere
+  starts to form with particles extracted from the surface of the neutron star.
+  These particles are accelerated by surface electric fields and emit photons
+  capable of producing electron-positron pairs. We inject secondary pairs at
+  locations of primary energetic particles, whose energy exceeds the threshold
+  for pair formation. We find solutions that are close to the ideal force-free
+  magnetosphere, with the Y-point and current sheet. Solutions with obliquities
+  {\$}\backslashlt 40{\^{}}{\{}\backslashcirc{\}}{\$} do not show pair
+  production in the open field line region, because the local current density
+  along magnetic field is below the Goldreich-Julian value. The bulk outflow in
+  these solutions is charge separated, and pair formation happens in the
+  current sheet and return current layer only. Solutions with higher
+  inclinations show pair production in the open field line region, with high
+  multiplicity of the bulk flow and the size of pair-producing region
+  increasing with inclination. We observe the spin-down of the star to be
+  comparable to MHD model predictions. The magnetic dissipation in the current
+  sheet ranges between 20{\%} for the aligned rotator and 3{\%} for the
+  orthogonal rotator. Our results suggest that for low obliquity neutron stars
+  with suppressed pair formation at the light cylinder, the presence of
+  phenomena related to pair activity in the bulk of the polar region, e.g.,
+  radio emission, may crucially depend on the physics beyond our simplified
+  model, such as the effects of curved space-time or multipolar surface
+  fields.%
+    }
+    \field{isbn}{1367-4811 (Electronic)$\backslash$r1367-4803 (Linking)}
+    \field{issn}{20418213}
+    \field{number}{1}
+    \verb{url}
+    \verb http://arxiv.org/abs/1412.0673
+    \endverb
+    \field{volume}{801}
+    \verb{file}
+    \verb :Users/Ileyk/Library/Application Support/Mendeley Desktop/Downloaded/
+    \verb Philippov, Spitkovsky, Cerutti - 2014 - Ab-initio pulsar magnetospher
+    \verb e three-dimensional particle-in-cell simulations of oblique pulsars.p
+    \verb df:pdf
+    \endverb
+    \field{journaltitle}{Astrophys. J. Lett.}
+    \field{eprinttype}{arXiv}
+    \field{year}{2015}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Piran2005}{article}{}
+    \name{author}{1}{}{%
+      {{hash=PT}{%
+         family={Piran},
+         family_i={P\bibinitperiod},
+         given={Tsvi},
+         given_i={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{PT1}
+    \strng{fullhash}{PT1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2005}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{issn}{0034-6861}
+    \field{number}{4}
+    \field{pages}{1143\bibrangedash 1210}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/RevModPhys.76.1143
+    \endverb
+    \field{volume}{76}
+    \verb{file}
+    \verb :Users/Ileyk/Articles/RevModPhys.76.1143.pdf:pdf
+    \endverb
+    \field{journaltitle}{Rev. Mod. Phys.}
+    \field{year}{2005}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Rees1992}{article}{}
+    \name{author}{2}{}{%
+      {{hash=RMJ}{%
+         family={Rees},
+         family_i={R\bibinitperiod},
+         given={M.\bibnamedelima J.},
+         given_i={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=MP}{%
+         family={Meszaros},
+         family_i={M\bibinitperiod},
+         given={P.},
+         given_i={P\bibinitperiod},
+      }}%
+    }
+    \keyw{Baryons,Compton Effect,Fireballs,Gamma Ray Bursts,Interstellar
+  Matter,Kinetic Energy,Neutron Stars,Relativity,Stellar Envelopes}
+    \strng{namehash}{RMJ+1}
+    \strng{fullhash}{RMJMP1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{1992}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{issn}{0035-8711}
+    \field{number}{1}
+    \field{pages}{41P\bibrangedash 43P}
+    \verb{url}
+    \verb https://academic.oup.com/mnras/article-lookup/doi/10.1093/mnras/258.1
+    \verb .41P
+    \endverb
+    \field{volume}{258}
+    \field{journaltitle}{Mon. Not. R. Astron. Soc.}
+    \field{year}{1992}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Rosswog2007}{article}{}
+    \name{author}{1}{}{%
+      {{hash=RS}{%
+         family={Rosswog},
+         family_i={R\bibinitperiod},
+         given={Stephan},
+         given_i={S\bibinitperiod},
+      }}%
+    }
+    \keyw{Accretion,Binaries: close,Black hole physics,Gamma-rays:
+  bursts,X-rays: general,accretion,accretion discs,binaries: close,black hole
+  physics,gamma-rays: bursts}
+    \strng{namehash}{RS1}
+    \strng{fullhash}{RS1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2007}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{abstract}{%
+    Recent observations of long and short gamma-ray bursts have revealed a
+  puzzling X-ray activity that in some cases continues for hours after the
+  burst. It is difficult to reconcile such time-scales with the viscous
+  time-scales that an accretion disc can plausibly provide. Here I discuss the
+  accretion activity expected from the material that is launched into eccentric
+  but gravitationally bound orbits during a compact binary merger coalescence.
+  From a simple analytical model the time-scales and accretion luminosities
+  that result from fallback in the aftermath of a compact binary merger are
+  derived. For the considered mass range, double neutron star binaries are
+  relatively homogeneous in their fallback luminosities. Neutron star black
+  hole systems show a larger spread in their fallback behaviour. While the
+  model is too simple to make predictions about the detailed time structure of
+  the fallback, it makes reasonable predictions about the gross properties of
+  the fallback. About one hour after the coalescence the fallback accretion
+  luminosity can still be as large as {\~{}}1045erg s-1, a fraction of which
+  will be transformed into X-rays. Large-scale amplitude variations in the
+  X-ray luminosities can plausibly be caused by gravitational fragmentation,
+  which for the high-eccentricity fallback should occur more easily than in an
+  accretion disc.%
+    }
+    \field{issn}{17453933}
+    \field{number}{1}
+    \field{pages}{48\bibrangedash 51}
+    \verb{url}
+    \verb http://adsabs.harvard.edu/abs/2007MNRAS.376L..48R
+    \endverb
+    \field{volume}{376}
+    \verb{file}
+    \verb :Users/Ileyk/Articles/376-1-L48.pdf:pdf
+    \endverb
+    \field{journaltitle}{Mon. Not. R. Astron. Soc. Lett.}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{arXiv:astro-ph}
+    \field{year}{2007}
+  \endentry
+
+  \entry{Spitkovsky2006}{article}{}
+    \name{author}{1}{}{%
+      {{hash=SA}{%
+         family={Spitkovsky},
+         family_i={S\bibinitperiod},
+         given={Anatoly},
+         given_i={A\bibinitperiod},
+      }}%
+    }
+    \keyw{Magnetohydrodynamics: MHD,Stars: Magnetic Fields,Stars:
+  Neutron,Stars: Pulsars: General}
+    \strng{namehash}{SA1}
+    \strng{fullhash}{SA1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2006}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    Magnetospheres of many astrophysical objects can be accurately described by
+  the low-inertia (or ``force-free'') limit of MHD. We present a new numerical
+  method for the solution of equations of force-free relativistic MHD based on
+  the finite-difference time-domain approach, with a prescription for handling
+  the spontaneous formation of current sheets. We use this method to study the
+  time-dependent evolution of pulsar magnetospheres in both aligned and oblique
+  magnetic geometries. For the aligned rotator, we confirm the general
+  properties of the time-independent solution of Contopoulos et al. For the
+  oblique rotator, we present the three-dimensional structure of the
+  magnetosphere and compute, for the first time, the spin-down power of pulsars
+  as a function of the inclination of the magnetic axis. We find that the
+  pulsar spin-down luminosity is L{\~{}}($\mu$2$\Omega$4*/c3) (1+sin2$\alpha$),
+  where $\mu$ is the stellar dipole moment, $\Omega$* is the rotation
+  frequency, and $\alpha$ is the magnetic inclination angle. We also discuss
+  the effects of current sheet resistivity and reconnection on the structure
+  and evolution of the magnetosphere.%
+    }
+    \field{issn}{0004-637X}
+    \field{number}{1}
+    \field{pages}{L51\bibrangedash L54}
+    \verb{url}
+    \verb http://adsabs.harvard.edu/abs/2006ApJ...648L..51S
+    \endverb
+    \field{volume}{648}
+    \verb{file}
+    \verb :Users/Ileyk/Library/Application Support/Mendeley Desktop/Downloaded/
+    \verb Spitkovsky - 2006 - Time-dependent Force-free Pulsar Magnetospheres A
+    \verb xisymmetric and Oblique Rotators.pdf:pdf
+    \endverb
+    \field{journaltitle}{Astrophys. J.}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{astro-ph}
+    \field{year}{2006}
+  \endentry
+
+  \entry{Tanaka2016}{article}{}
+    \name{author}{1}{}{%
+      {{hash=TM}{%
+         family={Tanaka},
+         family_i={T\bibinitperiod},
+         given={Masaomi},
+         given_i={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TM1}
+    \strng{fullhash}{TM1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2016}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    We review current understanding of kilonova/macronova emission from compact
+  binary mergers (mergers of two neutron stars or a neutron star and a black
+  hole). Kilonova/macronova is optical and near-infrared emission powered by
+  radioactive decays of r-process nuclei. Emission from the dynamical ejecta
+  with {\~{}}0.01 Msun is likely to have a luminosity of
+  {\~{}}10{\^{}}{\{}40{\}}-10{\^{}}{\{}41{\}} erg s{\^{}}{\{}-1{\}} with a
+  characteristic timescale of about 1 week. The spectral peak is located in red
+  optical or near-infrared wavelengths. A subsequent accretion disk wind may
+  provide an additional luminosity, or an earlier/bluer emission if it is not
+  absorbed by the precedent dynamical ejecta. The detection of near-infrared
+  excess in the afterglow of short GRB 130603B and possible optical excess in
+  GRB 060614 supports the concept of the kilonova/macronova scenario. At 200
+  Mpc distance, a typical brightness of kilonova/macronova with 0.01 Msun
+  ejecta is expected to be about 22 mag and the emission rapidly fades to
+  {\textgreater}24 mag within {\~{}}10 days after the merger.
+  Kilonova/macronova candidates can be distinguished from supernovae by (1) the
+  faster time evolution, (2) fainter absolute magnitudes, and (3) redder
+  colors. To effectively search for such objects, follow-up survey observations
+  with multiple visits within {\textless}10 days and with multiple filters will
+  be important. Since the high expansion velocity (v {\~{}} 0.1-0.2c) is a
+  robust outcome of compact binary mergers, the detection of smooth spectra
+  will be the smoking gun to conclusively identify the GW source.%
+    }
+    \field{issn}{16877977}
+    \verb{url}
+    \verb http://arxiv.org/abs/1605.07235 http://dx.doi.org/10.1155/2016/634197
+    \verb 4
+    \endverb
+    \field{volume}{2016}
+    \verb{file}
+    \verb :Users/Ileyk/Articles/6341974.pdf:pdf
+    \endverb
+    \field{journaltitle}{Adv. Astron.}
+    \field{eprinttype}{arXiv}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Abbott2016}{article}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={{The LIGO/Virgo Collaboration}},
+         family_i={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{T1}
+    \strng{fullhash}{T1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2016}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{issn}{0031-9007}
+    \field{number}{6}
+    \field{pages}{061102}
+    \verb{url}
+    \verb http://link.aps.org/doi/10.1103/PhysRevLett.116.061102
+    \endverb
+    \field{volume}{116}
+    \verb{file}
+    \verb :Users/Ileyk/Library/Application Support/Mendeley Desktop/Downloaded/
+    \verb Abbott et al. - 2016 - Observation of Gravitational Waves from a Bina
+    \verb ry Black Hole Merger.pdf:pdf
+    \endverb
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{year}{2016}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{TheLIGOScientificCollaboration2017}{article}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={{The LIGO/Virgo Collaboration}},
+         family_i={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T1}
+    \strng{fullhash}{T1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2017}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    On August 17, 2017 at 12:41:04 UTC the Advanced LIGO and Advanced Virgo
+  gravitational-wave detectors made their first observation of a binary neutron
+  star inspiral. The signal, GW170817, was detected with a combined
+  signal-to-noise ratio of 32.4 and a false-alarm-rate estimate of less than
+  one per {\$}8.0\backslashtimes10{\^{}}4{\$} years. We infer the component
+  masses of the binary to be between 0.86 and 2.26 {\$}M{\_}\backslashodot{\$},
+  in agreement with masses of known neutron stars. Restricting the component
+  spins to the range inferred in binary neutron stars, we find the component
+  masses to be in the range 1.17 to 1.60 {\$}M{\_}\backslashodot{\$}, with the
+  total mass of the system
+  {\$}2.74{\^{}}{\{}+0.04{\}}{\_}{\{}-0.01{\}}\backslash,M{\_}\backslashodot{\$}.
+  The source was localized within a sky region of 28 deg{\$}{\^{}}2{\$} (90{\%}
+  probability) and had a luminosity distance of
+  {\$}40{\^{}}{\{}+8{\}}{\_}{\{}-14{\}}{\$} Mpc, the closest and most precisely
+  localized gravitational-wave signal yet. The association with the gamma-ray
+  burst GRB 170817A, detected by Fermi-GBM 1.7 s after the coalescence,
+  corroborates the hypothesis of a neutron star merger and provides the first
+  direct evidence of a link between these mergers and short gamma-ray bursts.
+  Subsequent identification of transient counterparts across the
+  electromagnetic spectrum in the same location further supports the
+  interpretation of this event as a neutron star merger. This unprecedented
+  joint gravitational and electromagnetic observation provides insight into
+  astrophysics, dense matter, gravitation and cosmology.%
+    }
+    \field{issn}{0031-9007}
+    \field{number}{16}
+    \verb{url}
+    \verb http://arxiv.org/abs/1710.05832 http://dx.doi.org/10.1103/PhysRevLett
+    \verb .119.161101
+    \endverb
+    \field{volume}{119}
+    \verb{file}
+    \verb :Users/Ileyk/Library/Application Support/Mendeley Desktop/Downloaded/
+    \verb The LIGO Scientific Collaboration et al. - 2017 - GW170817 Observatio
+    \verb n of Gravitational Waves from a Binary Neutron Star Inspiral.pdf:pdf
+    \endverb
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{eprinttype}{arXiv}
+    \field{year}{2017}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Troja2018}{article}{}
+    \name{author}{12}{}{%
+      {{hash=TE}{%
+         family={Troja},
+         family_i={T\bibinitperiod},
+         given={E.},
+         given_i={E\bibinitperiod},
+      }}%
+      {{hash=RG}{%
+         family={Ryan},
+         family_i={R\bibinitperiod},
+         given={G.},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=PL}{%
+         family={Piro},
+         family_i={P\bibinitperiod},
+         given={L.},
+         given_i={L\bibinitperiod},
+      }}%
+      {{hash=vEH}{%
+         prefix={van},
+         prefix_i={v\bibinitperiod},
+         family={Eerten},
+         family_i={E\bibinitperiod},
+         given={H.},
+         given_i={H\bibinitperiod},
+      }}%
+      {{hash=CSB}{%
+         family={Cenko},
+         family_i={C\bibinitperiod},
+         given={S.\bibnamedelima B.},
+         given_i={S\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=YY}{%
+         family={Yoon},
+         family_i={Y\bibinitperiod},
+         given={Y.},
+         given_i={Y\bibinitperiod},
+      }}%
+      {{hash=LSKK}{%
+         family={Lee},
+         family_i={L\bibinitperiod},
+         given={S.\bibnamedelima K.\bibnamedelima K.},
+         given_i={S\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim
+  K\bibinitperiod},
+      }}%
+      {{hash=IM}{%
+         family={Im},
+         family_i={I\bibinitperiod},
+         given={M.},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=ST}{%
+         family={Sakamoto},
+         family_i={S\bibinitperiod},
+         given={T.},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=GP}{%
+         family={Gatkine},
+         family_i={G\bibinitperiod},
+         given={P.},
+         given_i={P\bibinitperiod},
+      }}%
+      {{hash=KA}{%
+         family={Kutyrev},
+         family_i={K\bibinitperiod},
+         given={A.},
+         given_i={A\bibinitperiod},
+      }}%
+      {{hash=VS}{%
+         family={Veilleux},
+         family_i={V\bibinitperiod},
+         given={S.},
+         given_i={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TE+1}
+    \strng{fullhash}{TERGPLEHvCSBYYLSKKIMSTGPKAVS1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2018}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{abstract}{%
+    The recent discovery of a faint gamma-ray burst (GRB) coincident with the
+  gravitational wave (GW) event GW 170817 revealed the existence of a
+  population of low-luminosity short duration gamma-ray transients produced by
+  neutron star mergers in the nearby Universe. These events could be routinely
+  detected by existing gamma-ray monitors, yet previous observations failed to
+  identify them without the aid of GW triggers. Here we show that GRB150101B
+  was an analogue of GRB170817A located at a cosmological distance. GRB 150101B
+  was a faint short duration GRB characterized by a bright optical counterpart
+  and a long-lived X-ray afterglow. These properties are unusual for standard
+  short GRBs and are instead consistent with an explosion viewed off-axis: the
+  optical light is produced by a luminous kilonova component, while the
+  observed X-rays trace the GRB afterglow viewed at an angle of {\~{}}13
+  degrees. Our findings suggest that these properties could be common among
+  future electromagnetic counterparts of GW sources.%
+    }
+    \field{issn}{20411723}
+    \field{number}{1}
+    \field{pages}{5\bibrangedash 10}
+    \verb{url}
+    \verb http://arxiv.org/abs/1806.10624 http://dx.doi.org/10.1038/s41467-018-
+    \verb 06558-7
+    \endverb
+    \field{volume}{9}
+    \verb{file}
+    \verb :Users/Ileyk/Articles/s41467-018-06558-7.pdf:pdf
+    \endverb
+    \field{journaltitle}{Nat. Commun.}
+    \field{eprinttype}{arXiv}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Yu2013}{article}{}
+    \name{author}{3}{}{%
+      {{hash=YYW}{%
+         family={Yu},
+         family_i={Y\bibinitperiod},
+         given={Yun\bibnamedelima Wei},
+         given_i={Y\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=ZB}{%
+         family={Zhang},
+         family_i={Z\bibinitperiod},
+         given={Bing},
+         given_i={B\bibinitperiod},
+      }}%
+      {{hash=GH}{%
+         family={Gao},
+         family_i={G\bibinitperiod},
+         given={He},
+         given_i={H\bibinitperiod},
+      }}%
+    }
+    \keyw{gamma-ray burst: general,stars: neutron,supernovae: general}
+    \strng{namehash}{YYW+1}
+    \strng{fullhash}{YYWZBGH1}
+    \field{labelnamesource}{author}
+    \field{labelyear}{2013}
+    \field{sortinit}{Y}
+    \field{sortinithash}{Y}
+    \field{abstract}{%
+    A massive millisecond magnetar may survive a merger of a neutron star (NS)
+  binary, which could continuously power the merger ejecta and accelerate it to
+  a mildly-relativistic speed. We develop a generic dynamic model for the
+  merger ejecta, where the transition from sub-relativistic to relativistic is
+  well described. We show that the ejecta emission (the "merger-nova") powered
+  by the magnetar can have an optical peak brightness comparable to a
+  supernova, which is a few tens or hundreds times brighter than the
+  radioactive-powered merger-novae (the so-called macro-nova or kilo-nova).
+  However, the duration of the magnetar-powered merger-nova peaks earlier and
+  has a duration significantly shorter than that of a supernova. An X-ray bump
+  appears even earlier in time. Such merger-novae may be detected with NS-NS
+  merger events with or without a short gamma-ray burst, and could be a bright
+  electromagnetic counterpart for gravitational wave bursts due to NS-NS
+  mergers. If detected, it suggests that the merger leaves behind a massive NS,
+  which has important implications in understanding the equation-of-state of
+  nuclear matter.%
+    }
+    \field{isbn}{0911801111}
+    \field{issn}{20418205}
+    \field{number}{2}
+    \verb{url}
+    \verb http://adsabs.harvard.edu/abs/2013ApJ...776L..40Y
+    \endverb
+    \field{volume}{776}
+    \verb{file}
+    \verb :Users/Ileyk/Articles/Yu{\_}2013{\_}ApJL{\_}776{\_}L40.pdf:pdf
+    \endverb
+    \field{journaltitle}{Astrophys. J. Lett.}
+    \field{eprinttype}{arXiv}
+    \field{year}{2013}
+  \endentry
+\endsortlist
+\endinput
